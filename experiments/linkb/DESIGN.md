@@ -72,12 +72,13 @@ geometry agreement:
 - **P2 (matrix)**: across the 3×3 matrix, behavior-agreement ranks correlate
   with geometry-agreement ranks (Mantel/Spearman of upper triangles; exact
   permutation p).
-- **P3 (LM-buffering boundary)**: all arms may converge toward the LM's own
-  prior difficulty profile (LM-attractor, cf. gemma4 in Supplement §1–2);
-  H3 survives iff encoder-geometry signal is detectable ABOVE the shared-LM
-  baseline, i.e., ρ_diff(C,S) exceeds the shared-LM+shared-task floor
-  (estimated by ρ_diff(C,R) and ρ_diff(S,R): agreements with an arm that has
-  no trained geometry).
+- **P3 (LM-buffering boundary, operationalized)**: all arms may converge toward
+  the LM's own prior difficulty profile (LM-attractor, cf. gemma4 in Supplement
+  §1–2). P3 passes iff the 10k class-bootstrap (seed 20260801) 95% CI of the
+  DIFFERENCE ρ_diff(C,S) − ρ_diff(C,R) excludes zero — a preregistered
+  inferential criterion, not a point-estimate comparison. Power caveat applies:
+  a CI including zero is reported as inconclusive-with-direction, not evidence
+  of absence.
 - **P4 (validity)**: the random arm R must (a) have markedly lower mean
   accuracy, and (b) NOT show geometry-ordered agreement (its pair agreements
   should be the lowest or noise-level). If R produces the same ordinal pattern,
@@ -90,17 +91,40 @@ geometry agreement:
 | P1+P2 pass, P3 passes above floor | encoder geometry causally shapes difficulty, LM fixed | upgrade §4 narrative: "first direct causal test passed"; still keep "candidate" (single experiment) but add the result |
 | P3 fails: all arms equal (LM-attractor dominates) | honest boundary: geometry shared in the visual layer, but a frozen LM + small projector buffers behavior | report as boundary; reframe §5.2; do NOT overclaim |
 | P4 fails | pipeline artifact | do not use; debug and rerun with disclosure |
+| Any of C/S/D floor-affected (mean acc < 20% or collapse > 0.80) | projector-only training insufficient at this budget | report with floor flag; ordinal tests carry no causal reading; budget changes require a NEW preregistered run |
+| D arm deviates from C/S more than geometry predicts | AMBIGUOUS by preregistration: mixes "geometry farther" with "projector harder to learn" (DINOv2 features carry no text alignment; the 2000-step projector must also learn the vision-language bridge) | D-arm evidence preregistered as weaker than the C-S pair; C-S is the primary causal comparison, D a directional check only |
 
 Negative/positive, the run is reported. No post-hoc arm substitution.
 
 ## 4. Statistics
 
 - Difficulty profiles: per-class accuracy per arm (13 classes pooled; also TB-8).
+- **Geometry reference (primary)**: 13-class pooled class-centroid cosine
+  matrices computed from THIS experiment's cached full-frame val features (the
+  same features feeding behavior), pairwise Spearman of upper triangles. This
+  aligns the geometry reference's class set with the behavior evaluation
+  exactly. The committed TB-8 matrices (C-S 0.957, S-D 0.772, C-D 0.719) are
+  the preregistered SECONDARY reference; divergence between the two references
+  is reported, not adjudicated post hoc.
 - ρ_diff: Spearman; CIs via class bootstrap (10k, seed 20260801 — paper convention).
 - Ordinal test P1: exact permutation over the 3 pair values against the
-  preregistered ordering (and page's exact test for the full ranking).
-- Matrix test P2: Spearman of upper triangles (3 pairs) vs geometry matrix from
-  `results/mantel_test_results.json`; exact enumeration (3!).
+  preregistered ordering. **Ceiling disclosed in advance**: with 3 pair values,
+  exactly 1 of the 3! = 6 permutations satisfies the predicted partial order, so
+  the smallest attainable one-sided p is **1/6 ≈ 0.167**; a perfect match is
+  preregistered as *descriptive support*, not inferential significance (same
+  disclosure convention as the paper's "smallest attainable" p=0.029 tests).
+- Matrix test P2: Spearman of upper triangles (3 pairs) vs the geometry
+  reference (primary: 13-class pooled geometry from this experiment's cached
+  features; secondary: committed TB-8 matrices). **Ceiling disclosed in
+  advance**: with 3 points, the two-sided exact test over 6 permutations has
+  smallest attainable p = **2/6 = 0.333**; P2 is likewise descriptive.
+- **Preregistered floor criterion (trainable arms; locked before unblinding) —
+  the failure mode that killed both prior perturbation attempts**: an arm is
+  flagged *floor-affected* if mean val accuracy **< 20%** (13-class chance
+  7.7%; 20% ≈ 2.6× chance) OR single-class response fraction (collapse)
+  **> 0.80** (the paper's strong-prior/attractor threshold). If ANY of C/S/D is
+  floor-affected, P1/P2 are reported with the flag and carry no causal reading;
+  if ALL are, the run is underpowered and reported as such.
 - Power caveat (preregistered): at n=13, 80% power requires |ρ|≥0.71 (paper's
   Fisher-z analysis). We therefore pre-commit to interpreting CIs + ordinal
   consistency, not point-significance alone. TB-8 (n=8) is descriptive only.
