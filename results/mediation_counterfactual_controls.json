@@ -1,0 +1,118 @@
+{
+  "dataset_scb5": {
+    "n_classes": 13,
+    "n_models": 9,
+    "controls": [
+      {
+        "control": "baseline_loo_cross_model",
+        "point_estimate_mean_indirect": 0.4132949181907196,
+        "observed_mean_full_data": 0.5360593640645815,
+        "bootstrap_ci_95": [
+          -0.5149421275275705,
+          0.8882226898457377
+        ],
+        "p_one_sided": 0.08863611975533855,
+        "n_valid_bootstraps": 9319,
+        "excludes_zero": false
+      },
+      {
+        "control": "permuted_class_mediator",
+        "point_estimate_mean_indirect": -0.061031554194926875,
+        "observed_mean_full_data": -0.04184488081532356,
+        "bootstrap_ci_95": [
+          -0.31946859801421795,
+          0.10629761630187287
+        ],
+        "p_one_sided": 0.7411741174117412,
+        "n_valid_bootstraps": 9999,
+        "excludes_zero": false
+      },
+      {
+        "control": "random_noise_mediator",
+        "point_estimate_mean_indirect": -0.02831813348652176,
+        "observed_mean_full_data": -0.01755166128811931,
+        "bootstrap_ci_95": [
+          -0.14060330288760106,
+          0.06821831390116416
+        ],
+        "p_one_sided": 0.758468630988174,
+        "n_valid_bootstraps": 9978,
+        "excludes_zero": false
+      },
+      {
+        "control": "independent_encoder_openai_l14",
+        "point_estimate_mean_indirect": 0.039443382975710276,
+        "observed_mean_full_data": 0.004854215922635847,
+        "bootstrap_ci_95": [
+          -0.21302764209864483,
+          0.38951746201820525
+        ],
+        "p_one_sided": 0.41574157415741575,
+        "n_valid_bootstraps": 9999,
+        "excludes_zero": false,
+        "mediator": "OpenAI ViT-L/14 per-class accuracy (outside MLLM set)"
+      },
+      {
+        "control": "independent_encoder_openai_b32",
+        "point_estimate_mean_indirect": 0.005669061046151108,
+        "observed_mean_full_data": 0.002530730344831919,
+        "bootstrap_ci_95": [
+          -0.13210877103568391,
+          0.15184225816095476
+        ],
+        "p_one_sided": 0.465,
+        "n_valid_bootstraps": 10000,
+        "excludes_zero": false,
+        "mediator": "OpenAI ViT-B/32 per-class accuracy (outside MLLM set)"
+      }
+    ]
+  },
+  "dataset_stanford40": {
+    "n_classes": 40,
+    "n_models": 6,
+    "controls": [
+      {
+        "control": "baseline_loo_cross_model",
+        "point_estimate_mean_indirect": 0.5499050393826225,
+        "observed_mean_full_data": 0.5622632904641552,
+        "bootstrap_ci_95": [
+          0.3711792193525377,
+          0.7077018518761546
+        ],
+        "p_one_sided": 0.0,
+        "n_valid_bootstraps": 10000,
+        "excludes_zero": true
+      },
+      {
+        "control": "permuted_class_mediator",
+        "point_estimate_mean_indirect": -0.00534278784683629,
+        "observed_mean_full_data": -0.005867377080493741,
+        "bootstrap_ci_95": [
+          -0.055448587260280076,
+          0.042282419871583564
+        ],
+        "p_one_sided": 0.6199,
+        "n_valid_bootstraps": 10000,
+        "excludes_zero": false
+      },
+      {
+        "control": "random_noise_mediator",
+        "point_estimate_mean_indirect": -0.01775586506666629,
+        "observed_mean_full_data": -0.017784379057766617,
+        "bootstrap_ci_95": [
+          -0.05783634789652753,
+          0.016710160277274195
+        ],
+        "p_one_sided": 0.8354,
+        "n_valid_bootstraps": 10000,
+        "excludes_zero": false
+      }
+    ]
+  },
+  "config": {
+    "rng_seed": 20260801,
+    "n_boot": 10000,
+    "permutation_seed": 42,
+    "method": "Cluster bootstrap: resample classes with replacement, seed 20260801; indirect effect via product-of-coefficients on rank-z scores (mediation_paths). Control 3 (independent encoder) uses OpenAI ViT-L/14 / ViT-B/32 per-class accuracies from the committed multi-backbone snapshot as the mediator."
+  }
+}

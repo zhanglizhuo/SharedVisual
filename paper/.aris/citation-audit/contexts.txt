@@ -1,0 +1,69 @@
+# Citation Contexts for SharedVisual
+# Format: KEY | file:line | surrounding_sentence
+
+ma2025anchorscore | SharedVisual.tex:64 | CLIP ... predicts the per-class accuracy of large multimodal language models (MLLMs) ... \cite{ma2025anchorscore}
+ma2025anchorscore | SharedVisual.tex:107 | Ma and Zhang \cite{ma2025anchorscore} introduced AnchorScore as a predictor of MLLM per-class accuracy
+ma2025anchorscore | SharedVisual.tex:123 | SCB5 (Smart Classroom Behavior v5) \cite{ma2025anchorscore} is a classroom behavior benchmark
+ma2025anchorscore | SharedVisual.tex:141 | The MLLM per-class accuracy used throughout follows the frozen values of the AnchorScore benchmark \cite{ma2025anchorscore}
+ma2025anchorscore | SharedVisual.tex:149 | The originally reported headline of rho approx 0.77 \cite{ma2025anchorscore} is the class-level correlation
+ma2025anchorscore | SharedVisual.tex:380 | the rho approx 0.77 cited from the original AnchorScore paper \cite{ma2025anchorscore}
+
+geirhos2021partial | SharedVisual.tex:80 | different vision models share a "partial consensus" on difficulty \cite{geirhos2021partial}
+geirhos2021partial | SharedVisual.tex:113 | Geirhos et al. \cite{geirhos2021partial} showed that vision models share a "partial consensus" on which classes are difficult
+
+elder2024internet | SharedVisual.tex:80 | learn similar feature spaces under Internet-scale training \cite{elder2024internet, davoodi2024universal, kornblith2019similarity}
+elder2024internet | SharedVisual.tex:110 | Eldar et al. \cite{elder2024internet} found convergence across different training objectives
+elder2024internet | SharedVisual.tex:386 | consistent with recent results in representation similarity \cite{kornblith2019similarity, elder2024internet, davoodi2024universal}
+
+davoodi2024universal | SharedVisual.tex:80 | (same as elder2024internet group cite)
+davoodi2024universal | SharedVisual.tex:110 | Davoodi et al. \cite{davoodi2024universal} reported universal representations across CLIP, SigLIP, and other large-scale models
+davoodi2024universal | SharedVisual.tex:386 | (same group cite)
+
+kornblith2019similarity | SharedVisual.tex:80 | (group cite)
+kornblith2019similarity | SharedVisual.tex:110 | Kornblith et al. \cite{kornblith2019similarity} showed that CKA between models increases with training data scale
+kornblith2019similarity | SharedVisual.tex:141 | We use CKA (Centered Kernel Alignment) \cite{kornblith2019similarity} for feature space similarity
+kornblith2019similarity | SharedVisual.tex:386 | (group cite)
+
+liu2023visual | SharedVisual.tex:107 | Others study benchmark design \cite{liu2023visual}
+liu2023visual | SharedVisual.tex:131 | CLIP (LLaVA-1.5-7B \cite{liu2023visual}, ...)
+
+kriegeskorte2008representational | SharedVisual.tex:110 | Kriegeskorte et al. \cite{kriegeskorte2008representational} formalized representational similarity analysis (RSA)
+kriegeskorte2008representational | SharedVisual.tex:365 | different models learn similar semantic topologies \cite{kriegeskorte2008representational, mehrer2020individual}
+
+huh2024platonic | SharedVisual.tex:110 | Huh et al.~\cite{huh2024platonic} go furthest, arguing that representations across modalities are converging
+huh2024platonic | SharedVisual.tex:365 | Huh et al.~\cite{huh2024platonic} formulate the Platonic Representation Hypothesis
+
+yao2011stanford40 | SharedVisual.tex:113 | prior work on few-shot recognition \cite{yao2011stanford40} addresses class confusability within a single model
+yao2011stanford40 | SharedVisual.tex:123 | Stanford40 Actions \cite{yao2011stanford40} contains 40 human action classes
+
+radford2021clip | SharedVisual.tex:127 | CLIP ViT-L/14 (OpenAI) \cite{radford2021clip}, trained on WIT-400M
+
+schuhmann2022laion5b | SharedVisual.tex:127 | CLIP ViT-L/14 (LAION) \cite{schuhmann2022laion5b}, trained on LAION-2B
+
+bai2025qwen2 | SharedVisual.tex:127 | Qwen2-VL Vision Encoder (QwenViT) \cite{bai2025qwen2}
+bai2025qwen2 | SharedVisual.tex:131 | Qwen3.x series ... \cite{bai2025qwen2}
+bai2025qwen2 | SharedVisual.tex:131 | Qwen2-VL ViT (Qwen2-VL-7B \cite{bai2025qwen2})
+
+team2025gemma3 | SharedVisual.tex:131 | SigLIP (Gemma series: Gemma-3-27B, Gemma4-31B ... \cite{team2025gemma3, team2025gemma4})
+team2025gemma4 | SharedVisual.tex:131 | (same group cite)
+
+mehrer2020individual | SharedVisual.tex:365 | different models learn similar semantic topologies \cite{kriegeskorte2008representational, mehrer2020individual}
+
+yamins2016using | SharedVisual.tex:365 | Yamins and DiCarlo~\cite{yamins2016using} showed that neural networks optimized for task performance converge to brain-like representations
+
+suchow2023universal | SharedVisual.tex:365 | Suchow et al.~\cite{suchow2023universal} demonstrated universal visual representations emerging across diverse training regimes
+
+arora2019fine | SharedVisual.tex:373 | Arora et al.~\cite{arora2019fine} showed that contrastive learning implicitly aligns representations to a latent similarity structure
+
+baron1986moderator | SharedVisual.tex:405 | product-of-coefficients decomposition \cite{baron1986moderator, mackinnon2002comparison}
+baron1986moderator | SharedVisual.tex:414 | textbook Baron--Kenny product-of-coefficients estimator \cite{baron1986moderator, mackinnon2002comparison}
+
+mackinnon2002comparison | SharedVisual.tex:405 | (group cite with baron1986moderator)
+mackinnon2002comparison | SharedVisual.tex:414 | (group cite with baron1986moderator)
+
+preacher2008asymptotic | SharedVisual.tex:412 | 10000 class resamples (percentile method) \cite{preacher2008asymptotic}
+
+conover1981rank | SharedVisual.tex:414 | rank-transformation approach to nonparametric regression \cite{conover1981rank}
+
+nilsback2008flowers | SharedVisual.tex:123 | Flowers102 (Oxford 102 Category Flower Dataset) \cite{nilsback2008flowers}
+nilsback2008flowers | SharedVisual.tex:327 | Flowers102 \cite{nilsback2008flowers}, a fine-grained benchmark of 102 flower species

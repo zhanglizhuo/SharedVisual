@@ -1,0 +1,450 @@
+{
+  "CLIP ViT-L/14 (OpenAI)[all]": {
+    "sigma_0": {
+      "accuracy": {
+        "guide": 0.0,
+        "answer": 0.0,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 44.72,
+        "teacher": 83.79,
+        "stand": 0.0,
+        "screen": 0.0,
+        "blackBoard": 1.7
+      },
+      "mean_prob": {
+        "guide": 0.125,
+        "answer": 0.1223,
+        "On-stage interaction": 0.1236,
+        "blackboard-writing": 0.1294,
+        "teacher": 0.1301,
+        "stand": 0.1227,
+        "screen": 0.1244,
+        "blackBoard": 0.1277
+      }
+    },
+    "sigma_1": {
+      "accuracy": {
+        "guide": 0.0,
+        "answer": 0.0,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 33.54,
+        "teacher": 83.19,
+        "stand": 0.0,
+        "screen": 0.0,
+        "blackBoard": 2.43
+      },
+      "mean_prob": {
+        "guide": 0.1248,
+        "answer": 0.1226,
+        "On-stage interaction": 0.1232,
+        "blackboard-writing": 0.1292,
+        "teacher": 0.13,
+        "stand": 0.1229,
+        "screen": 0.1244,
+        "blackBoard": 0.1278
+      }
+    },
+    "sigma_2": {
+      "accuracy": {
+        "guide": 0.0,
+        "answer": 0.0,
+        "On-stage interaction": 2.08,
+        "blackboard-writing": 25.47,
+        "teacher": 83.31,
+        "stand": 0.0,
+        "screen": 0.0,
+        "blackBoard": 3.16
+      },
+      "mean_prob": {
+        "guide": 0.1243,
+        "answer": 0.1234,
+        "On-stage interaction": 0.1242,
+        "blackboard-writing": 0.128,
+        "teacher": 0.1296,
+        "stand": 0.1228,
+        "screen": 0.1246,
+        "blackBoard": 0.1279
+      }
+    },
+    "sigma_4": {
+      "accuracy": {
+        "guide": 0.0,
+        "answer": 0.0,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 11.18,
+        "teacher": 88.42,
+        "stand": 0.0,
+        "screen": 0.0,
+        "blackBoard": 16.75
+      },
+      "mean_prob": {
+        "guide": 0.1239,
+        "answer": 0.1248,
+        "On-stage interaction": 0.1245,
+        "blackboard-writing": 0.128,
+        "teacher": 0.13,
+        "stand": 0.1223,
+        "screen": 0.125,
+        "blackBoard": 0.1281
+      }
+    },
+    "sigma_8": {
+      "accuracy": {
+        "guide": 0.0,
+        "answer": 0.7,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 2.48,
+        "teacher": 84.14,
+        "stand": 0.0,
+        "screen": 0.0,
+        "blackBoard": 25.24
+      },
+      "mean_prob": {
+        "guide": 0.1239,
+        "answer": 0.1261,
+        "On-stage interaction": 0.124,
+        "blackboard-writing": 0.128,
+        "teacher": 0.1301,
+        "stand": 0.1223,
+        "screen": 0.1245,
+        "blackBoard": 0.1288
+      }
+    }
+  },
+  "CLIP ViT-L/14 (LAION)[all]": {
+    "sigma_0": {
+      "accuracy": {
+        "guide": 0.0,
+        "answer": 5.57,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 17.39,
+        "teacher": 89.19,
+        "stand": 0.0,
+        "screen": 0.0,
+        "blackBoard": 5.83
+      },
+      "mean_prob": {
+        "guide": 0.1222,
+        "answer": 0.1309,
+        "On-stage interaction": 0.1263,
+        "blackboard-writing": 0.1282,
+        "teacher": 0.1341,
+        "stand": 0.1228,
+        "screen": 0.1209,
+        "blackBoard": 0.1284
+      }
+    },
+    "sigma_1": {
+      "accuracy": {
+        "guide": 0.0,
+        "answer": 9.06,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 17.39,
+        "teacher": 86.94,
+        "stand": 0.0,
+        "screen": 0.0,
+        "blackBoard": 5.58
+      },
+      "mean_prob": {
+        "guide": 0.1214,
+        "answer": 0.1309,
+        "On-stage interaction": 0.1259,
+        "blackboard-writing": 0.1283,
+        "teacher": 0.1338,
+        "stand": 0.1229,
+        "screen": 0.1208,
+        "blackBoard": 0.1285
+      }
+    },
+    "sigma_2": {
+      "accuracy": {
+        "guide": 0.0,
+        "answer": 5.23,
+        "On-stage interaction": 2.08,
+        "blackboard-writing": 12.42,
+        "teacher": 89.07,
+        "stand": 0.0,
+        "screen": 0.0,
+        "blackBoard": 8.74
+      },
+      "mean_prob": {
+        "guide": 0.1221,
+        "answer": 0.1299,
+        "On-stage interaction": 0.1267,
+        "blackboard-writing": 0.1282,
+        "teacher": 0.1337,
+        "stand": 0.123,
+        "screen": 0.1208,
+        "blackBoard": 0.1286
+      }
+    },
+    "sigma_4": {
+      "accuracy": {
+        "guide": 0.0,
+        "answer": 1.39,
+        "On-stage interaction": 29.17,
+        "blackboard-writing": 1.86,
+        "teacher": 90.74,
+        "stand": 0.0,
+        "screen": 0.0,
+        "blackBoard": 16.5
+      },
+      "mean_prob": {
+        "guide": 0.1222,
+        "answer": 0.1295,
+        "On-stage interaction": 0.1289,
+        "blackboard-writing": 0.1286,
+        "teacher": 0.1341,
+        "stand": 0.1228,
+        "screen": 0.1213,
+        "blackBoard": 0.1293
+      }
+    },
+    "sigma_8": {
+      "accuracy": {
+        "guide": 0.0,
+        "answer": 13.59,
+        "On-stage interaction": 25.0,
+        "blackboard-writing": 0.0,
+        "teacher": 77.49,
+        "stand": 0.0,
+        "screen": 0.0,
+        "blackBoard": 27.67
+      },
+      "mean_prob": {
+        "guide": 0.1221,
+        "answer": 0.1303,
+        "On-stage interaction": 0.1278,
+        "blackboard-writing": 0.128,
+        "teacher": 0.1324,
+        "stand": 0.1234,
+        "screen": 0.1211,
+        "blackBoard": 0.1297
+      }
+    }
+  },
+  "CLIP ViT-B/32 (OpenAI)[all]": {
+    "sigma_0": {
+      "accuracy": {
+        "guide": 0.6,
+        "answer": 0.0,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 32.92,
+        "teacher": 68.82,
+        "stand": 0.0,
+        "screen": 0.0,
+        "blackBoard": 22.09
+      },
+      "mean_prob": {
+        "guide": 0.1269,
+        "answer": 0.1267,
+        "On-stage interaction": 0.1226,
+        "blackboard-writing": 0.1285,
+        "teacher": 0.1286,
+        "stand": 0.1218,
+        "screen": 0.1243,
+        "blackBoard": 0.1279
+      }
+    },
+    "sigma_1": {
+      "accuracy": {
+        "guide": 0.0,
+        "answer": 0.0,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 32.92,
+        "teacher": 70.84,
+        "stand": 0.0,
+        "screen": 0.0,
+        "blackBoard": 23.3
+      },
+      "mean_prob": {
+        "guide": 0.1269,
+        "answer": 0.1267,
+        "On-stage interaction": 0.1228,
+        "blackboard-writing": 0.1285,
+        "teacher": 0.1288,
+        "stand": 0.1219,
+        "screen": 0.1242,
+        "blackBoard": 0.1279
+      }
+    },
+    "sigma_2": {
+      "accuracy": {
+        "guide": 0.0,
+        "answer": 0.0,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 21.74,
+        "teacher": 74.88,
+        "stand": 0.0,
+        "screen": 0.0,
+        "blackBoard": 26.46
+      },
+      "mean_prob": {
+        "guide": 0.1268,
+        "answer": 0.1268,
+        "On-stage interaction": 0.123,
+        "blackboard-writing": 0.1282,
+        "teacher": 0.1289,
+        "stand": 0.1221,
+        "screen": 0.1242,
+        "blackBoard": 0.1278
+      }
+    },
+    "sigma_4": {
+      "accuracy": {
+        "guide": 0.0,
+        "answer": 0.0,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 1.24,
+        "teacher": 60.69,
+        "stand": 0.0,
+        "screen": 0.0,
+        "blackBoard": 32.04
+      },
+      "mean_prob": {
+        "guide": 0.1257,
+        "answer": 0.1265,
+        "On-stage interaction": 0.1244,
+        "blackboard-writing": 0.1277,
+        "teacher": 0.1286,
+        "stand": 0.122,
+        "screen": 0.1239,
+        "blackBoard": 0.128
+      }
+    },
+    "sigma_8": {
+      "accuracy": {
+        "guide": 0.0,
+        "answer": 0.0,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 0.0,
+        "teacher": 37.95,
+        "stand": 0.0,
+        "screen": 0.0,
+        "blackBoard": 60.44
+      },
+      "mean_prob": {
+        "guide": 0.1248,
+        "answer": 0.1257,
+        "On-stage interaction": 0.1246,
+        "blackboard-writing": 0.1275,
+        "teacher": 0.1277,
+        "stand": 0.122,
+        "screen": 0.1241,
+        "blackBoard": 0.129
+      }
+    }
+  },
+  "SigLIP ViT-SO400M-14-384[all]": {
+    "sigma_0": {
+      "accuracy": {
+        "guide": 0.0,
+        "answer": 0.0,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 18.01,
+        "teacher": 99.94,
+        "stand": 0.0,
+        "screen": 0.0,
+        "blackBoard": 0.0
+      },
+      "mean_prob": {
+        "guide": 0.1231,
+        "answer": 0.1215,
+        "On-stage interaction": 0.1252,
+        "blackboard-writing": 0.1298,
+        "teacher": 0.135,
+        "stand": 0.1236,
+        "screen": 0.1228,
+        "blackBoard": 0.1273
+      }
+    },
+    "sigma_1": {
+      "accuracy": {
+        "guide": 0.0,
+        "answer": 0.0,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 23.6,
+        "teacher": 99.88,
+        "stand": 0.0,
+        "screen": 0.0,
+        "blackBoard": 0.0
+      },
+      "mean_prob": {
+        "guide": 0.1232,
+        "answer": 0.1215,
+        "On-stage interaction": 0.1252,
+        "blackboard-writing": 0.1299,
+        "teacher": 0.1347,
+        "stand": 0.1235,
+        "screen": 0.1229,
+        "blackBoard": 0.1273
+      }
+    },
+    "sigma_2": {
+      "accuracy": {
+        "guide": 0.0,
+        "answer": 0.0,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 9.32,
+        "teacher": 100.0,
+        "stand": 0.0,
+        "screen": 0.0,
+        "blackBoard": 0.0
+      },
+      "mean_prob": {
+        "guide": 0.1239,
+        "answer": 0.1207,
+        "On-stage interaction": 0.1255,
+        "blackboard-writing": 0.1294,
+        "teacher": 0.1343,
+        "stand": 0.1234,
+        "screen": 0.123,
+        "blackBoard": 0.1275
+      }
+    },
+    "sigma_4": {
+      "accuracy": {
+        "guide": 0.0,
+        "answer": 0.0,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 6.21,
+        "teacher": 100.0,
+        "stand": 0.0,
+        "screen": 0.0,
+        "blackBoard": 0.0
+      },
+      "mean_prob": {
+        "guide": 0.1249,
+        "answer": 0.122,
+        "On-stage interaction": 0.1249,
+        "blackboard-writing": 0.1287,
+        "teacher": 0.1336,
+        "stand": 0.1228,
+        "screen": 0.1228,
+        "blackBoard": 0.1278
+      }
+    },
+    "sigma_8": {
+      "accuracy": {
+        "guide": 0.0,
+        "answer": 0.0,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 6.21,
+        "teacher": 99.94,
+        "stand": 0.0,
+        "screen": 0.0,
+        "blackBoard": 0.24
+      },
+      "mean_prob": {
+        "guide": 0.1253,
+        "answer": 0.1245,
+        "On-stage interaction": 0.1256,
+        "blackboard-writing": 0.128,
+        "teacher": 0.1325,
+        "stand": 0.1224,
+        "screen": 0.1238,
+        "blackBoard": 0.1275
+      }
+    }
+  }
+}

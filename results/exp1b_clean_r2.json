@@ -1,0 +1,16 @@
+{
+  "leakage_removed": 104,
+  "clean_train_imgs": 4896,
+  "val_imgs": 500,
+  "clean_val_R2": {
+    "siglip": 0.20921005096756806,
+    "b32": 0.1293234681231803,
+    "qwen": 0.03574396658630119
+  },
+  "note": "MLP retrained on train excluding 104 filenames that also appear in val; R^2 evaluated on 500 fully-disjoint val images",
+  "linear_clean_val_R2": {
+    "siglip": 0.1920169146590568,
+    "b32": 0.1347862185514277,
+    "qwen": 0.05270198852866226
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "dataset": "Stanford40",
+  "n_classes": 40,
+  "n_mllms": 6,
+  "models": [
+    "qwen3.5:27b",
+    "qwen3.5:35b-a3b",
+    "qwen3.6:27b",
+    "qwen3.6:35b-a3b",
+    "gemma4:26b",
+    "gemma4:31b"
+  ],
+  "method": "partial Spearman controlling for leave-one-out cross-model mean difficulty; non-parametric bootstrap (resample classes)",
+  "aggregated_phenomenon": {
+    "statistic": "Spearman rho(AnchorScore, cross-model mean accuracy over 6 MLLMs)",
+    "spearman_r": 0.817,
+    "p_value": 1.315322061597672e-10,
+    "bootstrap_95_ci": [
+      0.624,
+      0.932
+    ],
+    "n_bootstrap": 10000,
+    "seed": 20260731
+  },
+  "results": {
+    "qwen3.5:27b": {
+      "raw_spearman_r": 0.58,
+      "raw_p": 8.722858295139378e-05,
+      "partial_spearman_r": -0.177,
+      "bootstrap_95_ci": [
+        -0.619,
+        0.407
+      ],
+      "proportion_mediated": 1.305,
+      "n_classes": 40,
+      "n_bootstrap": 10000,
+      "covariate": "leave-one-out cross-model mean accuracy (other 5 MLLMs)"
+    },
+    "qwen3.5:35b-a3b": {
+      "raw_spearman_r": 0.639,
+      "raw_p": 9.209403182685459e-06,
+      "partial_spearman_r": -0.132,
+      "bootstrap_95_ci": [
+        -0.495,
+        0.281
+      ],
+      "proportion_mediated": 1.206,
+      "n_classes": 40,
+      "n_bootstrap": 10000,
+      "covariate": "leave-one-out cross-model mean accuracy (other 5 MLLMs)"
+    },
+    "qwen3.6:27b": {
+      "raw_spearman_r": 0.723,
+      "raw_p": 1.35858492436414e-07,
+      "partial_spearman_r": 0.319,
+      "bootstrap_95_ci": [
+        -0.348,
+        0.699
+      ],
+      "proportion_mediated": 0.559,
+      "n_classes": 40,
+      "n_bootstrap": 10000,
+      "covariate": "leave-one-out cross-model mean accuracy (other 5 MLLMs)"
+    },
+    "qwen3.6:35b-a3b": {
+      "raw_spearman_r": 0.723,
+      "raw_p": 1.3601660978671648e-07,
+      "partial_spearman_r": 0.459,
+      "bootstrap_95_ci": [
+        0.087,
+        0.738
+      ],
+      "proportion_mediated": 0.365,
+      "n_classes": 40,
+      "n_bootstrap": 10000,
+      "covariate": "leave-one-out cross-model mean accuracy (other 5 MLLMs)"
+    },
+    "gemma4:26b": {
+      "raw_spearman_r": 0.678,
+      "raw_p": 1.5273915421104546e-06,
+      "partial_spearman_r": 0.291,
+      "bootstrap_95_ci": [
+        -0.151,
+        0.606
+      ],
+      "proportion_mediated": 0.57,
+      "n_classes": 40,
+      "n_bootstrap": 10000,
+      "covariate": "leave-one-out cross-model mean accuracy (other 5 MLLMs)"
+    },
+    "gemma4:31b": {
+      "raw_spearman_r": 0.662,
+      "raw_p": 3.2306160693020187e-06,
+      "partial_spearman_r": 0.182,
+      "bootstrap_95_ci": [
+        -0.238,
+        0.603
+      ],
+      "proportion_mediated": 0.725,
+      "n_classes": 40,
+      "n_bootstrap": 10000,
+      "covariate": "leave-one-out cross-model mean accuracy (other 5 MLLMs)"
+    }
+  },
+  "summary": {
+    "mean_raw_rho": 0.667,
+    "mean_partial_rho": 0.157,
+    "all_ci_contain_zero": false
+  }
+}

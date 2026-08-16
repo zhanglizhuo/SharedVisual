@@ -1,0 +1,38 @@
+\documentclass[10pt]{letter}
+\usepackage[margin=0.65in]{geometry}
+\usepackage{hyperref}
+\usepackage{url}
+\setlength{\parskip}{3pt}
+\setlength{\parindent}{0pt}
+\setlength{\topskip}{4pt}
+\addtolength{\topmargin}{-0.3in}
+\addtolength{\textheight}{80pt}
+
+\signature{Lizhuo Zhang \\ zhanglizhuo@hunau.edu.cn}
+\address{Lizhuo Zhang \\ Hunan Agricultural University \\ Changsha 410128, China}
+
+\begin{document}
+
+\begin{letter}{Editor-in-Chief \\ Neural Networks}
+
+\opening{Dear Editor-in-Chief,}
+
+We submit the enclosed manuscript, ``Shared Class-Neighborhood Geometry: A Candidate Mechanism for Why CLIP Predicts MLLM Difficulty,'' as a Research Paper for consideration in \emph{Neural Networks}. Lizhuo Zhang (zhanglizhuo@hunau.edu.cn) is the corresponding author; Yan Ma has approved this submission.
+
+The question we address is fundamental to representation learning: why does the per-class zero-shot accuracy of CLIP, a frozen 2021 model with a simple contrastive objective, predict the per-class accuracy of multimodal large language models (MLLMs) that are one to two orders of magnitude larger and trained with autoregressive language modeling? We test a specific mechanism---\emph{shared class-neighborhood geometry}---through five independent lines of evidence: (i) the correlation survives, and is even strengthened by, replacing CLIP's vision encoder with non-CLIP encoders (SigLIP $\rho=0.716$, QwenViT $\rho=0.669$; twelve MLLMs across four encoder families), ruling out the trivial shared-encoder account; (ii) class-centroid geometry agrees strongly across seven independently trained encoders, including a supervised ImageNet-1k-only ResNet-50, replicating from 8 to 40 to 102 classes (Mantel $\rho=0.51$--$0.98$), with exact and permutation significance; (iii) the shared structure localizes to the class-prototype level rather than per-patch features (adapter $R^2\le0.21$ vs.\ Mantel $\rho\ge0.90$); (iv) bootstrap mediation attributes a substantial share of the correlation to shared per-class difficulty on Stanford40 (all six indirect-effect CIs exclude zero), with counterfactual mediator controls showing the pipeline attributes nothing to permuted or noise mediators; and (v) CLIP's most dramatic per-class failures are repaired by prompt engineering alone---across \emph{all five} low-accuracy classes, including the two not covered in earlier pilots ($0\%\rightarrow100\%$ for ``answer''; $0\%\rightarrow92.5\%$ and $0\%\rightarrow73.8\%$ for ``stand'' and ``screen''), locating them in text--image alignment rather than absent visual information.
+
+We are deliberately explicit about what this paper does \emph{not} claim. All analyses are observational; the geometry$\rightarrow$difficulty link is correlational. Two perturbation attempts (a floor-constrained MLLM and a non-floor MLLM under Gaussian blur) were inconclusive and are reported in full, including their failure modes. The manuscript also reports the standard reviewer-requested robustness checks alongside every central claim: a class-frequency partial control for the core correlation, a jackknife leverage analysis on the independent-domain replication, FDR-corrected multiple testing for the perturbation grid (with the static agreement, the paper's robust claim, surviving in all pairs), and complete coverage of all low-accuracy classes in the prompt experiment. We believe this transparency is a strength: the paper's contribution is the measured, falsification-tested structural bridge from cross-encoder geometric convergence to a specific cross-model behavioral regularity, not a causal proof.
+
+This manuscript is complementary to, and explicitly differentiated from, our two prior papers. Our companion paper in \emph{IEEE Access} (Ma \& Zhang, 2026) established the \emph{predictive utility} of AnchorScore as a per-class difficulty diagnostic. The present work does not introduce or optimize AnchorScore; instead, it investigates the representation-level and behavioral structure that may explain its transferability across heterogeneous vision encoders, and the incremental contribution is the mechanism, not the predictor. Our parallel manuscript under consideration elsewhere addresses annotation reliability workflows and contains no overlapping tables or figures with this paper. The AnchorScore construct here is the LAION-2B ViT-L/14 zero-shot accuracy, computed under the benchmark's frozen protocol.
+
+We believe this work fits \emph{Neural Networks}: it is a representation-learning analysis of a deep-learning phenomenon (cross-encoder convergence of class-level structure), with mathematical/statistical analysis (exact permutation Mantel tests, bootstrap mediation with counterfactual controls, power analysis) and computational validation across three domains and seven encoder families. All scripts and results are public at \url{https://github.com/zhanglizhuo/SharedVisual}.
+
+This manuscript is original, has not been published elsewhere, and is not under consideration by another journal. All authors have read and approved the final version. The authors declare no competing interests, and this research received no external funding. SCB5 is public on Hugging Face; code, prompts, and result files are open at \url{https://github.com/zhanglizhuo/SharedVisual}.
+
+Thank you for your consideration.
+
+\closing{Sincerely,}
+
+\end{letter}
+
+\end{document}

@@ -1,0 +1,75 @@
+{
+  "date": "2026-08-15",
+  "auditor": "local-executor (cross-model unavailable; deviation recorded)",
+  "overall_verdict": "pass",
+  "integrity_status": "pass",
+  "checks": {
+    "gt_provenance": {
+      "status": "pass",
+      "details": "All evals scored against dataset GT (SCB5 HF, Stanford40, Flowers102); MLLM accuracies frozen from benchmark with documented protocol; counterfactual mediators explicitly labeled proxy."
+    },
+    "score_normalization": {
+      "status": "pass",
+      "details": "Raw accuracies/Spearman; no self-referential denominators; L2-norm only for cosine geometry."
+    },
+    "result_existence": {
+      "status": "pass",
+      "details": "All headline claims verified against committed files this session; recomputation spot-checks exact; only standard rounding displays differ."
+    },
+    "dead_code": {
+      "status": "pass",
+      "details": "No orphan metric functions; mismatched filename globs accounted for (.txt outputs, glue scripts, upstream producers)."
+    },
+    "scope": {
+      "status": "pass",
+      "details": "12 MLLMs/7 encoders/3 domains; FDR handled; no over-claiming scope language."
+    },
+    "eval_type": "real_gt (with explicitly labeled synthetic_proxy mediators and simulation_only estimator checks)"
+  },
+  "claims": [
+    {
+      "id": "C1",
+      "impact": "supported"
+    },
+    {
+      "id": "C2",
+      "impact": "supported"
+    },
+    {
+      "id": "C3",
+      "impact": "supported"
+    },
+    {
+      "id": "C4",
+      "impact": "supported"
+    },
+    {
+      "id": "C5",
+      "impact": "supported"
+    },
+    {
+      "id": "C6",
+      "impact": "supported"
+    },
+    {
+      "id": "C7",
+      "impact": "supported"
+    },
+    {
+      "id": "C8",
+      "impact": "supported"
+    },
+    {
+      "id": "C9",
+      "impact": "supported"
+    },
+    {
+      "id": "C10",
+      "impact": "supported"
+    },
+    {
+      "id": "C11",
+      "impact": "supported"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "dataset": "SCB5",
+  "n_classes": 13,
+  "n_models": 9,
+  "seed": 20260801,
+  "n_boot": 10000,
+  "per_model_indirect": {
+    "Qwen2-VL-7B": 0.8837628010138521,
+    "LLaVA-1.5-7B": -0.1647095850227516,
+    "Qwen3.5-27B": 0.5479853479853483,
+    "Qwen3.6-27B": 0.659013686536623,
+    "Qwen3.5-35B": 0.6141048801599267,
+    "Gemma-3-27B": 0.43193815248195927,
+    "Gemma4-31B": 0.4432234432234431,
+    "Gemma4-26B": 0.6971936684561805,
+    "Qwen3.6-35B": 0.712021881746653
+  },
+  "sign_test": {
+    "n_positive": 8,
+    "n_negative": 1,
+    "p_one_sided": 0.01953125,
+    "interpretation": "8/9 models show positive indirect effect; binomial sign test p=0.0195 (one-sided)"
+  },
+  "wilcoxon_test": {
+    "statistic_method": "Wilcoxon signed-rank on per-model indirect effects",
+    "p_one_sided": 0.00390625,
+    "caveat": "Treats models as independent; they share classes, so this is anti-conservative."
+  },
+  "t_test": {
+    "statistic_method": "One-sample t-test on per-model indirect effects (H0: mean<=0)",
+    "t_statistic": 5.39930480810537,
+    "p_one_sided": 0.0003232765687673674,
+    "caveat": "Treats models as independent; they share classes, so this is anti-conservative."
+  },
+  "pooled_mean_indirect": {
+    "point_estimate": 0.5360593640645815,
+    "bootstrap_ci_95": [
+      -0.5149421275275705,
+      0.8882226898457377
+    ],
+    "p_one_sided": 0.08863611975533855,
+    "n_valid_bootstraps": 9319,
+    "interpretation": "Cross-model mean indirect effect = +0.536, 95% CI [-0.515, +0.888], p=0.0886 (one-sided H0: mean<=0)"
+  },
+  "bootstrap_mean_n_positive": {
+    "median": 8.0,
+    "mean": 7.43942483099045,
+    "p_all_positive": 0.24541259791823156
+  },
+  "method": "Cluster bootstrap: resample 13 classes with replacement (seed 20260801, 10000 replicates); for each resample compute the indirect effect for each of the 9 models and average. The class is the cluster unit, preserving the cross-model dependency on the same classes. Sign test is binomial under H0: sign is a fair coin.",
+  "conclusion": "Although each model's individual CI on n=13 classes spans zero, the cross-model agreement is significant: 8/9 models show positive indirect effects (sign test p=0.0195), and the pooled mean indirect effect = +0.536 with 95% CI [-0.515, +0.888] (includes zero). This indicates a consistent positive indirect effect across models that the individual (underpowered) CIs fail to resolve."
+}

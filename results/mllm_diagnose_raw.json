@@ -1,0 +1,488 @@
+{
+  "A_free_choose": {
+    "0001001.jpg": {
+      "gt": "teacher",
+      "output": "The image shows a classroom setting where a teacher is standing in front of a class of students. The students are raising their hands, indicating that they are"
+    },
+    "0001002.jpg": {
+      "gt": "teacher",
+      "output": "The image shows a classroom setting with a teacher standing in front of a class of students. The teacher is likely guiding or answering questions, as indicated by"
+    },
+    "0001003.jpg": {
+      "gt": "teacher",
+      "output": "The image shows a classroom setting where a teacher is standing in front of a class of students. The teacher appears to be addressing the students, possibly asking"
+    },
+    "0001004.jpg": {
+      "gt": "stand",
+      "output": "The image shows a classroom setting with students seated at desks. The teacher is standing in front of the class, likely addressing the students or leading a lesson"
+    },
+    "0001005.jpg": {
+      "gt": "answer",
+      "output": "The image shows a classroom setting with a teacher standing in front of a class of students. The teacher appears to be addressing the students, possibly guiding or"
+    },
+    "0001006.jpg": {
+      "gt": "stand",
+      "output": "The image shows a classroom setting with students sitting at desks. The students appear to be engaged in an activity, possibly listening to a lecture or participating in"
+    },
+    "0001007.jpg": {
+      "gt": "stand",
+      "output": "The image shows a classroom setting with students sitting at desks and a teacher standing in front of the class. The teacher appears to be addressing the students,"
+    },
+    "0001008.jpg": {
+      "gt": "teacher",
+      "output": "The image shows a classroom setting where a teacher is standing in front of a class of students. The teacher appears to be giving a lecture or presentation,"
+    },
+    "0001009.jpg": {
+      "gt": "teacher",
+      "output": "The image shows a teacher standing in front of a classroom, writing on a blackboard. The teacher appears to be explaining or teaching a lesson."
+    },
+    "0001020.jpg": {
+      "gt": "guide",
+      "output": "The image shows a classroom setting with a teacher standing in front of a class of students. The teacher appears to be giving a lesson or presentation."
+    },
+    "0001049.jpg": {
+      "gt": "stand",
+      "output": "The image shows a classroom setting where students are engaged in an activity. The students appear to be working on their desks, possibly completing a task or answering"
+    },
+    "0001066.jpg": {
+      "gt": "stand",
+      "output": "The image shows a classroom setting with children sitting at desks, engaged in an activity. The children appear to be participating in a lesson or a group activity"
+    },
+    "0001074.jpg": {
+      "gt": "answer",
+      "output": "The image shows a classroom setting with a teacher standing in front of a blackboard. The teacher appears to be writing on the blackboard, which suggests"
+    },
+    "00030015.jpg": {
+      "gt": "blackboard-writing",
+      "output": "The image shows a classroom setting where students are engaged in an activity. The students are raising their hands, indicating that they are participating in a discussion or"
+    },
+    "00030016.jpg": {
+      "gt": "blackBoard",
+      "output": "The image shows a classroom setting with students sitting at desks. The students appear to be engaged in a lesson or activity. The teacher is standing in front"
+    },
+    "0009013.jpg": {
+      "gt": "guide",
+      "output": "The image shows a classroom setting with students sitting at desks. The students appear to be engaged in an activity, possibly listening to a lecture or participating in"
+    },
+    "0009016.jpg": {
+      "gt": "guide",
+      "output": "The image shows a classroom setting with students seated at desks. The teacher is standing in front of the class, likely guiding or instructing the students."
+    },
+    "0009046.jpg": {
+      "gt": "guide",
+      "output": "The image shows a classroom setting where a teacher is interacting with students. The teacher appears to be guiding or answering questions from the students."
+    },
+    "0009047.jpg": {
+      "gt": "guide",
+      "output": "The image shows a classroom setting where a teacher is standing in front of a group of students who are seated at desks. The teacher appears to be engaging"
+    },
+    "0011007.jpg": {
+      "gt": "blackBoard",
+      "output": "The image shows a classroom setting where a teacher is standing in front of a class of students. The teacher appears to be addressing the students, possibly guiding"
+    },
+    "0011029.jpg": {
+      "gt": "screen",
+      "output": "The image shows a classroom setting with students sitting at desks and a teacher standing at the front of the room. The teacher appears to be addressing the class"
+    },
+    "0011030.jpg": {
+      "gt": "screen",
+      "output": "The image shows a classroom setting with students seated at desks. The teacher is standing in front of the class, likely addressing the students or leading a lesson"
+    },
+    "0011035.jpg": {
+      "gt": "blackBoard",
+      "output": "The image shows a classroom setting with students seated at desks. The teacher is standing in front of the class, likely addressing the students or leading a lesson"
+    },
+    "0011036.jpg": {
+      "gt": "blackBoard",
+      "output": "The image shows a classroom setting with students wearing yellow shirts. The teacher is standing in front of the class, likely addressing the students or leading a lesson"
+    },
+    "0025001.jpg": {
+      "gt": "screen",
+      "output": "The image shows a classroom setting with students sitting at desks, engaged in writing or reading. The students are wearing uniforms, which suggests a formal educational environment"
+    },
+    "0025003.jpg": {
+      "gt": "screen",
+      "output": "The image shows a classroom setting with students sitting at desks, engaged in an activity. The students appear to be reading or writing, suggesting that they are"
+    },
+    "0025010.jpg": {
+      "gt": "blackBoard",
+      "output": "The image shows a classroom setting with students sitting at desks, engaged in writing or studying. The students appear to be participating in a lesson or activity."
+    },
+    "0089_000309.jpg": {
+      "gt": "blackboard-writing",
+      "output": "The image shows a teacher standing in front of a classroom, likely giving a lesson or presentation. The teacher is holding a piece of paper, and there"
+    },
+    "0089_000310.jpg": {
+      "gt": "blackboard-writing",
+      "output": "The image shows a classroom setting with a teacher standing in front of a class of students. The teacher is holding a piece of paper and appears to be"
+    },
+    "0089_000311.jpg": {
+      "gt": "blackboard-writing",
+      "output": "The image shows a classroom setting with a teacher standing in front of a group of students. The teacher is holding a piece of paper and appears to be"
+    },
+    "0089_000322.jpg": {
+      "gt": "blackboard-writing",
+      "output": "The image shows a classroom setting with a teacher standing in front of a blackboard, writing on it. The teacher appears to be giving a lesson or"
+    },
+    "0089_000862.jpg": {
+      "gt": "answer",
+      "output": "The image shows a classroom setting with students sitting at desks. The teacher is standing in front of the class, likely addressing the students or leading a lesson"
+    },
+    "0089_001240.jpg": {
+      "gt": "answer",
+      "output": "The image shows a classroom setting with a teacher standing in front of a blackboard. The teacher appears to be giving a lesson or presentation, as indicated"
+    },
+    "0089_001241.jpg": {
+      "gt": "answer",
+      "output": "The image shows a classroom setting with a teacher standing in front of a class of students. The teacher is likely guiding or answering questions, as indicated by"
+    },
+    "0089_001976.jpg": {
+      "gt": "On-stage interaction",
+      "output": "The image shows a classroom setting with a teacher standing in front of a blackboard. The teacher appears to be writing on the blackboard, which suggests"
+    },
+    "0089_001977.jpg": {
+      "gt": "On-stage interaction",
+      "output": "The image shows a classroom setting with a teacher standing in front of a blackboard. The teacher appears to be writing on the blackboard, which suggests"
+    },
+    "0089_001978.jpg": {
+      "gt": "On-stage interaction",
+      "output": "The image shows a classroom setting with a teacher standing in front of a whiteboard or a digital screen. The teacher appears to be giving a lesson or"
+    },
+    "0089_001979.jpg": {
+      "gt": "On-stage interaction",
+      "output": "The image shows a classroom setting with a teacher and students. The teacher is standing in front of a screen, possibly giving a lesson or presentation. The"
+    },
+    "0089_001980.jpg": {
+      "gt": "On-stage interaction",
+      "output": "The image shows a classroom setting where a teacher is standing in front of a screen displaying an image. The teacher appears to be guiding or explaining something related"
+    },
+    "0107023.jpg": {
+      "gt": "screen",
+      "output": "The image shows a classroom setting with students seated at desks. The teacher is standing in front of the class, and there is a screen visible in the"
+    }
+  },
+  "B_explicit_output": {
+    "0001001.jpg": {
+      "gt": "teacher",
+      "output": "blackBoard"
+    },
+    "0001002.jpg": {
+      "gt": "teacher",
+      "output": "blackBoard"
+    },
+    "0001003.jpg": {
+      "gt": "teacher",
+      "output": "teacher"
+    },
+    "0001004.jpg": {
+      "gt": "stand",
+      "output": "blackBoard"
+    },
+    "0001005.jpg": {
+      "gt": "answer",
+      "output": "teacher"
+    },
+    "0001006.jpg": {
+      "gt": "stand",
+      "output": "blackBoard"
+    },
+    "0001007.jpg": {
+      "gt": "stand",
+      "output": "teacher"
+    },
+    "0001008.jpg": {
+      "gt": "teacher",
+      "output": "blackBoard"
+    },
+    "0001009.jpg": {
+      "gt": "teacher",
+      "output": "blackboard-writing"
+    },
+    "0001020.jpg": {
+      "gt": "guide",
+      "output": "blackBoard"
+    },
+    "0001049.jpg": {
+      "gt": "stand",
+      "output": "blackBoard"
+    },
+    "0001066.jpg": {
+      "gt": "stand",
+      "output": "classroom"
+    },
+    "0001074.jpg": {
+      "gt": "answer",
+      "output": "teacher"
+    },
+    "00030015.jpg": {
+      "gt": "blackboard-writing",
+      "output": "screen"
+    },
+    "00030016.jpg": {
+      "gt": "blackBoard",
+      "output": "teacher"
+    },
+    "0009013.jpg": {
+      "gt": "guide",
+      "output": "classroom"
+    },
+    "0009016.jpg": {
+      "gt": "guide",
+      "output": "teacher"
+    },
+    "0009046.jpg": {
+      "gt": "guide",
+      "output": "teacher"
+    },
+    "0009047.jpg": {
+      "gt": "guide",
+      "output": "teacher"
+    },
+    "0011007.jpg": {
+      "gt": "blackBoard",
+      "output": "blackBoard"
+    },
+    "0011029.jpg": {
+      "gt": "screen",
+      "output": "teacher"
+    },
+    "0011030.jpg": {
+      "gt": "screen",
+      "output": "teacher"
+    },
+    "0011035.jpg": {
+      "gt": "blackBoard",
+      "output": "blackBoard"
+    },
+    "0011036.jpg": {
+      "gt": "blackBoard",
+      "output": "blackBoard"
+    },
+    "0025001.jpg": {
+      "gt": "screen",
+      "output": "classroom"
+    },
+    "0025003.jpg": {
+      "gt": "screen",
+      "output": "blackBoard"
+    },
+    "0025010.jpg": {
+      "gt": "blackBoard",
+      "output": "classroom"
+    },
+    "0089_000309.jpg": {
+      "gt": "blackboard-writing",
+      "output": "blackBoard"
+    },
+    "0089_000310.jpg": {
+      "gt": "blackboard-writing",
+      "output": "blackBoard"
+    },
+    "0089_000311.jpg": {
+      "gt": "blackboard-writing",
+      "output": "blackBoard"
+    },
+    "0089_000322.jpg": {
+      "gt": "blackboard-writing",
+      "output": "blackboard"
+    },
+    "0089_000862.jpg": {
+      "gt": "answer",
+      "output": "teacher"
+    },
+    "0089_001240.jpg": {
+      "gt": "answer",
+      "output": "blackBoard"
+    },
+    "0089_001241.jpg": {
+      "gt": "answer",
+      "output": "blackBoard"
+    },
+    "0089_001976.jpg": {
+      "gt": "On-stage interaction",
+      "output": "blackBoard"
+    },
+    "0089_001977.jpg": {
+      "gt": "On-stage interaction",
+      "output": "blackBoard"
+    },
+    "0089_001978.jpg": {
+      "gt": "On-stage interaction",
+      "output": "blackBoard"
+    },
+    "0089_001979.jpg": {
+      "gt": "On-stage interaction",
+      "output": "blackBoard"
+    },
+    "0089_001980.jpg": {
+      "gt": "On-stage interaction",
+      "output": "blackBoard"
+    },
+    "0107023.jpg": {
+      "gt": "screen",
+      "output": "blackBoard"
+    }
+  },
+  "C_letter_choice": {
+    "0001001.jpg": {
+      "gt": "teacher",
+      "output": "H"
+    },
+    "0001002.jpg": {
+      "gt": "teacher",
+      "output": "H"
+    },
+    "0001003.jpg": {
+      "gt": "teacher",
+      "output": "H"
+    },
+    "0001004.jpg": {
+      "gt": "stand",
+      "output": "H"
+    },
+    "0001005.jpg": {
+      "gt": "answer",
+      "output": "E"
+    },
+    "0001006.jpg": {
+      "gt": "stand",
+      "output": "H"
+    },
+    "0001007.jpg": {
+      "gt": "stand",
+      "output": "H"
+    },
+    "0001008.jpg": {
+      "gt": "teacher",
+      "output": "H"
+    },
+    "0001009.jpg": {
+      "gt": "teacher",
+      "output": "D"
+    },
+    "0001020.jpg": {
+      "gt": "guide",
+      "output": "E"
+    },
+    "0001049.jpg": {
+      "gt": "stand",
+      "output": "H"
+    },
+    "0001066.jpg": {
+      "gt": "stand",
+      "output": "H"
+    },
+    "0001074.jpg": {
+      "gt": "answer",
+      "output": "E"
+    },
+    "00030015.jpg": {
+      "gt": "blackboard-writing",
+      "output": "H"
+    },
+    "00030016.jpg": {
+      "gt": "blackBoard",
+      "output": "H"
+    },
+    "0009013.jpg": {
+      "gt": "guide",
+      "output": "H"
+    },
+    "0009016.jpg": {
+      "gt": "guide",
+      "output": "E"
+    },
+    "0009046.jpg": {
+      "gt": "guide",
+      "output": "E"
+    },
+    "0009047.jpg": {
+      "gt": "guide",
+      "output": "H"
+    },
+    "0011007.jpg": {
+      "gt": "blackBoard",
+      "output": "H"
+    },
+    "0011029.jpg": {
+      "gt": "screen",
+      "output": "H"
+    },
+    "0011030.jpg": {
+      "gt": "screen",
+      "output": "H"
+    },
+    "0011035.jpg": {
+      "gt": "blackBoard",
+      "output": "H"
+    },
+    "0011036.jpg": {
+      "gt": "blackBoard",
+      "output": "H"
+    },
+    "0025001.jpg": {
+      "gt": "screen",
+      "output": "H"
+    },
+    "0025003.jpg": {
+      "gt": "screen",
+      "output": "H"
+    },
+    "0025010.jpg": {
+      "gt": "blackBoard",
+      "output": "H"
+    },
+    "0089_000309.jpg": {
+      "gt": "blackboard-writing",
+      "output": "H"
+    },
+    "0089_000310.jpg": {
+      "gt": "blackboard-writing",
+      "output": "H"
+    },
+    "0089_000311.jpg": {
+      "gt": "blackboard-writing",
+      "output": "H"
+    },
+    "0089_000322.jpg": {
+      "gt": "blackboard-writing",
+      "output": "H"
+    },
+    "0089_000862.jpg": {
+      "gt": "answer",
+      "output": "H"
+    },
+    "0089_001240.jpg": {
+      "gt": "answer",
+      "output": "H"
+    },
+    "0089_001241.jpg": {
+      "gt": "answer",
+      "output": "H"
+    },
+    "0089_001976.jpg": {
+      "gt": "On-stage interaction",
+      "output": "H"
+    },
+    "0089_001977.jpg": {
+      "gt": "On-stage interaction",
+      "output": "H"
+    },
+    "0089_001978.jpg": {
+      "gt": "On-stage interaction",
+      "output": "H"
+    },
+    "0089_001979.jpg": {
+      "gt": "On-stage interaction",
+      "output": "H"
+    },
+    "0089_001980.jpg": {
+      "gt": "On-stage interaction",
+      "output": "H"
+    },
+    "0107023.jpg": {
+      "gt": "screen",
+      "output": "H"
+    }
+  }
+}

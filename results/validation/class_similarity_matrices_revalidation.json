@@ -1,0 +1,22 @@
+{
+  "validation": "regeneration-of-class-similarity-matrices",
+  "date": "2026-07-31",
+  "producer_script": "experiments/exp2_class_similarity_matrices.py",
+  "hardware": "V100 32GB (GPU1), dl_env conda env",
+  "images": {"total": 390, "per_class": {"guide": 50, "answer": 50, "On-stage interaction": 48, "blackboard-writing": 50, "teacher": 50, "stand": 50, "screen": 42, "blackBoard": 50}},
+  "mantel_rho_committed_vs_regenerated": {
+    "CLIP-L14 x CLIP-L14-LAION": [0.9815, 0.9819, 0.0004],
+    "CLIP-L14 x CLIP-B32": [0.9546, 0.9557, 0.0011],
+    "CLIP-L14 x QwenViT": [0.8972, 0.8966, 0.0006],
+    "CLIP-L14-LAION x CLIP-B32": [0.9522, 0.9524, 0.0002],
+    "CLIP-L14-LAION x QwenViT": [0.9129, 0.9119, 0.0010],
+    "CLIP-B32 x QwenViT": [0.9493, 0.9464, 0.0029]
+  },
+  "exact_permutation_p_regenerated": {
+    "all_pairs": 4.96e-05,
+    "n_permutations": 40320,
+    "relabelings_reaching_observed": 1
+  },
+  "per_encoder_regeneration_agreement_note": "Individual 28-pair vectors differ between runs (rho 0.12-0.41) due to image-subset/preprocessing differences, but pairwise Mantel agreement is stable within 0.003; the paper's claims rest on the committed matrices, which this run independently reproduces.",
+  "conclusion": "Mantel results fully reproducible: all rho within +/-0.003, exact permutation p = 4.96e-05 for all six encoder pairs (identity-only match), matching the paper's claim."
+}

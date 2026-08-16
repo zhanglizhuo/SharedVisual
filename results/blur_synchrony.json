@@ -1,0 +1,64 @@
+{
+  "task": "perturbation synchrony: gemma4:31b vs CLIP (LAION L/14), SCB5 TeacherBehavior 8 classes",
+  "common_sigmas": [
+    0,
+    1,
+    2,
+    4
+  ],
+  "per_class_acc_sigma0": {
+    "guide": 0.28,
+    "answer": 0.0,
+    "On-stage interaction": 0.021,
+    "blackboard-writing": 0.92,
+    "teacher": 0.76,
+    "stand": 0.16,
+    "screen": 0.333,
+    "blackBoard": 0.02
+  },
+  "per_class_acc_sigma4": {
+    "guide": 0.16,
+    "answer": 0.0,
+    "On-stage interaction": 0.0,
+    "blackboard-writing": 0.14,
+    "teacher": 0.6,
+    "stand": 0.1,
+    "screen": 0.452,
+    "blackBoard": 0.0
+  },
+  "per_class_drop_gemma4": {
+    "guide": 0.12,
+    "answer": 0.0,
+    "On-stage interaction": 0.021,
+    "blackboard-writing": 0.78,
+    "teacher": 0.16,
+    "stand": 0.06,
+    "screen": -0.119,
+    "blackBoard": 0.02
+  },
+  "per_class_drop_clip": {
+    "guide": 0.0,
+    "answer": 0.0,
+    "On-stage interaction": 0.0,
+    "blackboard-writing": 0.31,
+    "teacher": -0.017,
+    "stand": 0.0,
+    "screen": 0.0,
+    "blackBoard": -0.136
+  },
+  "drop_spearman_rho": 0.2454951265154914,
+  "drop_spearman_p_asymptotic": 0.5578565851821256,
+  "drop_permutation_p_10k_seed42": 0.563943605639436,
+  "per_class_curve_spearman": {
+    "guide": null,
+    "answer": null,
+    "On-stage interaction": null,
+    "blackboard-writing": 1.0,
+    "teacher": -0.8,
+    "stand": null,
+    "screen": null,
+    "blackBoard": -0.775
+  },
+  "mean_curve_spearman_over_usable": -0.192,
+  "n_usable_curves": 3
+}

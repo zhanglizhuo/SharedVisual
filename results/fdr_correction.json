@@ -1,0 +1,716 @@
+{
+  "raw": [
+    {
+      "test": "Qwen2-VL-7B",
+      "p": 0.2086,
+      "q_fdr": 0.2086,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "Qwen3.5-35B",
+      "p": 0.0041,
+      "q_fdr": 0.007688,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "Gemma4-26B",
+      "p": 0.0041,
+      "q_fdr": 0.007688,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "Qwen3.6-27B",
+      "p": 0.0165,
+      "q_fdr": 0.020625,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "Gemma4-31B",
+      "p": 0.005,
+      "q_fdr": 0.008333,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "Gemma-3-27B",
+      "p": 0.0095,
+      "q_fdr": 0.012955,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "LLaVA-1.5-7B",
+      "p": 0.1029,
+      "q_fdr": 0.11025,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "Qwen3.5-27B",
+      "p": 0.0287,
+      "q_fdr": 0.033115,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "Qwen3.6-35B",
+      "p": 0.0095,
+      "q_fdr": 0.012955,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "(S40) qwen3.5:27b",
+      "p": 8.72e-05,
+      "q_fdr": 0.000218,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "(S40) qwen3.5:35b-a3b",
+      "p": 9.21e-06,
+      "q_fdr": 2.8e-05,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "(S40) qwen3.6:27b",
+      "p": 1.36e-07,
+      "q_fdr": 1e-06,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "(S40) qwen3.6:35b-a3b",
+      "p": 1.36e-07,
+      "q_fdr": 1e-06,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "(S40) gemma4:26b",
+      "p": 1.53e-06,
+      "q_fdr": 8e-06,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "(S40) gemma4:31b",
+      "p": 3.23e-06,
+      "q_fdr": 1.2e-05,
+      "fdr_0.05": "\u2713"
+    }
+  ],
+  "partial_scb5": [
+    {
+      "test": "LLaVA-1.5-7B",
+      "p": 0.103,
+      "q_fdr": 0.2575,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "Gemma4-31B",
+      "p": 0.103,
+      "q_fdr": 0.2575,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "Gemma-3-27B",
+      "p": 0.6158,
+      "q_fdr": 0.969,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "Qwen3.5-35B",
+      "p": 0.7752,
+      "q_fdr": 0.969,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "Qwen2-VL-7B",
+      "p": 0.9858,
+      "q_fdr": 0.9858,
+      "fdr_0.05": ""
+    }
+  ],
+  "mantel": [
+    {
+      "test": "CLIP OpenAI L/14 vs CLIP LAION L/14",
+      "p": 4.96e-05,
+      "q_fdr": 5.8e-05,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "CLIP OpenAI L/14 vs CLIP B/32",
+      "p": 4.96e-05,
+      "q_fdr": 5.8e-05,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "CLIP OpenAI L/14 vs Qwen2-VL",
+      "p": 4.96e-05,
+      "q_fdr": 5.8e-05,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "CLIP LAION L/14 vs CLIP B/32",
+      "p": 4.96e-05,
+      "q_fdr": 5.8e-05,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "CLIP LAION L/14 vs Qwen2-VL",
+      "p": 4.96e-05,
+      "q_fdr": 5.8e-05,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "CLIP B/32 vs Qwen2-VL",
+      "p": 4.96e-05,
+      "q_fdr": 5.8e-05,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "CLIP vs Qwen2-VL (Stanford40)",
+      "p": 9.999e-05,
+      "q_fdr": 0.0001,
+      "fdr_0.05": "\u2713"
+    }
+  ],
+  "combined": [
+    {
+      "test": "Qwen2-VL-7B",
+      "p": 0.9858,
+      "q_fdr": 0.9858,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "Qwen3.5-35B",
+      "p": 0.7752,
+      "q_fdr": 0.812114,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "Gemma4-26B",
+      "p": 0.0041,
+      "q_fdr": 0.006443,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "Qwen3.6-27B",
+      "p": 0.0165,
+      "q_fdr": 0.022687,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "Gemma4-31B",
+      "p": 0.103,
+      "q_fdr": 0.119263,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "Gemma-3-27B",
+      "p": 0.6158,
+      "q_fdr": 0.67738,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "LLaVA-1.5-7B",
+      "p": 0.103,
+      "q_fdr": 0.119263,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "Qwen3.5-27B",
+      "p": 0.0287,
+      "q_fdr": 0.037141,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "Qwen3.6-35B",
+      "p": 0.0095,
+      "q_fdr": 0.013933,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "(S40) qwen3.5:27b",
+      "p": 8.72e-05,
+      "q_fdr": 0.00016,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "(S40) qwen3.5:35b-a3b",
+      "p": 9.21e-06,
+      "q_fdr": 4.1e-05,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "(S40) qwen3.6:27b",
+      "p": 1.36e-07,
+      "q_fdr": 1e-06,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "(S40) qwen3.6:35b-a3b",
+      "p": 1.36e-07,
+      "q_fdr": 1e-06,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "(S40) gemma4:26b",
+      "p": 1.53e-06,
+      "q_fdr": 1.1e-05,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "(S40) gemma4:31b",
+      "p": 3.23e-06,
+      "q_fdr": 1.8e-05,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "CLIP OpenAI L/14 vs CLIP LAION L/14",
+      "p": 4.96e-05,
+      "q_fdr": 9.9e-05,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "CLIP OpenAI L/14 vs CLIP B/32",
+      "p": 4.96e-05,
+      "q_fdr": 9.9e-05,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "CLIP OpenAI L/14 vs Qwen2-VL",
+      "p": 4.96e-05,
+      "q_fdr": 9.9e-05,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "CLIP LAION L/14 vs CLIP B/32",
+      "p": 4.96e-05,
+      "q_fdr": 9.9e-05,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "CLIP LAION L/14 vs Qwen2-VL",
+      "p": 4.96e-05,
+      "q_fdr": 9.9e-05,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "CLIP B/32 vs Qwen2-VL",
+      "p": 4.96e-05,
+      "q_fdr": 9.9e-05,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "CLIP vs Qwen2-VL (Stanford40)",
+      "p": 9.999e-05,
+      "q_fdr": 0.000169,
+      "fdr_0.05": "\u2713"
+    }
+  ],
+  "perturbation_per_level": {
+    "sigma_1": [
+      {
+        "test": "sigma_1 | CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)",
+        "p": 1.0,
+        "q_fdr": 1.0,
+        "fdr_0.05": ""
+      },
+      {
+        "test": "sigma_1 | CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)",
+        "p": 1.0,
+        "q_fdr": 1.0,
+        "fdr_0.05": ""
+      },
+      {
+        "test": "sigma_1 | CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384",
+        "p": 0.644,
+        "q_fdr": 0.966,
+        "fdr_0.05": ""
+      },
+      {
+        "test": "sigma_1 | CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)",
+        "p": 0.0813,
+        "q_fdr": 0.4878,
+        "fdr_0.05": ""
+      },
+      {
+        "test": "sigma_1 | CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384",
+        "p": 0.2561,
+        "q_fdr": 0.5122,
+        "fdr_0.05": ""
+      },
+      {
+        "test": "sigma_1 | CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384",
+        "p": 0.2519,
+        "q_fdr": 0.5122,
+        "fdr_0.05": ""
+      }
+    ],
+    "sigma_2": [
+      {
+        "test": "sigma_2 | CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)",
+        "p": 0.0066,
+        "q_fdr": 0.0396,
+        "fdr_0.05": "\u2713"
+      },
+      {
+        "test": "sigma_2 | CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)",
+        "p": 0.5016,
+        "q_fdr": 0.7524,
+        "fdr_0.05": ""
+      },
+      {
+        "test": "sigma_2 | CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384",
+        "p": 0.7932,
+        "q_fdr": 0.7932,
+        "fdr_0.05": ""
+      },
+      {
+        "test": "sigma_2 | CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)",
+        "p": 0.3915,
+        "q_fdr": 0.7524,
+        "fdr_0.05": ""
+      },
+      {
+        "test": "sigma_2 | CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384",
+        "p": 0.7872,
+        "q_fdr": 0.7932,
+        "fdr_0.05": ""
+      },
+      {
+        "test": "sigma_2 | CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384",
+        "p": 0.0354,
+        "q_fdr": 0.1062,
+        "fdr_0.05": ""
+      }
+    ],
+    "sigma_4": [
+      {
+        "test": "sigma_4 | CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)",
+        "p": 0.0486,
+        "q_fdr": 0.2223,
+        "fdr_0.05": ""
+      },
+      {
+        "test": "sigma_4 | CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)",
+        "p": 0.2333,
+        "q_fdr": 0.30516,
+        "fdr_0.05": ""
+      },
+      {
+        "test": "sigma_4 | CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384",
+        "p": 0.0741,
+        "q_fdr": 0.2223,
+        "fdr_0.05": ""
+      },
+      {
+        "test": "sigma_4 | CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)",
+        "p": 0.2543,
+        "q_fdr": 0.30516,
+        "fdr_0.05": ""
+      },
+      {
+        "test": "sigma_4 | CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384",
+        "p": 0.1803,
+        "q_fdr": 0.30516,
+        "fdr_0.05": ""
+      },
+      {
+        "test": "sigma_4 | CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384",
+        "p": 0.7876,
+        "q_fdr": 0.7876,
+        "fdr_0.05": ""
+      }
+    ],
+    "sigma_8": [
+      {
+        "test": "sigma_8 | CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)",
+        "p": 0.2315,
+        "q_fdr": 0.2315,
+        "fdr_0.05": ""
+      },
+      {
+        "test": "sigma_8 | CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)",
+        "p": 0.1321,
+        "q_fdr": 0.15852,
+        "fdr_0.05": ""
+      },
+      {
+        "test": "sigma_8 | CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384",
+        "p": 0.0324,
+        "q_fdr": 0.0688,
+        "fdr_0.05": ""
+      },
+      {
+        "test": "sigma_8 | CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)",
+        "p": 0.0142,
+        "q_fdr": 0.0688,
+        "fdr_0.05": ""
+      },
+      {
+        "test": "sigma_8 | CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384",
+        "p": 0.1025,
+        "q_fdr": 0.15375,
+        "fdr_0.05": ""
+      },
+      {
+        "test": "sigma_8 | CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384",
+        "p": 0.0344,
+        "q_fdr": 0.0688,
+        "fdr_0.05": ""
+      }
+    ]
+  },
+  "perturbation_merged": [
+    {
+      "test": "merged | CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)",
+      "p": 0.1083,
+      "q_fdr": 0.13212,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "merged | CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)",
+      "p": 0.0953,
+      "q_fdr": 0.13212,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "merged | CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384",
+      "p": 0.003,
+      "q_fdr": 0.018,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "merged | CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)",
+      "p": 0.1101,
+      "q_fdr": 0.13212,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "merged | CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384",
+      "p": 0.2671,
+      "q_fdr": 0.2671,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "merged | CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384",
+      "p": 0.0199,
+      "q_fdr": 0.0597,
+      "fdr_0.05": ""
+    }
+  ],
+  "perturbation_grid_30": [
+    {
+      "test": "sigma_1 | CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)",
+      "p": 1.0,
+      "q_fdr": 1.0,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "sigma_1 | CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)",
+      "p": 1.0,
+      "q_fdr": 1.0,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "sigma_1 | CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384",
+      "p": 0.644,
+      "q_fdr": 0.7728,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "sigma_1 | CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)",
+      "p": 0.0813,
+      "q_fdr": 0.235929,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "sigma_1 | CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384",
+      "p": 0.2561,
+      "q_fdr": 0.364227,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "sigma_1 | CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384",
+      "p": 0.2519,
+      "q_fdr": 0.364227,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "sigma_2 | CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)",
+      "p": 0.0066,
+      "q_fdr": 0.099,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "sigma_2 | CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)",
+      "p": 0.5016,
+      "q_fdr": 0.627,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "sigma_2 | CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384",
+      "p": 0.7932,
+      "q_fdr": 0.849857,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "sigma_2 | CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)",
+      "p": 0.3915,
+      "q_fdr": 0.510652,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "sigma_2 | CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384",
+      "p": 0.7872,
+      "q_fdr": 0.849857,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "sigma_2 | CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384",
+      "p": 0.0354,
+      "q_fdr": 0.151714,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "sigma_4 | CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)",
+      "p": 0.0486,
+      "q_fdr": 0.18225,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "sigma_4 | CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)",
+      "p": 0.2333,
+      "q_fdr": 0.364227,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "sigma_4 | CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384",
+      "p": 0.0741,
+      "q_fdr": 0.235929,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "sigma_4 | CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)",
+      "p": 0.2543,
+      "q_fdr": 0.364227,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "sigma_4 | CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384",
+      "p": 0.1803,
+      "q_fdr": 0.338062,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "sigma_4 | CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384",
+      "p": 0.7876,
+      "q_fdr": 0.849857,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "sigma_8 | CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)",
+      "p": 0.2315,
+      "q_fdr": 0.364227,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "sigma_8 | CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)",
+      "p": 0.1321,
+      "q_fdr": 0.2642,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "sigma_8 | CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384",
+      "p": 0.0324,
+      "q_fdr": 0.151714,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "sigma_8 | CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)",
+      "p": 0.0142,
+      "q_fdr": 0.142,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "sigma_8 | CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384",
+      "p": 0.1025,
+      "q_fdr": 0.235929,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "sigma_8 | CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384",
+      "p": 0.0344,
+      "q_fdr": 0.151714,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "merged | CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)",
+      "p": 0.1083,
+      "q_fdr": 0.235929,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "merged | CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)",
+      "p": 0.0953,
+      "q_fdr": 0.235929,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "merged | CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384",
+      "p": 0.003,
+      "q_fdr": 0.09,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "merged | CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)",
+      "p": 0.1101,
+      "q_fdr": 0.235929,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "merged | CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384",
+      "p": 0.2671,
+      "q_fdr": 0.364227,
+      "fdr_0.05": ""
+    },
+    {
+      "test": "merged | CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384",
+      "p": 0.0199,
+      "q_fdr": 0.14925,
+      "fdr_0.05": ""
+    }
+  ],
+  "perturbation_static": [
+    {
+      "test": "static | CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)",
+      "p": 0.0032,
+      "q_fdr": 0.0096,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "static | CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)",
+      "p": 0.0016,
+      "q_fdr": 0.0096,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "static | CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384",
+      "p": 0.0181,
+      "q_fdr": 0.02208,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "static | CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)",
+      "p": 0.0256,
+      "q_fdr": 0.0256,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "static | CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384",
+      "p": 0.0184,
+      "q_fdr": 0.02208,
+      "fdr_0.05": "\u2713"
+    },
+    {
+      "test": "static | CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384",
+      "p": 0.0159,
+      "q_fdr": 0.02208,
+      "fdr_0.05": "\u2713"
+    }
+  ]
+}

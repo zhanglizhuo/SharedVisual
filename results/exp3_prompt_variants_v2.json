@@ -1,0 +1,68 @@
+{
+  "blackboard-writing": {
+    "blackboard-writing": {
+      "accuracy": 45.3,
+      "mean_prob": 0.129
+    },
+    "a blackboard with writing on it": {
+      "accuracy": 14.3,
+      "mean_prob": 0.127
+    },
+    "writing on a blackboard": {
+      "accuracy": 18.6,
+      "mean_prob": 0.128
+    },
+    "a person writing on a blackboard": {
+      "accuracy": 50.9,
+      "mean_prob": 0.129
+    },
+    "a teacher writing on the board": {
+      "accuracy": 98.1,
+      "mean_prob": 0.133
+    }
+  },
+  "answer": {
+    "answer": {
+      "accuracy": 0.0,
+      "mean_prob": 0.122
+    },
+    "a student answering a question": {
+      "accuracy": 95.1,
+      "mean_prob": 0.131
+    },
+    "a student raising hand to answer": {
+      "accuracy": 100.0,
+      "mean_prob": 0.134
+    },
+    "a student speaking in class": {
+      "accuracy": 95.5,
+      "mean_prob": 0.131
+    },
+    "answering a question": {
+      "accuracy": 0.0,
+      "mean_prob": 0.126
+    }
+  },
+  "blackBoard": {
+    "blackBoard": {
+      "accuracy": 1.7,
+      "mean_prob": 0.128
+    },
+    "a person standing near a blackboard": {
+      "accuracy": 6.8,
+      "mean_prob": 0.128
+    },
+    "presenting at a blackboard": {
+      "accuracy": 32.3,
+      "mean_prob": 0.13
+    },
+    "standing by the board": {
+      "accuracy": 0.0,
+      "mean_prob": 0.126
+    },
+    "a teacher at the blackboard": {
+      "accuracy": 68.7,
+      "mean_prob": 0.131
+    }
+  }
+}

@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# LaTeX build artifacts (keep PDF for review)
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz
+*.toc
+*.fdb_latexmk
+*.fls
+
+# Regenerable feature caches (large; reproduce via experiments/exp6_stanford40_geometry.py)
+results/exp6_clip_features.npz
+results/exp6_qwen_features.npz
+
+# Editor / OS
+.DS_Store
+*.swp
+*~
+.vscode/
+.idea/
+
+# Internal working docs (server credentials / private notes)
+AGENTS.md
+todo.md
+
+# Server-specific scripts (contain SSH hosts / data paths)
+experiments/relay_scb5.sh
+experiments/eval_clip_mllms_v100.py
+experiments/eval_single.py

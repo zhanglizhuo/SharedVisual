@@ -1,0 +1,17 @@
+{
+  "purpose": "zero-context paper-to-evidence claim audit",
+  "model": "same-family-agent (gpt-5.5 xhigh requested, unavailable)",
+  "reasoning_effort": "xhigh",
+  "protocol": "extract every quantitative claim; trace to raw files; check inflation/cherry-pick/config/aggregation/delta/caption/scope",
+  "paper_input": [
+    "paper/SharedVisual.tex"
+  ],
+  "evidence_input": "44 raw JSON/TXT files under results/ and data/visualanchor_snapshot/ (listed in task prompt)",
+  "excluded": [
+    "EXPERIMENT_AUDIT.md/json",
+    "AUDIT_REPORT.md",
+    "FINDINGS.md",
+    "any scripts, any executor summaries"
+  ],
+  "thread_id": "ses_0268ffcd5ffeDj1iErbhem16Vr"
+}

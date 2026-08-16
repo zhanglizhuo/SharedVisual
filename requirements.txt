@@ -1,0 +1,18 @@
+# Core scientific stack
+numpy
+scipy
+matplotlib
+pillow
+scikit-learn
+tqdm
+requests
+
+# Deep learning (MLLM evaluation / feature extraction require GPU)
+torch>=2.0
+torchvision
+transformers>=4.40
+accelerate
+timm
+
+# CLIP / SigLIP encoders
+open_clip_torch>=2.24

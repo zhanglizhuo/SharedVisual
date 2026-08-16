@@ -1,0 +1,69 @@
+{
+  "clip_group": {
+    "LLaVA-1.5-7B": {
+      "rho": 0.4726,
+      "p": 0.1029,
+      "n": 13
+    },
+    "LLaVA-1.5-13B": {
+      "rho": 0.454,
+      "p": 0.1192,
+      "n": 13
+    },
+    "LLaVA-NeXT-Mistral-7B": {
+      "rho": 0.5205,
+      "p": 0.0682,
+      "n": 13
+    },
+    "LLaVA-NeXT-Vicuna-7B": {
+      "rho": 0.4023,
+      "p": 0.173,
+      "n": 13
+    }
+  },
+  "clip_group_mean_rho": 0.4623,
+  "siglip_group": {
+    "Gemma4-31B": {
+      "rho": 0.7253,
+      "p": 0.005,
+      "n": 13
+    },
+    "Gemma4-26B": {
+      "rho": 0.7363,
+      "p": 0.0041,
+      "n": 13
+    },
+    "Gemma-3-27B": {
+      "rho": 0.6868,
+      "p": 0.0095,
+      "n": 13
+    }
+  },
+  "siglip_group_mean_rho": 0.7161,
+  "conclusion": "siglip_higher",
+  "decoder_confound_control": {
+    "BLIP-2 OPT-2.7B": {
+      "rho": 0.3925,
+      "p": 0.1847,
+      "n": 13,
+      "encoder": "CLIP ViT-G/14 (OpenAI)",
+      "decoder": "OPT-2.7B (non-LLaVA)"
+    },
+    "InstructBLIP-Flan-T5-XL": {
+      "rho": 0.2427,
+      "p": 0.4243,
+      "n": 13,
+      "encoder": "CLIP ViT-G/14 (OpenAI)",
+      "decoder": "FLAN-T5-XL (non-LLaVA)"
+    },
+    "IDEFICS-9B": {
+      "rho": 0.1678,
+      "p": 0.5838,
+      "n": 13,
+      "encoder": "CLIP ViT-L/14-336 (OpenCLIP)",
+      "decoder": "LLaMA-1-7B (non-LLaVA)"
+    },
+    "interpretation": "Three additional CLIP-encoder MLLMs with non-LLaVA decoders (BLIP-2 OPT-2.7B rho=0.393; InstructBLIP-Flan-T5-XL rho=0.243; IDEFICS-9B rho=0.168) all fall at or below the LLaVA CLIP-group range (0.402-0.521), spanning three decoder families (OPT, FLAN-T5, LLaMA-1) and two fusion paradigms (Q-Former, perceiver), indicating the low CLIP-group rho is not driven by LLaVA-family decoders. Caveat: all three exhibit class-prior response biases (near-deterministic single-attractor outputs within each sub-dataset), limiting the information content of their per-class accuracies."
+  },
+  "note": "New models evaluated with llava_scb5.py protocol (class-name prompt, 100/class, seed 42), identical to existing LLaVA-1.5-7B. BLIP-2 reported as decoder-confound control, not merged into CLIP group."
+}

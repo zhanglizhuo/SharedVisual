@@ -1,0 +1,46 @@
+{
+  "stand": {
+    "stand": {
+      "accuracy": 0.0,
+      "mean_prob": 0.123
+    },
+    "a person standing": {
+      "accuracy": 0.0,
+      "mean_prob": 0.123
+    },
+    "a teacher standing in front of the classroom": {
+      "accuracy": 92.5,
+      "mean_prob": 0.131
+    },
+    "standing in class": {
+      "accuracy": 78.1,
+      "mean_prob": 0.13
+    },
+    "a student standing at attention": {
+      "accuracy": 80.0,
+      "mean_prob": 0.131
+    }
+  },
+  "screen": {
+    "screen": {
+      "accuracy": 0.0,
+      "mean_prob": 0.124
+    },
+    "a screen in a classroom": {
+      "accuracy": 71.4,
+      "mean_prob": 0.13
+    },
+    "a display screen showing slides": {
+      "accuracy": 19.0,
+      "mean_prob": 0.127
+    },
+    "a projection screen in class": {
+      "accuracy": 0.0,
+      "mean_prob": 0.124
+    },
+    "a screen on the classroom wall": {
+      "accuracy": 73.8,
+      "mean_prob": 0.131
+    }
+  }
+}

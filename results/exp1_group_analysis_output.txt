@@ -1,0 +1,29 @@
+======================================================================
+Exp 1 (Approach C): Natural MLLM Groups by Visual Encoder Family
+======================================================================
+
+Group: CLIP ViT-L/14 (1 MLLMs)
+  Individual ρ: ['0.473']
+  Mean ρ: 0.473
+  Hypothesis: shared CLIP encoder → higher ρ expected
+
+Group: SigLIP (3 MLLMs)
+  Individual ρ: ['0.725', '0.736', '0.687']
+  Mean ρ: 0.716
+  Hypothesis: SigLIP encoder → lower ρ than CLIP group (if shared vision matters)
+
+Group: QwenViT (自研) (4 MLLMs)
+  Individual ρ: ['0.604', '0.648', '0.736', '0.687']
+  Mean ρ: 0.669
+  Hypothesis: proprietary encoder → intermediate ρ
+
+Group: Qwen2-VL ViT (1 MLLMs)
+  Individual ρ: ['0.374']
+  Mean ρ: 0.374
+  Hypothesis: smaller model, different encoder → low ρ
+
+======================================================================
+CONCLUSION: Compare mean ρ across groups.
+If CLIP group >> SigLIP group → shared vision encoder is causal.
+If similar across groups → mechanism is not encoder-specific.
+======================================================================

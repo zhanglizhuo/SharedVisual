@@ -1,0 +1,227 @@
+{
+  "test": "Mantel (Spearman rank correlation of similarity-matrix upper triangles, permutation-based significance)",
+  "scb5_8_classes": [
+    {
+      "encoder_a": "CLIP ViT-L/14 (OpenAI)",
+      "encoder_b": "CLIP ViT-L/14 (LAION)",
+      "n_classes": 8,
+      "n_pairs": 28,
+      "mantel_rho": 0.9815245746767904,
+      "permutation_p": 4.960194439622033e-05,
+      "n_permutations": 40320,
+      "method": "exact (all permutations)"
+    },
+    {
+      "encoder_a": "CLIP ViT-L/14 (OpenAI)",
+      "encoder_b": "CLIP ViT-B/32 (OpenAI)",
+      "n_classes": 8,
+      "n_pairs": 28,
+      "mantel_rho": 0.954557897618396,
+      "permutation_p": 4.960194439622033e-05,
+      "n_permutations": 40320,
+      "method": "exact (all permutations)"
+    },
+    {
+      "encoder_a": "CLIP ViT-L/14 (OpenAI)",
+      "encoder_b": "Qwen2-VL Vision",
+      "n_classes": 8,
+      "n_pairs": 28,
+      "mantel_rho": 0.8971937113497008,
+      "permutation_p": 4.960194439622033e-05,
+      "n_permutations": 40320,
+      "method": "exact (all permutations)"
+    },
+    {
+      "encoder_a": "CLIP ViT-L/14 (OpenAI)",
+      "encoder_b": "SigLIP (ViT-SO400M)",
+      "n_classes": 8,
+      "n_pairs": 28,
+      "mantel_rho": 0.954700980611446,
+      "permutation_p": 4.960194439622033e-05,
+      "n_permutations": 40320,
+      "method": "exact (all permutations)"
+    },
+    {
+      "encoder_a": "CLIP ViT-L/14 (OpenAI)",
+      "encoder_b": "ResNet-50 (ImageNet-1k)",
+      "n_classes": 8,
+      "n_pairs": 28,
+      "mantel_rho": 0.9497741980280152,
+      "permutation_p": 4.960194439622033e-05,
+      "n_permutations": 40320,
+      "method": "exact (all permutations)"
+    },
+    {
+      "encoder_a": "CLIP ViT-L/14 (OpenAI)",
+      "encoder_b": "DINOv2 ViT-B/14 (LVD-142M)",
+      "n_classes": 8,
+      "n_pairs": 28,
+      "mantel_rho": 0.6615574168973237,
+      "permutation_p": 4.960194439622033e-05,
+      "n_permutations": 40320,
+      "method": "exact (all permutations)"
+    },
+    {
+      "encoder_a": "CLIP ViT-L/14 (LAION)",
+      "encoder_b": "CLIP ViT-B/32 (OpenAI)",
+      "n_classes": 8,
+      "n_pairs": 28,
+      "mantel_rho": 0.9522375893197307,
+      "permutation_p": 4.960194439622033e-05,
+      "n_permutations": 40320,
+      "method": "exact (all permutations)"
+    },
+    {
+      "encoder_a": "CLIP ViT-L/14 (LAION)",
+      "encoder_b": "Qwen2-VL Vision",
+      "n_classes": 8,
+      "n_pairs": 28,
+      "mantel_rho": 0.9129482959098569,
+      "permutation_p": 4.960194439622033e-05,
+      "n_permutations": 40320,
+      "method": "exact (all permutations)"
+    },
+    {
+      "encoder_a": "CLIP ViT-L/14 (LAION)",
+      "encoder_b": "SigLIP (ViT-SO400M)",
+      "n_classes": 8,
+      "n_pairs": 28,
+      "mantel_rho": 0.9567597153804049,
+      "permutation_p": 4.960194439622033e-05,
+      "n_permutations": 40320,
+      "method": "exact (all permutations)"
+    },
+    {
+      "encoder_a": "CLIP ViT-L/14 (LAION)",
+      "encoder_b": "ResNet-50 (ImageNet-1k)",
+      "n_classes": 8,
+      "n_pairs": 28,
+      "mantel_rho": 0.9666119321291735,
+      "permutation_p": 4.960194439622033e-05,
+      "n_permutations": 40320,
+      "method": "exact (all permutations)"
+    },
+    {
+      "encoder_a": "CLIP ViT-L/14 (LAION)",
+      "encoder_b": "DINOv2 ViT-B/14 (LVD-142M)",
+      "n_classes": 8,
+      "n_pairs": 28,
+      "mantel_rho": 0.7192118226600985,
+      "permutation_p": 4.960194439622033e-05,
+      "n_permutations": 40320,
+      "method": "exact (all permutations)"
+    },
+    {
+      "encoder_a": "CLIP ViT-B/32 (OpenAI)",
+      "encoder_b": "Qwen2-VL Vision",
+      "n_classes": 8,
+      "n_pairs": 28,
+      "mantel_rho": 0.9493497693332583,
+      "permutation_p": 4.960194439622033e-05,
+      "n_permutations": 40320,
+      "method": "exact (all permutations)"
+    },
+    {
+      "encoder_a": "CLIP ViT-B/32 (OpenAI)",
+      "encoder_b": "SigLIP (ViT-SO400M)",
+      "n_classes": 8,
+      "n_pairs": 28,
+      "mantel_rho": 0.9273299662590536,
+      "permutation_p": 4.960194439622033e-05,
+      "n_permutations": 40320,
+      "method": "exact (all permutations)"
+    },
+    {
+      "encoder_a": "CLIP ViT-B/32 (OpenAI)",
+      "encoder_b": "ResNet-50 (ImageNet-1k)",
+      "n_classes": 8,
+      "n_pairs": 28,
+      "mantel_rho": 0.9355412705647713,
+      "permutation_p": 4.960194439622033e-05,
+      "n_permutations": 40320,
+      "method": "exact (all permutations)"
+    },
+    {
+      "encoder_a": "CLIP ViT-B/32 (OpenAI)",
+      "encoder_b": "DINOv2 ViT-B/14 (LVD-142M)",
+      "n_classes": 8,
+      "n_pairs": 28,
+      "mantel_rho": 0.7806213293302304,
+      "permutation_p": 4.960194439622033e-05,
+      "n_permutations": 40320,
+      "method": "exact (all permutations)"
+    },
+    {
+      "encoder_a": "Qwen2-VL Vision",
+      "encoder_b": "SigLIP (ViT-SO400M)",
+      "n_classes": 8,
+      "n_pairs": 28,
+      "mantel_rho": 0.9490829810852995,
+      "permutation_p": 4.960194439622033e-05,
+      "n_permutations": 40320,
+      "method": "exact (all permutations)"
+    },
+    {
+      "encoder_a": "Qwen2-VL Vision",
+      "encoder_b": "ResNet-50 (ImageNet-1k)",
+      "n_classes": 8,
+      "n_pairs": 28,
+      "mantel_rho": 0.9277306671179925,
+      "permutation_p": 4.960194439622033e-05,
+      "n_permutations": 40320,
+      "method": "exact (all permutations)"
+    },
+    {
+      "encoder_a": "Qwen2-VL Vision",
+      "encoder_b": "DINOv2 ViT-B/14 (LVD-142M)",
+      "n_classes": 8,
+      "n_pairs": 28,
+      "mantel_rho": 0.8699699203602774,
+      "permutation_p": 4.960194439622033e-05,
+      "n_permutations": 40320,
+      "method": "exact (all permutations)"
+    },
+    {
+      "encoder_a": "SigLIP (ViT-SO400M)",
+      "encoder_b": "ResNet-50 (ImageNet-1k)",
+      "n_classes": 8,
+      "n_pairs": 28,
+      "mantel_rho": 0.9797482211275315,
+      "permutation_p": 4.960194439622033e-05,
+      "n_permutations": 40320,
+      "method": "exact (all permutations)"
+    },
+    {
+      "encoder_a": "SigLIP (ViT-SO400M)",
+      "encoder_b": "DINOv2 ViT-B/14 (LVD-142M)",
+      "n_classes": 8,
+      "n_pairs": 28,
+      "mantel_rho": 0.7717569786535304,
+      "permutation_p": 4.960194439622033e-05,
+      "n_permutations": 40320,
+      "method": "exact (all permutations)"
+    },
+    {
+      "encoder_a": "ResNet-50 (ImageNet-1k)",
+      "encoder_b": "DINOv2 ViT-B/14 (LVD-142M)",
+      "n_classes": 8,
+      "n_pairs": 28,
+      "mantel_rho": 0.759168035030104,
+      "permutation_p": 4.960194439622033e-05,
+      "n_permutations": 40320,
+      "method": "exact (all permutations)"
+    }
+  ],
+  "stanford40_40_classes": [
+    {
+      "encoder_a": "CLIP_ViT_L_14_OpenAI",
+      "encoder_b": "Qwen2_VL_Vision",
+      "n_classes": 40,
+      "n_pairs": 780,
+      "mantel_rho": 0.8100331677579504,
+      "permutation_p": 9.999000099990002e-05,
+      "n_permutations": 10000,
+      "method": "random permutations (seed=42)"
+    }
+  ]
+}

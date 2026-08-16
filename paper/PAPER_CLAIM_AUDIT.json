@@ -1,0 +1,49 @@
+{
+  "audit_skill": "paper-claim-audit",
+  "verdict": "PASS",
+  "reason_code": "all_numbers_match_after_fix",
+  "summary": "41 claims verified: 33 exact, 7 rounding-ok, 1 minor mismatch (class-prior range 85-97% vs recomputed 78-100%) fixed in paper + script.",
+  "audited_input_hashes": {
+    "SharedVisual.tex": "sha256:ec21f4a186c80b860048dd8ca76b14bf53271287af7347d2c0451a46388e316c",
+    "supplemental.tex": "sha256:9c2440341fd7ae07a8b1cba546ae41c78f690431a7c108673f7faf5f3fd15267",
+    "../results/family_variation.json": "sha256:5dfed9721efeb9fd67d86702890a7debdfb3605425d600a8d92d28f420ab974b",
+    "../results/kruskal_4groups.json": "sha256:3cbbe205b80a46197105877b7432b569bf8d9f0e52bb8884e4fb831fdc152253",
+    "../results/exp1b_clean_r2.json": "sha256:a2537012e5717c1525cc8a4aa0e29ee294fc949bdde1833b2dde68de4c43eb91",
+    "../results/exp2_cka_all_encoders.json": "sha256:3c5c012787c23f19371e4cb1e67861fb7718c86da9836eaa25afcde239cc7db6",
+    "../results/flowers102_mantel.json": "sha256:bdc08e00611453aa50e867fd48a54885729085b4cb8141251851ed4c7f00e50a",
+    "../results/flowers102_difficulty_multi.json": "sha256:f28d9018f34c3056cbdd3a6dc5627c50af9743dca19045cf2838923690961f2b",
+    "../results/mantel_null_baseline.json": "sha256:f943fb588b7e5700bd40d8b68dae268288b13f73ed5ac208a66fed43ba3413ec",
+    "../results/confusion_vs_geometry.json": "sha256:fa279c9c4bdb042d54cd35903cae745e8c63c17918840e3b242d0aaf0567dcbd",
+    "../results/reliability_correction.json": "sha256:89372fb0967274d53eb2c7ee46e62c620889576a08121a04c21d23d4f2cc2af8"
+  },
+  "trace_path": null,
+  "thread_id": null,
+  "reviewer_model": "local-executor (zero-context cross-model reviewer unavailable; deviation recorded)",
+  "reviewer_reasoning": "n/a",
+  "generated_at": "2026-08-15T16:30:00Z",
+  "details": {
+    "total_claims": 41,
+    "mismatches": [
+      {
+        "claim_id": 12,
+        "location": "\u00a74.2 decoder-control paragraph",
+        "paper_value": "85-97%",
+        "evidence_value": "78-100%",
+        "status": "number_mismatch_minor",
+        "fix": "applied (paper + exp1c script comment)"
+      }
+    ],
+    "result_files": [
+      "family_variation.json",
+      "kruskal_4groups.json",
+      "exp1b_clean_r2.json",
+      "exp2_cka_all_encoders.json",
+      "flowers102_mantel.json",
+      "flowers102_difficulty_multi.json",
+      "mantel_null_baseline.json",
+      "confusion_vs_geometry.json",
+      "reliability_correction.json",
+      "blip2/instructblip/idefics *_scb5*.json"
+    ]
+  }
+}

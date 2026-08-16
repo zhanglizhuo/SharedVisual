@@ -1,0 +1,193 @@
+{
+  "scb5": {
+    "dataset": "SCB5 (13 classes, 12 MLLMs, 4 families)",
+    "n_models": 12,
+    "n_classes": 13,
+    "groups": {
+      "CLIP": 4,
+      "SigLIP": 3,
+      "QwenViT": 4,
+      "Qwen2-VL-ViT": 1
+    },
+    "within": {
+      "n_pairs": 15,
+      "mean_rho": 0.8224234439392633,
+      "min": 0.576923076923077,
+      "max": 0.9560439560439561
+    },
+    "between": {
+      "n_pairs": 51,
+      "mean_rho": 0.39327054830607605,
+      "min": -0.13602234077937927,
+      "max": 0.9340659340659341
+    },
+    "per_family_within": {
+      "CLIP": {
+        "n_pairs": 6,
+        "mean_rho": 0.7877435915331396,
+        "min": 0.585195077242528,
+        "max": 0.9018647179168889
+      },
+      "SigLIP": {
+        "n_pairs": 3,
+        "mean_rho": 0.7417582417582418,
+        "min": 0.576923076923077,
+        "max": 0.8626373626373626
+      },
+      "QwenViT": {
+        "n_pairs": 6,
+        "mean_rho": 0.8974358974358975,
+        "min": 0.8516483516483516,
+        "max": 0.9560439560439561
+      }
+    },
+    "difference": {
+      "within_minus_between": 0.4291528956331872,
+      "ci95_bootstrap_classes": [
+        0.16217866111772197,
+        0.7114913506448417
+      ],
+      "p_two_sided": 0.00021645021645021645,
+      "test_mode": "exact enumeration (138600 assignments)"
+    },
+    "pairwise_rhos": {
+      "Gemma-3-27B | Gemma4-26B": 0.8626373626373626,
+      "Gemma-3-27B | Gemma4-31B": 0.576923076923077,
+      "Gemma-3-27B | LLaVA-1.5-13B": -0.11946314428672723,
+      "Gemma-3-27B | LLaVA-1.5-7B": 0.028301030419654545,
+      "Gemma-3-27B | LLaVA-NeXT-Mistral-7B": 0.050854459381108046,
+      "Gemma-3-27B | LLaVA-NeXT-Vicuna-7B": 0.1041873248522905,
+      "Gemma-3-27B | Qwen2-VL-7B": 0.7747252747252747,
+      "Gemma-3-27B | Qwen3.5-27B": 0.6648351648351648,
+      "Gemma-3-27B | Qwen3.5-35B": 0.7417582417582418,
+      "Gemma-3-27B | Qwen3.6-27B": 0.6593406593406593,
+      "Gemma-3-27B | Qwen3.6-35B": 0.7142857142857143,
+      "Gemma4-26B | Gemma4-31B": 0.7857142857142857,
+      "Gemma4-26B | LLaVA-1.5-13B": 0.09557051542938179,
+      "Gemma4-26B | LLaVA-1.5-7B": 0.3056511285322691,
+      "Gemma4-26B | LLaVA-NeXT-Mistral-7B": 0.39187848111324436,
+      "Gemma4-26B | LLaVA-NeXT-Vicuna-7B": 0.31545606691387956,
+      "Gemma4-26B | Qwen2-VL-7B": 0.6483516483516483,
+      "Gemma4-26B | Qwen3.5-27B": 0.7637362637362637,
+      "Gemma4-26B | Qwen3.5-35B": 0.8076923076923077,
+      "Gemma4-26B | Qwen3.6-27B": 0.7857142857142857,
+      "Gemma4-26B | Qwen3.6-35B": 0.8626373626373626,
+      "Gemma4-31B | LLaVA-1.5-13B": 0.34644311843150905,
+      "Gemma4-31B | LLaVA-1.5-7B": 0.35376288024568187,
+      "Gemma4-31B | LLaVA-NeXT-Mistral-7B": 0.5354675428951965,
+      "Gemma4-31B | LLaVA-NeXT-Vicuna-7B": 0.12734006370835507,
+      "Gemma4-31B | Qwen2-VL-7B": 0.37912087912087916,
+      "Gemma4-31B | Qwen3.5-27B": 0.8791208791208791,
+      "Gemma4-31B | Qwen3.5-35B": 0.8571428571428571,
+      "Gemma4-31B | Qwen3.6-27B": 0.9340659340659341,
+      "Gemma4-31B | Qwen3.6-35B": 0.8956043956043955,
+      "LLaVA-1.5-13B | LLaVA-1.5-7B": 0.8430011062684412,
+      "LLaVA-1.5-13B | LLaVA-NeXT-Mistral-7B": 0.8455295730453194,
+      "LLaVA-1.5-13B | LLaVA-NeXT-Vicuna-7B": 0.585195077242528,
+      "LLaVA-1.5-13B | Qwen2-VL-7B": -0.11348998707239089,
+      "LLaVA-1.5-13B | Qwen3.5-27B": 0.10154367264371815,
+      "LLaVA-1.5-13B | Qwen3.5-35B": 0.2030873452874363,
+      "LLaVA-1.5-13B | Qwen3.6-27B": 0.23295313135911813,
+      "LLaVA-1.5-13B | Qwen3.6-35B": 0.2389262885734545,
+      "LLaVA-1.5-7B | LLaVA-NeXT-Mistral-7B": 0.8875160997438774,
+      "LLaVA-1.5-7B | LLaVA-NeXT-Vicuna-7B": 0.9018647179168889,
+      "LLaVA-1.5-7B | Qwen2-VL-7B": 0.1641459764339964,
+      "LLaVA-1.5-7B | Qwen3.5-27B": 0.053771957797343645,
+      "LLaVA-1.5-7B | Qwen3.5-35B": 0.2999909224483382,
+      "LLaVA-1.5-7B | Qwen3.6-27B": 0.24904906769296004,
+      "LLaVA-1.5-7B | Qwen3.6-35B": 0.3679133954555091,
+      "LLaVA-NeXT-Mistral-7B | LLaVA-NeXT-Vicuna-7B": 0.6633549749817828,
+      "LLaVA-NeXT-Mistral-7B | Qwen2-VL-7B": 0.020940071509868017,
+      "LLaVA-NeXT-Mistral-7B | Qwen3.5-27B": 0.27521236841540825,
+      "LLaVA-NeXT-Mistral-7B | Qwen3.5-35B": 0.37392984839050036,
+      "LLaVA-NeXT-Mistral-7B | Qwen3.6-27B": 0.40982711383598835,
+      "LLaVA-NeXT-Mistral-7B | Qwen3.6-35B": 0.4576901344299724,
+      "LLaVA-NeXT-Vicuna-7B | Qwen2-VL-7B": 0.292303328057815,
+      "LLaVA-NeXT-Vicuna-7B | Qwen3.5-27B": -0.13602234077937927,
+      "LLaVA-NeXT-Vicuna-7B | Qwen3.5-35B": 0.19390418791954064,
+      "LLaVA-NeXT-Vicuna-7B | Qwen3.6-27B": 0.04341138535512104,
+      "LLaVA-NeXT-Vicuna-7B | Qwen3.6-35B": 0.23731557327466168,
+      "Qwen2-VL-7B | Qwen3.5-27B": 0.4505494505494505,
+      "Qwen2-VL-7B | Qwen3.5-35B": 0.7087912087912087,
+      "Qwen2-VL-7B | Qwen3.6-27B": 0.48901098901098894,
+      "Qwen2-VL-7B | Qwen3.6-35B": 0.5384615384615384,
+      "Qwen3.5-27B | Qwen3.5-35B": 0.8681318681318682,
+      "Qwen3.5-27B | Qwen3.6-27B": 0.9560439560439561,
+      "Qwen3.5-27B | Qwen3.6-35B": 0.8516483516483516,
+      "Qwen3.5-35B | Qwen3.6-27B": 0.8956043956043955,
+      "Qwen3.5-35B | Qwen3.6-35B": 0.8626373626373626,
+      "Qwen3.6-27B | Qwen3.6-35B": 0.9505494505494506
+    }
+  },
+  "stanford40": {
+    "dataset": "Stanford40 (40 classes, 6 MLLMs, 2 families)",
+    "n_models": 6,
+    "n_classes": 40,
+    "groups": {
+      "QwenViT": 4,
+      "SigLIP": 2
+    },
+    "within": {
+      "n_pairs": 7,
+      "mean_rho": 0.7724785112835759,
+      "min": 0.6806798171996451,
+      "max": 0.8667036926886749
+    },
+    "between": {
+      "n_pairs": 8,
+      "mean_rho": 0.6092213888333613,
+      "min": 0.5441263097764659,
+      "max": 0.6847421295884586
+    },
+    "per_family_within": {
+      "QwenViT": {
+        "n_pairs": 6,
+        "mean_rho": 0.7692421964361982,
+        "min": 0.6806798171996451,
+        "max": 0.8667036926886749
+      },
+      "SigLIP": {
+        "n_pairs": 1,
+        "mean_rho": 0.7918964003678425,
+        "min": 0.7918964003678425,
+        "max": 0.7918964003678425
+      }
+    },
+    "difference": {
+      "within_minus_between": 0.16325712245021462,
+      "ci95_bootstrap_classes": [
+        0.02003849626017443,
+        0.3519560466427861
+      ],
+      "p_two_sided": 0.06666666666666667,
+      "test_mode": "exact enumeration (15 assignments)"
+    },
+    "pairwise_rhos": {
+      "gemma4:26b | gemma4:31b": 0.7918964003678425,
+      "gemma4:26b | qwen3.5:27b": 0.5444249514388874,
+      "gemma4:26b | qwen3.5:35b-a3b": 0.5441263097764659,
+      "gemma4:26b | qwen3.6:27b": 0.6561161633837552,
+      "gemma4:26b | qwen3.6:35b-a3b": 0.5994137098450308,
+      "gemma4:31b | qwen3.5:27b": 0.6075185409602245,
+      "gemma4:31b | qwen3.5:35b-a3b": 0.6186946983996652,
+      "gemma4:31b | qwen3.6:27b": 0.6847421295884586,
+      "gemma4:31b | qwen3.6:35b-a3b": 0.6187346072744022,
+      "qwen3.5:27b | qwen3.5:35b-a3b": 0.6806798171996451,
+      "qwen3.5:27b | qwen3.6:27b": 0.7951711374323243,
+      "qwen3.5:27b | qwen3.6:35b-a3b": 0.763777864148138,
+      "qwen3.5:35b-a3b | qwen3.6:27b": 0.7382130064029063,
+      "qwen3.5:35b-a3b | qwen3.6:35b-a3b": 0.8667036926886749,
+      "qwen3.6:27b | qwen3.6:35b-a3b": 0.7709076607455002
+    }
+  },
+  "decoder_control": {
+    "pairwise_rhos": {
+      "BLIP-2 OPT-2.7B | InstructBLIP-Flan-T5-XL": 0.45006819334308923,
+      "BLIP-2 OPT-2.7B | IDEFICS-9B": 0.033058980245364314,
+      "InstructBLIP-Flan-T5-XL | IDEFICS-9B": 0.17718260305314315
+    },
+    "mean_rho": 0.2201032588805322,
+    "caveat": "all three models show class-prior collapse (near-deterministic single-attractor outputs), limiting the information content of their per-class accuracies"
+  },
+  "note": "Within- vs between-encoder-family agreement of per-class accuracy rankings (pairwise Spearman). 'Within-family model variation', not 'LM effect': models within a family differ in decoder, projector, resolution, and instruction tuning. SCB5 exact enumeration 12!/(4!3!4!1!)=138600 label assignments; Stanford40 C(6,4)=15 (p resolution 1/15). Bootstrap: 2000 class resamples, seed 42. Data: mllm_full.json + 3 LLaVA HF evals (SCB5); stanford40 ollama_results.json."
+}

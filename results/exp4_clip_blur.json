@@ -1,0 +1,52 @@
+{
+  "blur_sigma_0": {
+    "guide": 0.0,
+    "answer": 0.0,
+    "On-stage interaction": 0.0,
+    "blackboard-writing": 45.3,
+    "teacher": 83.7,
+    "stand": 0.0,
+    "screen": 0.0,
+    "blackBoard": 1.7
+  },
+  "blur_sigma_1": {
+    "guide": 0.0,
+    "answer": 0.0,
+    "On-stage interaction": 0.0,
+    "blackboard-writing": 30.4,
+    "teacher": 84.6,
+    "stand": 0.0,
+    "screen": 0.0,
+    "blackBoard": 2.2
+  },
+  "blur_sigma_2": {
+    "guide": 0.0,
+    "answer": 0.0,
+    "On-stage interaction": 0.0,
+    "blackboard-writing": 23.6,
+    "teacher": 85.7,
+    "stand": 0.0,
+    "screen": 0.0,
+    "blackBoard": 2.9
+  },
+  "blur_sigma_4": {
+    "guide": 0.0,
+    "answer": 0.0,
+    "On-stage interaction": 0.0,
+    "blackboard-writing": 14.3,
+    "teacher": 85.4,
+    "stand": 0.0,
+    "screen": 0.0,
+    "blackBoard": 15.3
+  },
+  "blur_sigma_8": {
+    "guide": 0.0,
+    "answer": 0.0,
+    "On-stage interaction": 0.0,
+    "blackboard-writing": 1.9,
+    "teacher": 66.5,
+    "stand": 0.0,
+    "screen": 0.0,
+    "blackBoard": 29.4
+  }
+}

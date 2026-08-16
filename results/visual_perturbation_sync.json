@@ -1,0 +1,653 @@
+{
+  "encoders": [
+    "CLIP ViT-L/14 (OpenAI)",
+    "CLIP ViT-L/14 (LAION)",
+    "CLIP ViT-B/32 (OpenAI)",
+    "SigLIP ViT-SO400M-14-384",
+    "CLIP ViT-L/14 (OpenAI) probe",
+    "Qwen2-VL Vision probe",
+    "ResNet-50 (IN-1k) probe"
+  ],
+  "protocols": {
+    "zero_shot": [
+      "CLIP ViT-L/14 (OpenAI)",
+      "CLIP ViT-L/14 (LAION)",
+      "CLIP ViT-B/32 (OpenAI)",
+      "SigLIP ViT-SO400M-14-384"
+    ],
+    "probe": [
+      "CLIP ViT-L/14 (OpenAI) probe",
+      "Qwen2-VL Vision probe",
+      "ResNet-50 (IN-1k) probe"
+    ]
+  },
+  "classes": [
+    "guide",
+    "answer",
+    "On-stage interaction",
+    "blackboard-writing",
+    "teacher",
+    "stand",
+    "screen",
+    "blackBoard"
+  ],
+  "sigmas": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "n_perm": 10000,
+  "seed": 42,
+  "static_control": {
+    "accuracy": {
+      "CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)": {
+        "rho": 0.5,
+        "p_perm": 0.3008
+      },
+      "CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)": {
+        "rho": 0.75,
+        "p_perm": 0.0496
+      },
+      "CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+        "rho": 0.875,
+        "p_perm": 0.0181
+      },
+      "CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)": {
+        "rho": 0.75,
+        "p_perm": 0.0515
+      },
+      "CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384": {
+        "rho": 0.375,
+        "p_perm": 0.5448
+      },
+      "CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+        "rho": 0.5,
+        "p_perm": 0.1411
+      },
+      "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
+        "rho": 0.929,
+        "p_perm": 0.0015
+      },
+      "CLIP ViT-L/14 (OpenAI) probe | ResNet-50 (IN-1k) probe": {
+        "rho": 0.786,
+        "p_perm": 0.0285
+      },
+      "Qwen2-VL Vision probe | ResNet-50 (IN-1k) probe": {
+        "rho": 0.881,
+        "p_perm": 0.0079
+      }
+    },
+    "mean_prob": {
+      "CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)": {
+        "rho": 0.216,
+        "p_perm": 0.6121
+      },
+      "CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)": {
+        "rho": 0.783,
+        "p_perm": 0.0251
+      },
+      "CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+        "rho": 0.802,
+        "p_perm": 0.0251
+      },
+      "CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)": {
+        "rho": 0.359,
+        "p_perm": 0.3891
+      },
+      "CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384": {
+        "rho": 0.429,
+        "p_perm": 0.3033
+      },
+      "CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+        "rho": 0.443,
+        "p_perm": 0.2754
+      },
+      "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
+        "rho": 0.714,
+        "p_perm": 0.0604
+      },
+      "CLIP ViT-L/14 (OpenAI) probe | ResNet-50 (IN-1k) probe": {
+        "rho": -0.024,
+        "p_perm": 0.9781
+      },
+      "Qwen2-VL Vision probe | ResNet-50 (IN-1k) probe": {
+        "rho": 0.095,
+        "p_perm": 0.8412
+      }
+    }
+  },
+  "delta_sync": {
+    "accuracy": {
+      "sigma_1": {
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)": {
+          "spearman_rho": 0.0,
+          "spearman_p": 1.0,
+          "pearson_centered_rho": 0.122,
+          "pearson_centered_p": 1.0
+        },
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": 0.5,
+          "spearman_p": 0.4604,
+          "pearson_centered_rho": 0.24,
+          "pearson_centered_p": 0.3546
+        },
+        "CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": -0.756,
+          "spearman_p": 0.2485,
+          "pearson_centered_rho": -0.993,
+          "pearson_centered_p": 0.129
+        },
+        "CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": 0.0,
+          "spearman_p": 1.0,
+          "pearson_centered_rho": -0.122,
+          "pearson_centered_p": 1.0
+        },
+        "CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": -0.143,
+          "spearman_p": 1.0,
+          "pearson_centered_rho": -0.143,
+          "pearson_centered_p": 1.0
+        },
+        "CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": 0.0,
+          "spearman_p": 1.0,
+          "pearson_centered_rho": -0.122,
+          "pearson_centered_p": 1.0
+        },
+        "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
+          "spearman_rho": NaN,
+          "spearman_p": 0.0001,
+          "pearson_centered_rho": 0.0,
+          "pearson_centered_p": 1.0
+        },
+        "CLIP ViT-L/14 (OpenAI) probe | ResNet-50 (IN-1k) probe": {
+          "spearman_rho": NaN,
+          "spearman_p": 0.0001,
+          "pearson_centered_rho": 0.0,
+          "pearson_centered_p": 1.0
+        },
+        "Qwen2-VL Vision probe | ResNet-50 (IN-1k) probe": {
+          "spearman_rho": NaN,
+          "spearman_p": 0.0001,
+          "pearson_centered_rho": 0.0,
+          "pearson_centered_p": 1.0
+        }
+      },
+      "sigma_2": {
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)": {
+          "spearman_rho": 0.736,
+          "spearman_p": 0.0505,
+          "pearson_centered_rho": 0.473,
+          "pearson_centered_p": 0.164
+        },
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": 0.697,
+          "spearman_p": 0.0568,
+          "pearson_centered_rho": 0.377,
+          "pearson_centered_p": 0.1573
+        },
+        "CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": 0.615,
+          "spearman_p": 0.2485,
+          "pearson_centered_rho": 0.975,
+          "pearson_centered_p": 0.1268
+        },
+        "CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": 0.581,
+          "spearman_p": 0.0893,
+          "pearson_centered_rho": 0.775,
+          "pearson_centered_p": 0.0566
+        },
+        "CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": 0.351,
+          "spearman_p": 0.7489,
+          "pearson_centered_rho": 0.316,
+          "pearson_centered_p": 0.7578
+        },
+        "CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": 0.216,
+          "spearman_p": 1.0,
+          "pearson_centered_rho": 0.175,
+          "pearson_centered_p": 0.8718
+        },
+        "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
+          "spearman_rho": NaN,
+          "spearman_p": 0.0001,
+          "pearson_centered_rho": 0.0,
+          "pearson_centered_p": 1.0
+        },
+        "CLIP ViT-L/14 (OpenAI) probe | ResNet-50 (IN-1k) probe": {
+          "spearman_rho": NaN,
+          "spearman_p": 0.0001,
+          "pearson_centered_rho": 0.0,
+          "pearson_centered_p": 1.0
+        },
+        "Qwen2-VL Vision probe | ResNet-50 (IN-1k) probe": {
+          "spearman_rho": NaN,
+          "spearman_p": 0.0001,
+          "pearson_centered_rho": 0.0,
+          "pearson_centered_p": 1.0
+        }
+      },
+      "sigma_4": {
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)": {
+          "spearman_rho": 0.509,
+          "spearman_p": 0.2116,
+          "pearson_centered_rho": 0.112,
+          "pearson_centered_p": 0.4893
+        },
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": 0.531,
+          "spearman_p": 0.2098,
+          "pearson_centered_rho": 0.362,
+          "pearson_centered_p": 0.2128
+        },
+        "CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": 0.661,
+          "spearman_p": 0.2533,
+          "pearson_centered_rho": 0.973,
+          "pearson_centered_p": 0.1284
+        },
+        "CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": 0.45,
+          "spearman_p": 0.2617,
+          "pearson_centered_rho": 0.083,
+          "pearson_centered_p": 0.7467
+        },
+        "CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": 0.176,
+          "spearman_p": 1.0,
+          "pearson_centered_rho": 0.097,
+          "pearson_centered_p": 0.8768
+        },
+        "CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": -0.283,
+          "spearman_p": 1.0,
+          "pearson_centered_rho": 0.14,
+          "pearson_centered_p": 1.0
+        },
+        "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
+          "spearman_rho": NaN,
+          "spearman_p": 0.0001,
+          "pearson_centered_rho": 0.0,
+          "pearson_centered_p": 1.0
+        },
+        "CLIP ViT-L/14 (OpenAI) probe | ResNet-50 (IN-1k) probe": {
+          "spearman_rho": NaN,
+          "spearman_p": 0.0001,
+          "pearson_centered_rho": 0.0,
+          "pearson_centered_p": 1.0
+        },
+        "Qwen2-VL Vision probe | ResNet-50 (IN-1k) probe": {
+          "spearman_rho": NaN,
+          "spearman_p": 0.0001,
+          "pearson_centered_rho": 0.0,
+          "pearson_centered_p": 1.0
+        }
+      },
+      "sigma_8": {
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)": {
+          "spearman_rho": 0.483,
+          "spearman_p": 0.2607,
+          "pearson_centered_rho": 0.17,
+          "pearson_centered_p": 0.5087
+        },
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": 0.25,
+          "spearman_p": 0.4969,
+          "pearson_centered_rho": 0.354,
+          "pearson_centered_p": 0.3342
+        },
+        "CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": 0.875,
+          "spearman_p": 0.0372,
+          "pearson_centered_rho": 0.98,
+          "pearson_centered_p": 0.017
+        },
+        "CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": 0.025,
+          "spearman_p": 0.7862,
+          "pearson_centered_rho": -0.056,
+          "pearson_centered_p": 0.8587
+        },
+        "CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": 0.293,
+          "spearman_p": 0.7107,
+          "pearson_centered_rho": 0.161,
+          "pearson_centered_p": 0.6108
+        },
+        "CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": 0.643,
+          "spearman_p": 0.219,
+          "pearson_centered_rho": 0.522,
+          "pearson_centered_p": 0.2197
+        },
+        "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
+          "spearman_rho": NaN,
+          "spearman_p": 0.0001,
+          "pearson_centered_rho": 0.0,
+          "pearson_centered_p": 1.0
+        },
+        "CLIP ViT-L/14 (OpenAI) probe | ResNet-50 (IN-1k) probe": {
+          "spearman_rho": NaN,
+          "spearman_p": 0.0001,
+          "pearson_centered_rho": 0.0,
+          "pearson_centered_p": 1.0
+        },
+        "Qwen2-VL Vision probe | ResNet-50 (IN-1k) probe": {
+          "spearman_rho": NaN,
+          "spearman_p": 0.0001,
+          "pearson_centered_rho": 0.0,
+          "pearson_centered_p": 1.0
+        }
+      }
+    },
+    "mean_prob": {
+      "sigma_1": {
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)": {
+          "spearman_rho": 0.542,
+          "spearman_p": 0.1702,
+          "pearson_centered_rho": 0.644,
+          "pearson_centered_p": 0.082
+        },
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": -0.12,
+          "spearman_p": 0.7745,
+          "pearson_centered_rho": -0.108,
+          "pearson_centered_p": 0.7987
+        },
+        "CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": -0.562,
+          "spearman_p": 0.1527,
+          "pearson_centered_rho": -0.633,
+          "pearson_centered_p": 0.0893
+        },
+        "CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": -0.551,
+          "spearman_p": 0.1561,
+          "pearson_centered_rho": -0.37,
+          "pearson_centered_p": 0.3752
+        },
+        "CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": -0.08,
+          "spearman_p": 0.8458,
+          "pearson_centered_rho": -0.158,
+          "pearson_centered_p": 0.7366
+        },
+        "CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": -0.356,
+          "spearman_p": 0.3889,
+          "pearson_centered_rho": -0.28,
+          "pearson_centered_p": 0.4751
+        },
+        "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
+          "spearman_rho": NaN,
+          "spearman_p": 0.0001,
+          "pearson_centered_rho": 0.0,
+          "pearson_centered_p": 1.0
+        },
+        "CLIP ViT-L/14 (OpenAI) probe | ResNet-50 (IN-1k) probe": {
+          "spearman_rho": NaN,
+          "spearman_p": 0.0001,
+          "pearson_centered_rho": 0.0,
+          "pearson_centered_p": 1.0
+        },
+        "Qwen2-VL Vision probe | ResNet-50 (IN-1k) probe": {
+          "spearman_rho": NaN,
+          "spearman_p": 0.0001,
+          "pearson_centered_rho": 0.0,
+          "pearson_centered_p": 1.0
+        }
+      },
+      "sigma_2": {
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)": {
+          "spearman_rho": 0.193,
+          "spearman_p": 0.6592,
+          "pearson_centered_rho": 0.149,
+          "pearson_centered_p": 0.7067
+        },
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": 0.359,
+          "spearman_p": 0.3811,
+          "pearson_centered_rho": 0.334,
+          "pearson_centered_p": 0.4381
+        },
+        "CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": -0.036,
+          "spearman_p": 0.943,
+          "pearson_centered_rho": -0.127,
+          "pearson_centered_p": 0.7517
+        },
+        "CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": 0.216,
+          "spearman_p": 0.6031,
+          "pearson_centered_rho": 0.074,
+          "pearson_centered_p": 0.8769
+        },
+        "CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": 0.419,
+          "spearman_p": 0.3032,
+          "pearson_centered_rho": 0.602,
+          "pearson_centered_p": 0.11
+        },
+        "CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": -0.286,
+          "spearman_p": 0.5029,
+          "pearson_centered_rho": -0.486,
+          "pearson_centered_p": 0.2218
+        },
+        "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
+          "spearman_rho": NaN,
+          "spearman_p": 0.0001,
+          "pearson_centered_rho": 0.0,
+          "pearson_centered_p": 1.0
+        },
+        "CLIP ViT-L/14 (OpenAI) probe | ResNet-50 (IN-1k) probe": {
+          "spearman_rho": NaN,
+          "spearman_p": 0.0001,
+          "pearson_centered_rho": 0.0,
+          "pearson_centered_p": 1.0
+        },
+        "Qwen2-VL Vision probe | ResNet-50 (IN-1k) probe": {
+          "spearman_rho": NaN,
+          "spearman_p": 0.0001,
+          "pearson_centered_rho": 0.0,
+          "pearson_centered_p": 1.0
+        }
+      },
+      "sigma_4": {
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)": {
+          "spearman_rho": 0.238,
+          "spearman_p": 0.5839,
+          "pearson_centered_rho": 0.04,
+          "pearson_centered_p": 0.9257
+        },
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": 0.479,
+          "spearman_p": 0.2291,
+          "pearson_centered_rho": 0.649,
+          "pearson_centered_p": 0.0784
+        },
+        "CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": 0.286,
+          "spearman_p": 0.5003,
+          "pearson_centered_rho": -0.117,
+          "pearson_centered_p": 0.7951
+        },
+        "CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": 0.575,
+          "spearman_p": 0.151,
+          "pearson_centered_rho": 0.619,
+          "pearson_centered_p": 0.0909
+        },
+        "CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": 0.024,
+          "spearman_p": 0.9768,
+          "pearson_centered_rho": -0.12,
+          "pearson_centered_p": 0.7613
+        },
+        "CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": -0.204,
+          "spearman_p": 0.6301,
+          "pearson_centered_rho": -0.367,
+          "pearson_centered_p": 0.369
+        },
+        "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
+          "spearman_rho": NaN,
+          "spearman_p": 0.0001,
+          "pearson_centered_rho": 0.0,
+          "pearson_centered_p": 1.0
+        },
+        "CLIP ViT-L/14 (OpenAI) probe | ResNet-50 (IN-1k) probe": {
+          "spearman_rho": NaN,
+          "spearman_p": 0.0001,
+          "pearson_centered_rho": 0.0,
+          "pearson_centered_p": 1.0
+        },
+        "Qwen2-VL Vision probe | ResNet-50 (IN-1k) probe": {
+          "spearman_rho": NaN,
+          "spearman_p": 0.0001,
+          "pearson_centered_rho": 0.0,
+          "pearson_centered_p": 1.0
+        }
+      },
+      "sigma_8": {
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)": {
+          "spearman_rho": 0.85,
+          "spearman_p": 0.0105,
+          "pearson_centered_rho": 0.641,
+          "pearson_centered_p": 0.0796
+        },
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": 0.252,
+          "spearman_p": 0.5471,
+          "pearson_centered_rho": 0.349,
+          "pearson_centered_p": 0.3986
+        },
+        "CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": 0.381,
+          "spearman_p": 0.3591,
+          "pearson_centered_rho": 0.338,
+          "pearson_centered_p": 0.415
+        },
+        "CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": 0.554,
+          "spearman_p": 0.159,
+          "pearson_centered_rho": 0.826,
+          "pearson_centered_p": 0.0161
+        },
+        "CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": 0.24,
+          "spearman_p": 0.5711,
+          "pearson_centered_rho": 0.094,
+          "pearson_centered_p": 0.823
+        },
+        "CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": -0.587,
+          "spearman_p": 0.1345,
+          "pearson_centered_rho": -0.38,
+          "pearson_centered_p": 0.3631
+        },
+        "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
+          "spearman_rho": NaN,
+          "spearman_p": 0.0001,
+          "pearson_centered_rho": 0.0,
+          "pearson_centered_p": 1.0
+        },
+        "CLIP ViT-L/14 (OpenAI) probe | ResNet-50 (IN-1k) probe": {
+          "spearman_rho": NaN,
+          "spearman_p": 0.0001,
+          "pearson_centered_rho": 0.0,
+          "pearson_centered_p": 1.0
+        },
+        "Qwen2-VL Vision probe | ResNet-50 (IN-1k) probe": {
+          "spearman_rho": NaN,
+          "spearman_p": 0.0001,
+          "pearson_centered_rho": 0.0,
+          "pearson_centered_p": 1.0
+        }
+      }
+    }
+  },
+  "merged": {
+    "accuracy": {
+      "CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)": {
+        "spearman_rho": 0.341,
+        "p_perm_class_block": 0.1695
+      },
+      "CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)": {
+        "spearman_rho": 0.15,
+        "p_perm_class_block": 0.5147
+      },
+      "CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+        "spearman_rho": 0.449,
+        "p_perm_class_block": 0.0201
+      },
+      "CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)": {
+        "spearman_rho": 0.466,
+        "p_perm_class_block": 0.106
+      },
+      "CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384": {
+        "spearman_rho": 0.028,
+        "p_perm_class_block": 0.9818
+      },
+      "CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+        "spearman_rho": -0.025,
+        "p_perm_class_block": 1.0
+      },
+      "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
+        "spearman_rho": NaN,
+        "p_perm_class_block": 0.0001
+      },
+      "CLIP ViT-L/14 (OpenAI) probe | ResNet-50 (IN-1k) probe": {
+        "spearman_rho": NaN,
+        "p_perm_class_block": 0.0001
+      },
+      "Qwen2-VL Vision probe | ResNet-50 (IN-1k) probe": {
+        "spearman_rho": NaN,
+        "p_perm_class_block": 0.0001
+      }
+    },
+    "mean_prob": {
+      "CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)": {
+        "spearman_rho": 0.54,
+        "p_perm_class_block": 0.0604
+      },
+      "CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)": {
+        "spearman_rho": 0.346,
+        "p_perm_class_block": 0.2305
+      },
+      "CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+        "spearman_rho": 0.162,
+        "p_perm_class_block": 0.5938
+      },
+      "CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)": {
+        "spearman_rho": 0.293,
+        "p_perm_class_block": 0.3001
+      },
+      "CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384": {
+        "spearman_rho": 0.303,
+        "p_perm_class_block": 0.2995
+      },
+      "CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+        "spearman_rho": -0.35,
+        "p_perm_class_block": 0.2115
+      },
+      "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
+        "spearman_rho": NaN,
+        "p_perm_class_block": 0.0001
+      },
+      "CLIP ViT-L/14 (OpenAI) probe | ResNet-50 (IN-1k) probe": {
+        "spearman_rho": NaN,
+        "p_perm_class_block": 0.0001
+      },
+      "Qwen2-VL Vision probe | ResNet-50 (IN-1k) probe": {
+        "spearman_rho": NaN,
+        "p_perm_class_block": 0.0001
+      }
+    }
+  },
+  "note": "mean_prob Delta values are ~1e-3 under the sharp zero-shot softmax (teacher class ~1.0) and constitute numerical noise; only the accuracy Delta analysis is interpretable. The accuracy Delta signal at sigma=8 is driven by the few blur-sensitive classes (blackboard-writing, blackBoard) with many zero entries; treat significance as indicative."
+}

@@ -1,0 +1,375 @@
+{
+  "experiment": "exp1b_encoder_swap",
+  "model": "llava-hf/llava-1.5-7b-hf",
+  "protocol": "eval_hf.py-compatible (13 classes, 100/class, seed 42, class-name prompt, substring matching, greedy, max_new_tokens=15)",
+  "adapter": {
+    "method": "label-free 2-layer MLP (GELU, dropout) trained by MSE to map patch features to LLaVA CLIP space",
+    "hidden": 2048,
+    "epochs": 12,
+    "val_frac": 0.05,
+    "train_imgs": 5000
+  },
+  "anchor": "CLIP LAION-2B ViT-L/14 per-class zero-shot accuracy (VisualAnchor anchor_scores.json)",
+  "variants": {
+    "baseline": {
+      "per_class_acc": {
+        "guide": {
+          "correct": 72,
+          "total": 100,
+          "acc": 72.0
+        },
+        "answer": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "On-stage interaction": {
+          "correct": 48,
+          "total": 48,
+          "acc": 100.0
+        },
+        "blackboard-writing": {
+          "correct": 3,
+          "total": 100,
+          "acc": 3.0
+        },
+        "teacher": {
+          "correct": 3,
+          "total": 100,
+          "acc": 3.0
+        },
+        "stand": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "screen": {
+          "correct": 0,
+          "total": 42,
+          "acc": 0.0
+        },
+        "blackBoard": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "hand-raising": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "read": {
+          "correct": 6,
+          "total": 100,
+          "acc": 6.0
+        },
+        "write": {
+          "correct": 1,
+          "total": 100,
+          "acc": 1.0
+        },
+        "BowHead": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "TurnHead": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        }
+      },
+      "rho": 0.13162330663345612,
+      "p": 0.6681929277788476,
+      "adapter_r2": null
+    },
+    "siglip": {
+      "per_class_acc": {
+        "guide": {
+          "correct": 32,
+          "total": 100,
+          "acc": 32.0
+        },
+        "answer": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "On-stage interaction": {
+          "correct": 48,
+          "total": 48,
+          "acc": 100.0
+        },
+        "blackboard-writing": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "teacher": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "stand": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "screen": {
+          "correct": 0,
+          "total": 42,
+          "acc": 0.0
+        },
+        "blackBoard": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "hand-raising": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "read": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "write": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "BowHead": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "TurnHead": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        }
+      },
+      "rho": 0.1310356045902398,
+      "p": 0.6695987666403922,
+      "adapter_r2": 0.3399899592984924
+    },
+    "b32": {
+      "per_class_acc": {
+        "guide": {
+          "correct": 13,
+          "total": 100,
+          "acc": 13.0
+        },
+        "answer": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "On-stage interaction": {
+          "correct": 48,
+          "total": 48,
+          "acc": 100.0
+        },
+        "blackboard-writing": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "teacher": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "stand": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "screen": {
+          "correct": 0,
+          "total": 42,
+          "acc": 0.0
+        },
+        "blackBoard": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "hand-raising": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "read": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "write": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "BowHead": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "TurnHead": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        }
+      },
+      "rho": 0.1310356045902398,
+      "p": 0.6695987666403922,
+      "adapter_r2": 0.2302796881748278
+    },
+    "qwen": {
+      "per_class_acc": {
+        "guide": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "answer": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "On-stage interaction": {
+          "correct": 48,
+          "total": 48,
+          "acc": 100.0
+        },
+        "blackboard-writing": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "teacher": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "stand": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "screen": {
+          "correct": 0,
+          "total": 42,
+          "acc": 0.0
+        },
+        "blackBoard": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "hand-raising": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "read": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "write": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "BowHead": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "TurnHead": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        }
+      },
+      "rho": 0.23145502494313788,
+      "p": 0.44674159662419666,
+      "adapter_r2": 0.14537629411092012
+    },
+    "random": {
+      "per_class_acc": {
+        "guide": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "answer": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "On-stage interaction": {
+          "correct": 48,
+          "total": 48,
+          "acc": 100.0
+        },
+        "blackboard-writing": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "teacher": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "stand": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "screen": {
+          "correct": 0,
+          "total": 42,
+          "acc": 0.0
+        },
+        "blackBoard": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "hand-raising": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "read": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "write": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "BowHead": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        },
+        "TurnHead": {
+          "correct": 0,
+          "total": 100,
+          "acc": 0.0
+        }
+      },
+      "rho": 0.23145502494313788,
+      "p": 0.44674159662419666,
+      "adapter_r2": -0.11583643695424373
+    }
+  }
+}

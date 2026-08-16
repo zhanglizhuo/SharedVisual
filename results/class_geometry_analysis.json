@@ -1,0 +1,84 @@
+{
+  "n_classes": 8,
+  "n_per_class": 50,
+  "class_names": [
+    "guide",
+    "answer",
+    "On-stage interaction",
+    "blackboard-writing",
+    "teacher",
+    "stand",
+    "screen",
+    "blackBoard"
+  ],
+  "encoders": [
+    "CLIP ViT-L/14 (OpenAI)",
+    "CLIP ViT-L/14 (LAION)",
+    "CLIP ViT-B/32 (OpenAI)",
+    "Qwen2-VL Vision"
+  ],
+  "cross_encoder_comparison": [
+    {
+      "encoder_a": "CLIP ViT-L/14 (OpenAI)",
+      "encoder_b": "CLIP ViT-L/14 (LAION)",
+      "spearman_r": 0.982,
+      "p_value": 0.0
+    },
+    {
+      "encoder_a": "CLIP ViT-L/14 (OpenAI)",
+      "encoder_b": "CLIP ViT-B/32 (OpenAI)",
+      "spearman_r": 0.955,
+      "p_value": 0.0
+    },
+    {
+      "encoder_a": "CLIP ViT-L/14 (OpenAI)",
+      "encoder_b": "Qwen2-VL Vision",
+      "spearman_r": 0.897,
+      "p_value": 0.0
+    },
+    {
+      "encoder_a": "CLIP ViT-L/14 (LAION)",
+      "encoder_b": "CLIP ViT-B/32 (OpenAI)",
+      "spearman_r": 0.952,
+      "p_value": 0.0
+    },
+    {
+      "encoder_a": "CLIP ViT-L/14 (LAION)",
+      "encoder_b": "Qwen2-VL Vision",
+      "spearman_r": 0.913,
+      "p_value": 0.0
+    },
+    {
+      "encoder_a": "CLIP ViT-B/32 (OpenAI)",
+      "encoder_b": "Qwen2-VL Vision",
+      "spearman_r": 0.949,
+      "p_value": 0.0
+    }
+  ],
+  "image_pair_rsa": {
+    "CLIP ViT-L/14 (OpenAI) vs CLIP ViT-L/14 (LAION)": {
+      "spearman_r": 0.8019,
+      "p_value": 0.0
+    },
+    "CLIP ViT-L/14 (OpenAI) vs CLIP ViT-B/32 (OpenAI)": {
+      "spearman_r": 0.6833,
+      "p_value": 0.0
+    },
+    "CLIP ViT-L/14 (OpenAI) vs Qwen2-VL Vision": {
+      "spearman_r": 0.5079,
+      "p_value": 0.0
+    },
+    "CLIP ViT-L/14 (LAION) vs CLIP ViT-B/32 (OpenAI)": {
+      "spearman_r": 0.755,
+      "p_value": 0.0
+    },
+    "CLIP ViT-L/14 (LAION) vs Qwen2-VL Vision": {
+      "spearman_r": 0.5561,
+      "p_value": 0.0
+    },
+    "CLIP ViT-B/32 (OpenAI) vs Qwen2-VL Vision": {
+      "spearman_r": 0.6103,
+      "p_value": 0.0
+    }
+  }
+}

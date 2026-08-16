@@ -1,0 +1,73 @@
+{
+  "TeacherBehavior": {
+    "guide": {
+      "correct": 45,
+      "total": 100,
+      "acc": 45.0
+    },
+    "answer": {
+      "correct": 0,
+      "total": 100,
+      "acc": 0.0
+    },
+    "On-stage interaction": {
+      "correct": 41,
+      "total": 48,
+      "acc": 85.4
+    },
+    "blackboard-writing": {
+      "correct": 0,
+      "total": 100,
+      "acc": 0.0
+    },
+    "teacher": {
+      "correct": 0,
+      "total": 100,
+      "acc": 0.0
+    },
+    "stand": {
+      "correct": 0,
+      "total": 100,
+      "acc": 0.0
+    },
+    "screen": {
+      "correct": 0,
+      "total": 42,
+      "acc": 0.0
+    },
+    "blackBoard": {
+      "correct": 0,
+      "total": 100,
+      "acc": 0.0
+    }
+  },
+  "HandriseReadWrite": {
+    "hand-raising": {
+      "correct": 100,
+      "total": 100,
+      "acc": 100.0
+    },
+    "read": {
+      "correct": 1,
+      "total": 100,
+      "acc": 1.0
+    },
+    "write": {
+      "correct": 0,
+      "total": 100,
+      "acc": 0.0
+    }
+  },
+  "BowTurnHead": {
+    "BowHead": {
+      "correct": 98,
+      "total": 100,
+      "acc": 98.0
+    },
+    "TurnHead": {
+      "correct": 2,
+      "total": 100,
+      "acc": 2.0
+    }
+  }
+}

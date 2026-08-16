@@ -1,0 +1,273 @@
+{
+ "method": "Classical attenuation correction (Spearman 1904): rho_corr = rho_obs / sqrt(rel_X * rel_Y), rel = (var_obs - mean_c p_c(1-p_c)/n_c) / var_obs; rank-noise simulation under the binomial model (10,000 replicates); precision-weighted Spearman (w_c = 1/(1/nx_c + 1/ny_c)).",
+ "seed": 20260801,
+ "n_sim": 10000,
+ "stanford40": {
+  "qwen3.5:27b": {
+   "model": "qwen3.5:27b",
+   "spearman_raw": 0.5801309001174889,
+   "spearman_p": 8.722858295139378e-05,
+   "n_classes": 40,
+   "pearson_raw": 0.5349536329831457,
+   "rel_x": 0.9853578569023849,
+   "rel_y": 0.6692326139088729,
+   "pearson_attenuation_corrected": 0.65876512659077,
+   "rank_noise_sim_mean_rho": 0.4999094114700557,
+   "rank_noise_sim_sd": 0.07348329170101454,
+   "weighted_spearman": 0.5847401471195528
+  },
+  "qwen3.5:35b-a3b": {
+   "model": "qwen3.5:35b-a3b",
+   "spearman_raw": 0.6387029863634054,
+   "spearman_p": 9.209403182685459e-06,
+   "n_classes": 40,
+   "pearson_raw": 0.7463740642953391,
+   "rel_x": 0.9853578569023849,
+   "rel_y": 0.6900172413793103,
+   "pearson_attenuation_corrected": 0.9051688011765187,
+   "rank_noise_sim_mean_rho": 0.5825795222245068,
+   "rank_noise_sim_sd": 0.058604020991143604,
+   "weighted_spearman": 0.6404449479062427
+  },
+  "qwen3.6:27b": {
+   "model": "qwen3.6:27b",
+   "spearman_raw": 0.7231594387020325,
+   "spearman_p": 1.35858492436414e-07,
+   "n_classes": 40,
+   "pearson_raw": 0.7743727448556995,
+   "rel_x": 0.9853578569023849,
+   "rel_y": 0.7891744402985074,
+   "pearson_attenuation_corrected": 0.8781456646262877,
+   "rank_noise_sim_mean_rho": 0.6554843983448767,
+   "rank_noise_sim_sd": 0.0673180228022916,
+   "weighted_spearman": 0.7237306851939967
+  },
+  "qwen3.6:35b-a3b": {
+   "model": "qwen3.6:35b-a3b",
+   "spearman_raw": 0.723139679152189,
+   "spearman_p": 1.3601660978671648e-07,
+   "n_classes": 40,
+   "pearson_raw": 0.8476756713687572,
+   "rel_x": 0.9853578569023849,
+   "rel_y": 0.8368889571022944,
+   "pearson_attenuation_corrected": 0.933466653926988,
+   "rank_noise_sim_mean_rho": 0.6490100811414538,
+   "rank_noise_sim_sd": 0.05771230110520592,
+   "weighted_spearman": 0.7244349671022396
+  },
+  "gemma4:26b": {
+   "model": "gemma4:26b",
+   "spearman_raw": 0.6781100899756551,
+   "spearman_p": 1.5273915421104546e-06,
+   "n_classes": 40,
+   "pearson_raw": 0.7146117586635189,
+   "rel_x": 0.9853578569023849,
+   "rel_y": 0.6454125314768182,
+   "pearson_attenuation_corrected": 0.8960958569552557,
+   "rank_noise_sim_mean_rho": 0.573326077883994,
+   "rank_noise_sim_sd": 0.07036049018243877,
+   "weighted_spearman": 0.680788979987496
+  },
+  "gemma4:31b": {
+   "model": "gemma4:31b",
+   "spearman_raw": 0.6623721726457031,
+   "spearman_p": 3.2306160693020187e-06,
+   "n_classes": 40,
+   "pearson_raw": 0.821416833993113,
+   "rel_x": 0.9853578569023849,
+   "rel_y": 0.758835952848723,
+   "pearson_attenuation_corrected": 0.9499323054673222,
+   "rank_noise_sim_mean_rho": 0.5779624144235255,
+   "rank_noise_sim_sd": 0.06879179555082357,
+   "weighted_spearman": 0.6650056243209406
+  },
+  "__aggregated_anchor_vs_crossmodel_mean__": {
+   "model": "cross-model mean (6 MLLMs)",
+   "spearman_raw": 0.816682799855033,
+   "spearman_p": 1.315322061597672e-10,
+   "n_classes": 40,
+   "pearson_raw": 0.8604856085986046,
+   "rel_x": 0.9853578569023849,
+   "rel_y": 0.9445786276189734,
+   "pearson_attenuation_corrected": 0.8919234080756158,
+   "rank_noise_sim_mean_rho": 0.7825622955310761,
+   "rank_noise_sim_sd": 0.03763905578326419,
+   "weighted_spearman": 0.8187713640117372,
+   "var_obs_y": 14.631339031339039,
+   "noise_y": 0.8108888888888892
+  }
+ },
+ "scb5": {
+  "Qwen2-VL-7B": {
+   "model": "Qwen2-VL-7B",
+   "spearman_raw": 0.3736263736263736,
+   "spearman_p": 0.20855405979520908,
+   "n_classes": 13,
+   "anchor_rel": 0.9821464498827174,
+   "sensitivity": {
+    "mllm_n_50": {
+     "pearson_attenuation_corrected": 0.4513336715674496,
+     "rank_noise_sim_mean_rho": 0.40349797135115184,
+     "rank_noise_sim_sd": 0.08080937499670485
+    },
+    "mllm_n_5000": {
+     "pearson_attenuation_corrected": 0.4470452572747618,
+     "rank_noise_sim_mean_rho": 0.3969230779579684,
+     "rank_noise_sim_sd": 0.05745091931678932
+    }
+   }
+  },
+  "LLaVA-1.5-7B": {
+   "model": "LLaVA-1.5-7B",
+   "spearman_raw": 0.47262720800823094,
+   "spearman_p": 0.10289831415774119,
+   "n_classes": 13,
+   "anchor_rel": 0.9821464498827174,
+   "sensitivity": {
+    "mllm_n_50": {
+     "pearson_attenuation_corrected": 0.3994184070963916,
+     "rank_noise_sim_mean_rho": 0.4234721865873197,
+     "rank_noise_sim_sd": 0.0598220436820722
+    },
+    "mllm_n_5000": {
+     "pearson_attenuation_corrected": 0.39836314068586715,
+     "rank_noise_sim_mean_rho": 0.4470720675871774,
+     "rank_noise_sim_sd": 0.04879792621132355
+    }
+   }
+  },
+  "Qwen3.5-27B": {
+   "model": "Qwen3.5-27B",
+   "spearman_raw": 0.6043956043956044,
+   "spearman_p": 0.02867270567140696,
+   "n_classes": 13,
+   "anchor_rel": 0.9821464498827174,
+   "sensitivity": {
+    "mllm_n_50": {
+     "pearson_attenuation_corrected": 0.6961344063288516,
+     "rank_noise_sim_mean_rho": 0.611982112554561,
+     "rank_noise_sim_sd": 0.0626941922011517
+    },
+    "mllm_n_5000": {
+     "pearson_attenuation_corrected": 0.6815191224893651,
+     "rank_noise_sim_mean_rho": 0.6019085037140145,
+     "rank_noise_sim_sd": 0.05003725046480618
+    }
+   }
+  },
+  "Qwen3.6-27B": {
+   "model": "Qwen3.6-27B",
+   "spearman_raw": 0.6483516483516483,
+   "spearman_p": 0.016536698804267252,
+   "n_classes": 13,
+   "anchor_rel": 0.9821464498827174,
+   "sensitivity": {
+    "mllm_n_50": {
+     "pearson_attenuation_corrected": 0.749574290496276,
+     "rank_noise_sim_mean_rho": 0.6718522048686647,
+     "rank_noise_sim_sd": 0.054524985783043094
+    },
+    "mllm_n_5000": {
+     "pearson_attenuation_corrected": 0.736821746010754,
+     "rank_noise_sim_mean_rho": 0.6571210911683363,
+     "rank_noise_sim_sd": 0.04170463029338861
+    }
+   }
+  },
+  "Qwen3.5-35B": {
+   "model": "Qwen3.5-35B",
+   "spearman_raw": 0.7362637362637362,
+   "spearman_p": 0.004107709360574612,
+   "n_classes": 13,
+   "anchor_rel": 0.9821464498827174,
+   "sensitivity": {
+    "mllm_n_50": {
+     "pearson_attenuation_corrected": 0.8346464707225401,
+     "rank_noise_sim_mean_rho": 0.7450616072313812,
+     "rank_noise_sim_sd": 0.05215648465305365
+    },
+    "mllm_n_5000": {
+     "pearson_attenuation_corrected": 0.8230674384752871,
+     "rank_noise_sim_mean_rho": 0.7482869700318091,
+     "rank_noise_sim_sd": 0.03756908387571501
+    }
+   }
+  },
+  "Gemma-3-27B": {
+   "model": "Gemma-3-27B",
+   "spearman_raw": 0.6868131868131868,
+   "spearman_p": 0.009509496050393583,
+   "n_classes": 13,
+   "anchor_rel": 0.9821464498827174,
+   "sensitivity": {
+    "mllm_n_50": {
+     "pearson_attenuation_corrected": 0.7500550748140251,
+     "rank_noise_sim_mean_rho": 0.695798592605406,
+     "rank_noise_sim_sd": 0.06316758803866189
+    },
+    "mllm_n_5000": {
+     "pearson_attenuation_corrected": 0.7384315164614401,
+     "rank_noise_sim_mean_rho": 0.6824568067807444,
+     "rank_noise_sim_sd": 0.04195741047241378
+    }
+   }
+  },
+  "Gemma4-31B": {
+   "model": "Gemma4-31B",
+   "spearman_raw": 0.7252747252747254,
+   "spearman_p": 0.005023237655349916,
+   "n_classes": 13,
+   "anchor_rel": 0.9821464498827174,
+   "sensitivity": {
+    "mllm_n_50": {
+     "pearson_attenuation_corrected": 0.7551719180697012,
+     "rank_noise_sim_mean_rho": 0.697860143815757,
+     "rank_noise_sim_sd": 0.06459391985349411
+    },
+    "mllm_n_5000": {
+     "pearson_attenuation_corrected": 0.7445126079985372,
+     "rank_noise_sim_mean_rho": 0.7311888347756657,
+     "rank_noise_sim_sd": 0.041452846617146176
+    }
+   }
+  },
+  "Gemma4-26B": {
+   "model": "Gemma4-26B",
+   "spearman_raw": 0.7362637362637362,
+   "spearman_p": 0.004107709360574612,
+   "n_classes": 13,
+   "anchor_rel": 0.9821464498827174,
+   "sensitivity": {
+    "mllm_n_50": {
+     "pearson_attenuation_corrected": 0.7643660308039291,
+     "rank_noise_sim_mean_rho": 0.7207662000073477,
+     "rank_noise_sim_sd": 0.05690826048228069
+    },
+    "mllm_n_5000": {
+     "pearson_attenuation_corrected": 0.7554374940443509,
+     "rank_noise_sim_mean_rho": 0.7205115487805651,
+     "rank_noise_sim_sd": 0.03531717105932893
+    }
+   }
+  },
+  "Qwen3.6-35B": {
+   "model": "Qwen3.6-35B",
+   "spearman_raw": 0.6868131868131868,
+   "spearman_p": 0.009509496050393583,
+   "n_classes": 13,
+   "anchor_rel": 0.9821464498827174,
+   "sensitivity": {
+    "mllm_n_50": {
+     "pearson_attenuation_corrected": 0.79777367487488,
+     "rank_noise_sim_mean_rho": 0.6834194881477199,
+     "rank_noise_sim_sd": 0.05686315956975598
+    },
+    "mllm_n_5000": {
+     "pearson_attenuation_corrected": 0.787722448762736,
+     "rank_noise_sim_mean_rho": 0.6823956348667051,
+     "rank_noise_sim_sd": 0.04403602772999442
+    }
+   }
+  }
+ }
+}

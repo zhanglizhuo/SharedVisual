@@ -1,0 +1,18 @@
+{
+ "args": {
+  "n_perm": 10000,
+  "seed": 42
+ },
+ "results": {
+  "pair": "CLIP ViT-L/14 (OpenAI) vs Qwen2-VL Vision",
+  "dataset": "Stanford40",
+  "n_classes": 40,
+  "n_pairs": 780,
+  "observed_spearman_rho": 0.8100331677579504,
+  "asymptotic_p": 1.56039564405509e-182,
+  "permutation_p": 0.0,
+  "n_permutations": 10000,
+  "seed": 42,
+  "note": "p = fraction of label permutations with rho >= observed; smallest attainable = 1/n_permutations"
+ }
+}

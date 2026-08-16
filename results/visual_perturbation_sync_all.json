@@ -1,0 +1,454 @@
+{
+  "encoders": [
+    "CLIP ViT-L/14 (OpenAI)",
+    "CLIP ViT-L/14 (LAION)",
+    "CLIP ViT-B/32 (OpenAI)",
+    "SigLIP ViT-SO400M-14-384"
+  ],
+  "protocols": {
+    "zero_shot": [
+      "CLIP ViT-L/14 (OpenAI)",
+      "CLIP ViT-L/14 (LAION)",
+      "CLIP ViT-B/32 (OpenAI)",
+      "SigLIP ViT-SO400M-14-384"
+    ],
+    "probe": []
+  },
+  "classes": [
+    "guide",
+    "answer",
+    "On-stage interaction",
+    "blackboard-writing",
+    "teacher",
+    "stand",
+    "screen",
+    "blackBoard"
+  ],
+  "sigmas": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "n_perm": 10000,
+  "seed": 42,
+  "note": "ALL-val regime (n=3240, 42-1684 imgs/class). Static per-class difficulty: 6/6 encoder pairs significant (rho 0.81-0.93, p<0.03). Accuracy-Delta synchrony under blur: sigma=2/4/8 multiple pairs significant (e.g. sigma2 OA|LAION rho=0.871 p=0.007; sigma8 OA|SigLIP rho=0.814 p=0.032); merged class-block perm OA|SigLIP rho=0.540 p=0.003, B32|SigLIP rho=0.577 p=0.020. sigma=1 n.s. (Delta ~ real zero). mean_prob Deltas remain ~1e-3 numerical noise under sharp softmax (not interpretable). SigLIP output insensitive (teacher 99.9% across sigma; only blackboard-writing Delta).",
+  "static_control": {
+    "accuracy": {
+      "CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)": {
+        "rho": 0.93,
+        "p_perm": 0.0032
+      },
+      "CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)": {
+        "rho": 0.93,
+        "p_perm": 0.0016
+      },
+      "CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+        "rho": 0.875,
+        "p_perm": 0.0181
+      },
+      "CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)": {
+        "rho": 0.831,
+        "p_perm": 0.0256
+      },
+      "CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384": {
+        "rho": 0.814,
+        "p_perm": 0.0184
+      },
+      "CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+        "rho": 0.814,
+        "p_perm": 0.0159
+      }
+    },
+    "mean_prob": {
+      "CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)": {
+        "rho": 0.286,
+        "p_perm": 0.5081
+      },
+      "CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)": {
+        "rho": 0.857,
+        "p_perm": 0.0098
+      },
+      "CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+        "rho": 0.81,
+        "p_perm": 0.0205
+      },
+      "CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)": {
+        "rho": 0.595,
+        "p_perm": 0.1289
+      },
+      "CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384": {
+        "rho": 0.476,
+        "p_perm": 0.238
+      },
+      "CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+        "rho": 0.619,
+        "p_perm": 0.1228
+      }
+    }
+  },
+  "delta_sync": {
+    "accuracy": {
+      "sigma_1": {
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)": {
+          "spearman_rho": 0.031,
+          "spearman_p": 1.0,
+          "pearson_centered_rho": 0.058,
+          "pearson_centered_p": 0.498
+        },
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": -0.031,
+          "spearman_p": 1.0,
+          "pearson_centered_rho": 0.14,
+          "pearson_centered_p": 0.7918
+        },
+        "CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": -0.125,
+          "spearman_p": 0.644,
+          "pearson_centered_rho": -0.995,
+          "pearson_centered_p": 0.1292
+        },
+        "CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": -0.719,
+          "spearman_p": 0.0813,
+          "pearson_centered_rho": -0.556,
+          "pearson_centered_p": 0.1589
+        },
+        "CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": 0.5,
+          "spearman_p": 0.2561,
+          "pearson_centered_rho": -0.025,
+          "pearson_centered_p": 0.983
+        },
+        "CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": -0.5,
+          "spearman_p": 0.2519,
+          "pearson_centered_rho": -0.165,
+          "pearson_centered_p": 0.4654
+        }
+      },
+      "sigma_2": {
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)": {
+          "spearman_rho": 0.871,
+          "spearman_p": 0.0066,
+          "pearson_centered_rho": 0.909,
+          "pearson_centered_p": 0.0046
+        },
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": 0.264,
+          "spearman_p": 0.5016,
+          "pearson_centered_rho": 0.865,
+          "pearson_centered_p": 0.0645
+        },
+        "CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": 0.116,
+          "spearman_p": 0.7932,
+          "pearson_centered_rho": 0.992,
+          "pearson_centered_p": 0.1227
+        },
+        "CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": 0.377,
+          "spearman_p": 0.3915,
+          "pearson_centered_rho": 0.818,
+          "pearson_centered_p": 0.0411
+        },
+        "CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": 0.224,
+          "spearman_p": 0.7872,
+          "pearson_centered_rho": 0.856,
+          "pearson_centered_p": 0.108
+        },
+        "CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": 0.814,
+          "spearman_p": 0.0354,
+          "pearson_centered_rho": 0.878,
+          "pearson_centered_p": 0.0195
+        }
+      },
+      "sigma_4": {
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)": {
+          "spearman_rho": 0.699,
+          "spearman_p": 0.0486,
+          "pearson_centered_rho": 0.579,
+          "pearson_centered_p": 0.1361
+        },
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": 0.494,
+          "spearman_p": 0.2333,
+          "pearson_centered_rho": 0.941,
+          "pearson_centered_p": 0.0158
+        },
+        "CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": 0.75,
+          "spearman_p": 0.0741,
+          "pearson_centered_rho": 0.926,
+          "pearson_centered_p": 0.0363
+        },
+        "CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": 0.468,
+          "spearman_p": 0.2543,
+          "pearson_centered_rho": 0.603,
+          "pearson_centered_p": 0.1527
+        },
+        "CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": 0.559,
+          "spearman_p": 0.1803,
+          "pearson_centered_rho": 0.57,
+          "pearson_centered_p": 0.1764
+        },
+        "CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": 0.116,
+          "spearman_p": 0.7876,
+          "pearson_centered_rho": 0.917,
+          "pearson_centered_p": 0.1312
+        }
+      },
+      "sigma_8": {
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)": {
+          "spearman_rho": 0.494,
+          "spearman_p": 0.2315,
+          "pearson_centered_rho": 0.698,
+          "pearson_centered_p": 0.0478
+        },
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": 0.588,
+          "spearman_p": 0.1321,
+          "pearson_centered_rho": 0.793,
+          "pearson_centered_p": 0.0527
+        },
+        "CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": 0.814,
+          "spearman_p": 0.0324,
+          "pearson_centered_rho": 0.901,
+          "pearson_centered_p": 0.0194
+        },
+        "CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": 0.832,
+          "spearman_p": 0.0142,
+          "pearson_centered_rho": 0.813,
+          "pearson_centered_p": 0.0182
+        },
+        "CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": 0.671,
+          "spearman_p": 0.1025,
+          "pearson_centered_rho": 0.573,
+          "pearson_centered_p": 0.1622
+        },
+        "CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": 0.814,
+          "spearman_p": 0.0344,
+          "pearson_centered_rho": 0.556,
+          "pearson_centered_p": 0.1385
+        }
+      }
+    },
+    "mean_prob": {
+      "sigma_1": {
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)": {
+          "spearman_rho": 0.647,
+          "spearman_p": 0.0917,
+          "pearson_centered_rho": 0.597,
+          "pearson_centered_p": 0.1165
+        },
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": -0.281,
+          "spearman_p": 0.4964,
+          "pearson_centered_rho": -0.373,
+          "pearson_centered_p": 0.3424
+        },
+        "CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": -0.393,
+          "spearman_p": 0.3381,
+          "pearson_centered_rho": -0.153,
+          "pearson_centered_p": 0.74
+        },
+        "CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": -0.251,
+          "spearman_p": 0.5429,
+          "pearson_centered_rho": -0.229,
+          "pearson_centered_p": 0.6062
+        },
+        "CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": -0.241,
+          "spearman_p": 0.5601,
+          "pearson_centered_rho": -0.053,
+          "pearson_centered_p": 0.8732
+        },
+        "CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": -0.718,
+          "spearman_p": 0.0485,
+          "pearson_centered_rho": -0.739,
+          "pearson_centered_p": 0.0389
+        }
+      },
+      "sigma_2": {
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)": {
+          "spearman_rho": 0.084,
+          "spearman_p": 0.8534,
+          "pearson_centered_rho": -0.245,
+          "pearson_centered_p": 0.5633
+        },
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": 0.515,
+          "spearman_p": 0.1976,
+          "pearson_centered_rho": 0.511,
+          "pearson_centered_p": 0.1982
+        },
+        "CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": -0.084,
+          "spearman_p": 0.847,
+          "pearson_centered_rho": -0.106,
+          "pearson_centered_p": 0.8104
+        },
+        "CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": 0.12,
+          "spearman_p": 0.7777,
+          "pearson_centered_rho": 0.065,
+          "pearson_centered_p": 0.8861
+        },
+        "CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": 0.571,
+          "spearman_p": 0.1508,
+          "pearson_centered_rho": 0.621,
+          "pearson_centered_p": 0.0993
+        },
+        "CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": -0.096,
+          "spearman_p": 0.8305,
+          "pearson_centered_rho": -0.201,
+          "pearson_centered_p": 0.6111
+        }
+      },
+      "sigma_4": {
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)": {
+          "spearman_rho": 0.122,
+          "spearman_p": 0.7919,
+          "pearson_centered_rho": -0.168,
+          "pearson_centered_p": 0.7081
+        },
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": 0.452,
+          "spearman_p": 0.2679,
+          "pearson_centered_rho": 0.438,
+          "pearson_centered_p": 0.2703
+        },
+        "CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": 0.275,
+          "spearman_p": 0.5003,
+          "pearson_centered_rho": 0.149,
+          "pearson_centered_p": 0.7228
+        },
+        "CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": 0.366,
+          "spearman_p": 0.3966,
+          "pearson_centered_rho": 0.681,
+          "pearson_centered_p": 0.0857
+        },
+        "CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": -0.049,
+          "spearman_p": 0.9222,
+          "pearson_centered_rho": -0.145,
+          "pearson_centered_p": 0.7413
+        },
+        "CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": -0.287,
+          "spearman_p": 0.4893,
+          "pearson_centered_rho": -0.321,
+          "pearson_centered_p": 0.4428
+        }
+      },
+      "sigma_8": {
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)": {
+          "spearman_rho": 0.214,
+          "spearman_p": 0.6197,
+          "pearson_centered_rho": -0.033,
+          "pearson_centered_p": 0.9359
+        },
+        "CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": 0.443,
+          "spearman_p": 0.2838,
+          "pearson_centered_rho": 0.162,
+          "pearson_centered_p": 0.6987
+        },
+        "CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": 0.452,
+          "spearman_p": 0.2724,
+          "pearson_centered_rho": 0.554,
+          "pearson_centered_p": 0.1531
+        },
+        "CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)": {
+          "spearman_rho": 0.778,
+          "spearman_p": 0.03,
+          "pearson_centered_rho": 0.766,
+          "pearson_centered_p": 0.0284
+        },
+        "CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": 0.119,
+          "spearman_p": 0.7927,
+          "pearson_centered_rho": 0.199,
+          "pearson_centered_p": 0.6313
+        },
+        "CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+          "spearman_rho": -0.24,
+          "spearman_p": 0.571,
+          "pearson_centered_rho": -0.152,
+          "pearson_centered_p": 0.7101
+        }
+      }
+    }
+  },
+  "merged": {
+    "accuracy": {
+      "CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)": {
+        "spearman_rho": 0.367,
+        "p_perm_class_block": 0.1083
+      },
+      "CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)": {
+        "spearman_rho": 0.472,
+        "p_perm_class_block": 0.0953
+      },
+      "CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+        "spearman_rho": 0.54,
+        "p_perm_class_block": 0.003
+      },
+      "CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)": {
+        "spearman_rho": 0.388,
+        "p_perm_class_block": 0.1101
+      },
+      "CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384": {
+        "spearman_rho": 0.185,
+        "p_perm_class_block": 0.2671
+      },
+      "CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+        "spearman_rho": 0.577,
+        "p_perm_class_block": 0.0199
+      }
+    },
+    "mean_prob": {
+      "CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)": {
+        "spearman_rho": 0.224,
+        "p_perm_class_block": 0.4836
+      },
+      "CLIP ViT-L/14 (OpenAI) | CLIP ViT-B/32 (OpenAI)": {
+        "spearman_rho": 0.287,
+        "p_perm_class_block": 0.3734
+      },
+      "CLIP ViT-L/14 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+        "spearman_rho": 0.29,
+        "p_perm_class_block": 0.3531
+      },
+      "CLIP ViT-L/14 (LAION) | CLIP ViT-B/32 (OpenAI)": {
+        "spearman_rho": 0.519,
+        "p_perm_class_block": 0.0663
+      },
+      "CLIP ViT-L/14 (LAION) | SigLIP ViT-SO400M-14-384": {
+        "spearman_rho": 0.099,
+        "p_perm_class_block": 0.74
+      },
+      "CLIP ViT-B/32 (OpenAI) | SigLIP ViT-SO400M-14-384": {
+        "spearman_rho": -0.225,
+        "p_perm_class_block": 0.4692
+      }
+    }
+  }
+}

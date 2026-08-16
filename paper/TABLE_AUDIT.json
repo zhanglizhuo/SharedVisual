@@ -1,0 +1,56 @@
+{
+ "tables": {
+  "tab:patchlevel": {
+   "exists": true,
+   "t1_numbers_in_table": 9,
+   "t1_numbers_in_json": 65,
+   "t1_orphan_numbers": [],
+   "t2_banned_terms": [],
+   "t3_caption_words": 22
+  },
+  "tab:mediation": {
+   "exists": true,
+   "t1_numbers_in_table": 105,
+   "t1_numbers_in_json": 652,
+   "t1_orphan_numbers": [],
+   "t2_banned_terms": [],
+   "t3_caption_words": 22
+  },
+  "tab:flowers102": {
+   "exists": true,
+   "t1_numbers_in_table": 10,
+   "t1_numbers_in_json": 23,
+   "t1_orphan_numbers": [],
+   "t2_banned_terms": [],
+   "t3_caption_words": 12
+  },
+  "tab:flowers102b": {
+   "exists": true,
+   "t1_numbers_in_table": 34,
+   "t1_numbers_in_json": 1217,
+   "t1_orphan_numbers": [],
+   "t2_banned_terms": [],
+   "t3_caption_words": 19
+  },
+  "tab:mediation_controls": {
+   "exists": true,
+   "t1_numbers_in_table": 31,
+   "t1_numbers_in_json": 39,
+   "t1_orphan_numbers": [],
+   "t2_banned_terms": [],
+   "t3_caption_words": 33
+  },
+  "tab:per_model_rho": {
+   "exists": true,
+   "t1_numbers_in_table": 24,
+   "t1_numbers_in_json": 44,
+   "t1_orphan_numbers": [],
+   "t2_banned_terms": [],
+   "t3_caption_words": 16
+  }
+ },
+ "t4_duplicate_labels": [],
+ "t4_undefined_refs_in_log": 0,
+ "verdict": "PASS",
+ "issues": []
+}

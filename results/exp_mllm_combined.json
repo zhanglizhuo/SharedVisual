@@ -1,0 +1,347 @@
+{
+  "model": "Qwen2-VL-7B-Instruct",
+  "n_per_class": 20,
+  "prompt_sensitivity": {
+    "bare": {
+      "accuracy": 15.6,
+      "correct": 25,
+      "total": 160,
+      "per_class": {
+        "guide": {
+          "accuracy": 20.0,
+          "correct": 4,
+          "total": 20
+        },
+        "answer": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        },
+        "On-stage interaction": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        },
+        "blackboard-writing": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        },
+        "teacher": {
+          "accuracy": 95.0,
+          "correct": 19,
+          "total": 20
+        },
+        "stand": {
+          "accuracy": 5.0,
+          "correct": 1,
+          "total": 20
+        },
+        "screen": {
+          "accuracy": 5.0,
+          "correct": 1,
+          "total": 20
+        },
+        "blackBoard": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        }
+      }
+    },
+    "enriched": {
+      "accuracy": 15.6,
+      "correct": 25,
+      "total": 160,
+      "per_class": {
+        "guide": {
+          "accuracy": 20.0,
+          "correct": 4,
+          "total": 20
+        },
+        "answer": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        },
+        "On-stage interaction": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        },
+        "blackboard-writing": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        },
+        "teacher": {
+          "accuracy": 100.0,
+          "correct": 20,
+          "total": 20
+        },
+        "stand": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        },
+        "screen": {
+          "accuracy": 5.0,
+          "correct": 1,
+          "total": 20
+        },
+        "blackBoard": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        }
+      }
+    }
+  },
+  "blur_degradation": {
+    "sigma_0": {
+      "accuracy": 13.1,
+      "correct": 21,
+      "total": 160,
+      "per_class": {
+        "guide": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        },
+        "answer": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        },
+        "On-stage interaction": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        },
+        "blackboard-writing": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        },
+        "teacher": {
+          "accuracy": 95.0,
+          "correct": 19,
+          "total": 20
+        },
+        "stand": {
+          "accuracy": 5.0,
+          "correct": 1,
+          "total": 20
+        },
+        "screen": {
+          "accuracy": 5.0,
+          "correct": 1,
+          "total": 20
+        },
+        "blackBoard": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        }
+      }
+    },
+    "sigma_1": {
+      "accuracy": 13.1,
+      "correct": 21,
+      "total": 160,
+      "per_class": {
+        "guide": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        },
+        "answer": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        },
+        "On-stage interaction": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        },
+        "blackboard-writing": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        },
+        "teacher": {
+          "accuracy": 95.0,
+          "correct": 19,
+          "total": 20
+        },
+        "stand": {
+          "accuracy": 5.0,
+          "correct": 1,
+          "total": 20
+        },
+        "screen": {
+          "accuracy": 5.0,
+          "correct": 1,
+          "total": 20
+        },
+        "blackBoard": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        }
+      }
+    },
+    "sigma_2": {
+      "accuracy": 12.5,
+      "correct": 20,
+      "total": 160,
+      "per_class": {
+        "guide": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        },
+        "answer": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        },
+        "On-stage interaction": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        },
+        "blackboard-writing": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        },
+        "teacher": {
+          "accuracy": 95.0,
+          "correct": 19,
+          "total": 20
+        },
+        "stand": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        },
+        "screen": {
+          "accuracy": 5.0,
+          "correct": 1,
+          "total": 20
+        },
+        "blackBoard": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        }
+      }
+    },
+    "sigma_4": {
+      "accuracy": 12.5,
+      "correct": 20,
+      "total": 160,
+      "per_class": {
+        "guide": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        },
+        "answer": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        },
+        "On-stage interaction": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        },
+        "blackboard-writing": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        },
+        "teacher": {
+          "accuracy": 95.0,
+          "correct": 19,
+          "total": 20
+        },
+        "stand": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        },
+        "screen": {
+          "accuracy": 5.0,
+          "correct": 1,
+          "total": 20
+        },
+        "blackBoard": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        }
+      }
+    },
+    "sigma_8": {
+      "accuracy": 11.9,
+      "correct": 19,
+      "total": 160,
+      "per_class": {
+        "guide": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        },
+        "answer": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        },
+        "On-stage interaction": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        },
+        "blackboard-writing": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        },
+        "teacher": {
+          "accuracy": 90.0,
+          "correct": 18,
+          "total": 20
+        },
+        "stand": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        },
+        "screen": {
+          "accuracy": 5.0,
+          "correct": 1,
+          "total": 20
+        },
+        "blackBoard": {
+          "accuracy": 0.0,
+          "correct": 0,
+          "total": 20
+        }
+      }
+    }
+  },
+  "enriched_descriptions": {
+    "guide": "a teacher guiding students",
+    "answer": "a student raising hand to answer",
+    "On-stage interaction": "interaction on stage",
+    "blackboard-writing": "a teacher writing on the board",
+    "teacher": "a teacher",
+    "stand": "a person standing",
+    "screen": "an electronic screen",
+    "blackBoard": "a teacher at the blackboard"
+  }
+}

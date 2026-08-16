@@ -1,0 +1,71 @@
+{
+  "n_images": 160,
+  "n_per_class": 20,
+  "cka": {
+    "CLIP ViT-L/14 (OpenAI)": {
+      "CLIP ViT-L/14 (OpenAI)": 1.0,
+      "CLIP ViT-L/14 (LAION)": 0.9065,
+      "CLIP ViT-B/32 (OpenAI)": 0.874,
+      "Qwen2-VL Vision": 0.792,
+      "SigLIP (ViT-SO400M)": 0.855,
+      "ResNet-50 (ImageNet-1k)": 0.8041,
+      "DINOv2 ViT-B/14 (LVD-142M)": 0.7023
+    },
+    "CLIP ViT-L/14 (LAION)": {
+      "CLIP ViT-L/14 (OpenAI)": 0.9065,
+      "CLIP ViT-L/14 (LAION)": 1.0,
+      "CLIP ViT-B/32 (OpenAI)": 0.9047,
+      "Qwen2-VL Vision": 0.8085,
+      "SigLIP (ViT-SO400M)": 0.8625,
+      "ResNet-50 (ImageNet-1k)": 0.8199,
+      "DINOv2 ViT-B/14 (LVD-142M)": 0.7351
+    },
+    "CLIP ViT-B/32 (OpenAI)": {
+      "CLIP ViT-L/14 (OpenAI)": 0.874,
+      "CLIP ViT-L/14 (LAION)": 0.9047,
+      "CLIP ViT-B/32 (OpenAI)": 1.0,
+      "Qwen2-VL Vision": 0.8198,
+      "SigLIP (ViT-SO400M)": 0.855,
+      "ResNet-50 (ImageNet-1k)": 0.8295,
+      "DINOv2 ViT-B/14 (LVD-142M)": 0.7823
+    },
+    "Qwen2-VL Vision": {
+      "CLIP ViT-L/14 (OpenAI)": 0.792,
+      "CLIP ViT-L/14 (LAION)": 0.8085,
+      "CLIP ViT-B/32 (OpenAI)": 0.8198,
+      "Qwen2-VL Vision": 1.0,
+      "SigLIP (ViT-SO400M)": 0.8369,
+      "ResNet-50 (ImageNet-1k)": 0.8177,
+      "DINOv2 ViT-B/14 (LVD-142M)": 0.7962
+    },
+    "SigLIP (ViT-SO400M)": {
+      "CLIP ViT-L/14 (OpenAI)": 0.855,
+      "CLIP ViT-L/14 (LAION)": 0.8625,
+      "CLIP ViT-B/32 (OpenAI)": 0.855,
+      "Qwen2-VL Vision": 0.8369,
+      "SigLIP (ViT-SO400M)": 1.0,
+      "ResNet-50 (ImageNet-1k)": 0.8691,
+      "DINOv2 ViT-B/14 (LVD-142M)": 0.824
+    },
+    "ResNet-50 (ImageNet-1k)": {
+      "CLIP ViT-L/14 (OpenAI)": 0.8041,
+      "CLIP ViT-L/14 (LAION)": 0.8199,
+      "CLIP ViT-B/32 (OpenAI)": 0.8295,
+      "Qwen2-VL Vision": 0.8177,
+      "SigLIP (ViT-SO400M)": 0.8691,
+      "ResNet-50 (ImageNet-1k)": 1.0,
+      "DINOv2 ViT-B/14 (LVD-142M)": 0.8566
+    },
+    "DINOv2 ViT-B/14 (LVD-142M)": {
+      "CLIP ViT-L/14 (OpenAI)": 0.7023,
+      "CLIP ViT-L/14 (LAION)": 0.7351,
+      "CLIP ViT-B/32 (OpenAI)": 0.7823,
+      "Qwen2-VL Vision": 0.7962,
+      "SigLIP (ViT-SO400M)": 0.824,
+      "ResNet-50 (ImageNet-1k)": 0.8566,
+      "DINOv2 ViT-B/14 (LVD-142M)": 1.0
+    }
+  },
+  "n_encoders": 7,
+  "note": "7-encoder CKA: 3 CLIP variants + QwenViT + SigLIP (from experiments/exp_siglip_geometry.py) + ResNet-50 + DINOv2 (from experiments/exp_clean_encoder_geometry.py). All encoders re-extracted on identical 160 SCB5 images (20/class)."
+}

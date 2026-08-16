@@ -1,0 +1,163 @@
+{
+  "task": "perturbation synchrony v2 (shared PIL blur pipeline, dual scoring)",
+  "common_sigmas": [
+    0,
+    1,
+    2,
+    4
+  ],
+  "comparisons": [
+    {
+      "tag": "CLIP_all_vs_gemma_display",
+      "clip_drop": {
+        "guide": 0.0,
+        "answer": 0.0,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 34.8,
+        "teacher": -4.6,
+        "stand": 0.0,
+        "screen": 0.0,
+        "blackBoard": -15.0
+      },
+      "gemma_drop": {
+        "guide": 0.12,
+        "answer": 0.0,
+        "On-stage interaction": 0.021,
+        "blackboard-writing": 0.78,
+        "teacher": 0.16,
+        "stand": 0.06,
+        "screen": -0.119,
+        "blackBoard": 0.02
+      },
+      "drop_spearman_rho": 0.2454951265154914,
+      "drop_p_asymptotic": 0.5578565851821256,
+      "drop_p_perm_10k_seed42": 0.563943605639436,
+      "per_class_curve_spearman": {
+        "guide": null,
+        "answer": null,
+        "On-stage interaction": -0.333,
+        "blackboard-writing": 1.0,
+        "teacher": -0.4,
+        "stand": null,
+        "screen": null,
+        "blackBoard": -0.775
+      },
+      "mean_curve_spearman_usable": -0.127,
+      "n_usable_curves": 4
+    },
+    {
+      "tag": "CLIP_all_vs_gemma_rawkey",
+      "clip_drop": {
+        "guide": 0.0,
+        "answer": 0.0,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 34.8,
+        "teacher": -4.6,
+        "stand": 0.0,
+        "screen": 0.0,
+        "blackBoard": -15.0
+      },
+      "gemma_drop": {
+        "guide": 0.0,
+        "answer": 0.0,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 0.0,
+        "teacher": 0.16,
+        "stand": 0.06,
+        "screen": -0.119,
+        "blackBoard": 0.02
+      },
+      "drop_spearman_rho": -0.566707238876119,
+      "drop_p_asymptotic": 0.14300727137673155,
+      "drop_p_perm_10k_seed42": 0.13538646135386462,
+      "per_class_curve_spearman": {
+        "guide": null,
+        "answer": null,
+        "On-stage interaction": null,
+        "blackboard-writing": null,
+        "teacher": -0.4,
+        "stand": null,
+        "screen": null,
+        "blackBoard": -0.775
+      },
+      "mean_curve_spearman_usable": -0.587,
+      "n_usable_curves": 2
+    },
+    {
+      "tag": "CLIP_50_vs_gemma_display",
+      "clip_drop": {
+        "guide": 0.0,
+        "answer": 0.0,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 24.0,
+        "teacher": -6.0,
+        "stand": 0.0,
+        "screen": 0.0,
+        "blackBoard": -2.0
+      },
+      "gemma_drop": {
+        "guide": 0.12,
+        "answer": 0.0,
+        "On-stage interaction": 0.021,
+        "blackboard-writing": 0.78,
+        "teacher": 0.16,
+        "stand": 0.06,
+        "screen": -0.119,
+        "blackBoard": 0.02
+      },
+      "drop_spearman_rho": 0.13638618139749523,
+      "drop_p_asymptotic": 0.7474293952265143,
+      "drop_p_perm_10k_seed42": 0.7618238176182381,
+      "per_class_curve_spearman": {
+        "guide": null,
+        "answer": null,
+        "On-stage interaction": -0.333,
+        "blackboard-writing": 0.949,
+        "teacher": -0.949,
+        "stand": null,
+        "screen": null,
+        "blackBoard": -0.577
+      },
+      "mean_curve_spearman_usable": -0.228,
+      "n_usable_curves": 4
+    },
+    {
+      "tag": "CLIP_50_vs_gemma_rawkey",
+      "clip_drop": {
+        "guide": 0.0,
+        "answer": 0.0,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 24.0,
+        "teacher": -6.0,
+        "stand": 0.0,
+        "screen": 0.0,
+        "blackBoard": -2.0
+      },
+      "gemma_drop": {
+        "guide": 0.0,
+        "answer": 0.0,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 0.0,
+        "teacher": 0.16,
+        "stand": 0.06,
+        "screen": -0.119,
+        "blackBoard": 0.02
+      },
+      "drop_spearman_rho": -0.6248310582480285,
+      "drop_p_asymptotic": 0.09765566228755825,
+      "drop_p_perm_10k_seed42": 0.12348765123487651,
+      "per_class_curve_spearman": {
+        "guide": null,
+        "answer": null,
+        "On-stage interaction": null,
+        "blackboard-writing": null,
+        "teacher": -0.949,
+        "stand": null,
+        "screen": null,
+        "blackBoard": -0.577
+      },
+      "mean_curve_spearman_usable": -0.763,
+      "n_usable_curves": 2
+    }
+  ]
+}

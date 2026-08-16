@@ -1,0 +1,104 @@
+================================================================================
+EXP 1 DEEP ANALYSIS: Why does SigLIP Group ρ > CLIP Group ρ?
+================================================================================
+
+--------------------------------------------------------------------------------
+1. BOOTSTRAP ρ PER ENCODER GROUP
+--------------------------------------------------------------------------------
+  CLIP ViT-L/14 (LLaVA)           mean ρ=0.473  [-0.153, 0.889]  (n_models=1, individual: ['0.473'])
+  SigLIP (Gemma)                  mean ρ=0.716  [0.206, 0.944]  (n_models=3, individual: ['0.725', '0.736', '0.687'])
+  QwenViT (Qwen3.x)               mean ρ=0.669  [0.077, 0.912]  (n_models=4, individual: ['0.604', '0.648', '0.736', '0.687'])
+  Qwen2-VL ViT                    mean ρ=0.374  [-0.185, 0.763]  (n_models=1, individual: ['0.374'])
+
+--------------------------------------------------------------------------------
+2. PARTIAL ρ (controlling for MLLM overall accuracy)
+   Removes the confound: 'better models have higher ρ because they're better at everything'
+--------------------------------------------------------------------------------
+  LLaVA-1.5-7B              overall=32.5%  raw ρ=0.473  partial ρ(cross-model avg)=0.192 (p=0.5291)
+  Gemma4-31B                overall=64.7%  raw ρ=0.725  partial ρ(cross-model avg)=0.242 (p=0.4262)
+  Gemma-3-27B               overall=51.2%  raw ρ=0.687  partial ρ(cross-model avg)=0.022 (p=0.9432)
+  Qwen3.5-35B               overall=60.5%  raw ρ=0.736  partial ρ(cross-model avg)=0.016 (p=0.9574)
+  Qwen2-VL-7B               overall=49.6%  raw ρ=0.374  partial ρ(cross-model avg)=-0.489 (p=0.0899)
+
+--------------------------------------------------------------------------------
+3. PER-CLASS DRIVERS: Where do groups disagree?
+--------------------------------------------------------------------------------
+  Classes where Gemma4-31B outperforms LLaVA-1.5-7B (relative to AnchorScore prediction):
+    TeacherBehavior           blackboard-writing    Anchor=26.1%  LLaVA=4.0%  Gemma=95.7%  Gap(resid)=+62.6pp
+    HandriseReadWrite         write                 Anchor=89.8%  LLaVA=0.0%  Gemma=97.8%  Gap(resid)=+54.6pp
+    BowTurnHead               BowHead               Anchor=49.1%  LLaVA=4.0%  Gemma=90.0%  Gap(resid)=+51.9pp
+    TeacherBehavior           teacher               Anchor=50.5%  LLaVA=1.0%  Gemma=63.2%  Gap(resid)=+27.8pp
+    TeacherBehavior           blackBoard            Anchor=3.2%  LLaVA=0.0%  Gemma=44.2%  Gap(resid)=+20.2pp
+  Classes where LLaVA outperforms Gemma4-31B (relative to AnchorScore prediction):
+    HandriseReadWrite         read                  Anchor=23.0%  LLaVA=51.0%  Gemma=21.2%  Gap(resid)=-58.2pp
+    TeacherBehavior           On-stage interaction  Anchor=54.2%  LLaVA=100.0%  Gemma=87.2%  Gap(resid)=-48.0pp
+    HandriseReadWrite         hand-raising          Anchor=80.0%  LLaVA=96.0%  Gemma=89.8%  Gap(resid)=-47.2pp
+    BowTurnHead               TurnHead              Anchor=64.1%  LLaVA=91.0%  Gemma=85.8%  Gap(resid)=-42.7pp
+    TeacherBehavior           guide                 Anchor=29.3%  LLaVA=76.0%  Gemma=82.8%  Gap(resid)=-22.9pp
+
+--------------------------------------------------------------------------------
+4. CROSS-MODEL SIMILARITY MATRIX (ρ between models' per-class accuracy)
+--------------------------------------------------------------------------------
+                              LLaVA-1.5-7BGemma4-31B (Gemma4-26B (Gemma-3-27B Qwen3.5-27B Qwen3.6-27B Qwen3.5-35B Qwen3.6-35B Qwen2-VL-7B 
+  LLaVA-1.5-7B (LLaVA)            1.000     0.354     0.306     0.028     0.054     0.249     0.300     0.368     0.164  
+  Gemma4-31B (Gemma)              0.354     1.000     0.786     0.577     0.879     0.934     0.857     0.896     0.379  
+  Gemma4-26B (Gemma)              0.306     0.786     1.000     0.863     0.764     0.786     0.808     0.863     0.648  
+  Gemma-3-27B (Gemma)             0.028     0.577     0.863     1.000     0.665     0.659     0.742     0.714     0.775  
+  Qwen3.5-27B (Qwen3.x)           0.054     0.879     0.764     0.665     1.000     0.956     0.868     0.852     0.451  
+  Qwen3.6-27B (Qwen3.x)           0.249     0.934     0.786     0.659     0.956     1.000     0.896     0.951     0.489  
+  Qwen3.5-35B (Qwen3.x)           0.300     0.857     0.808     0.742     0.868     0.896     1.000     0.863     0.709  
+  Qwen3.6-35B (Qwen3.x)           0.368     0.896     0.863     0.714     0.852     0.951     0.863     1.000     0.538  
+  Qwen2-VL-7B (Qwen2-VL ViT)      0.164     0.379     0.648     0.775     0.451     0.489     0.709     0.538     1.000  
+
+--------------------------------------------------------------------------------
+5. CLIP BACKBONE VARIANTS: zero-shot ρ with each other and MLLM
+--------------------------------------------------------------------------------
+  OpenAI ViT-L/14 (AnchorScore)       vs ViT-L/14 LAION                       ρ = 0.599
+  OpenAI ViT-B/32                     vs ViT-L/14 LAION                       ρ = 0.236
+  OpenAI ViT-B/32                     vs OpenAI ViT-L/14 (AnchorScore)        ρ = 0.665
+
+  ViT-L/14 LAION zero-shot vs MLLM per-class (ρ):
+    → LLaVA-1.5-7B               ρ=-0.317  (p=0.2913)
+    → Gemma4-31B                 ρ=0.203  (p=0.5053)
+    → Gemma-3-27B                ρ=0.390  (p=0.1876)
+    → Qwen3.5-35B                ρ=0.462  (p=0.1124)
+    → Qwen2-VL-7B                ρ=0.401  (p=0.1744)
+  OpenAI ViT-L/14 (AnchorScore) zero-shot vs MLLM per-class (ρ):
+    → LLaVA-1.5-7B               ρ=-0.249  (p=0.4119)
+    → Gemma4-31B                 ρ=0.341  (p=0.2547)
+    → Gemma-3-27B                ρ=-0.038  (p=0.9007)
+    → Qwen3.5-35B                ρ=0.335  (p=0.2629)
+    → Qwen2-VL-7B                ρ=0.110  (p=0.7208)
+  OpenAI ViT-B/32 zero-shot vs MLLM per-class (ρ):
+    → LLaVA-1.5-7B               ρ=-0.416  (p=0.1574)
+    → Gemma4-31B                 ρ=0.214  (p=0.4821)
+    → Gemma-3-27B                ρ=-0.176  (p=0.5656)
+    → Qwen3.5-35B                ρ=0.121  (p=0.6940)
+    → Qwen2-VL-7B                ρ=-0.159  (p=0.6031)
+
+--------------------------------------------------------------------------------
+6. SYNTHESIS & INTERPRETATION
+--------------------------------------------------------------------------------
+
+  The Exp1C (natural groups) finding — SigLip ρ > CLIP ρ — is SURPRISING.
+  It suggests the shared vision bottleneck hypothesis is INCOMPLETE.
+
+  Possible explanations:
+  A. LLM scale dominates: Larger LLMs (Gemma4-31B, 27B) learn better
+     from any visual features than small LLMs (LLaVA-1.5-7B, Vicuna-7B).
+     → Partial correlation controlling for overall accuracy tests this.
+
+  B. AnchorScore captures general visual difficulty, not CLIP-specific:
+     If ALL vision encoders find the same classes hard, any classifier
+     (linear probe, MLLM) will show correlation.
+     → Exp 2 (CKA/RSA) and Exp 4 (perturbation synchrony) test this.
+
+  C. SigLIP and CLIP learn similar visual features despite different losses:
+     Both are trained on Internet-scale image-text data.
+     → Exp 2 (feature similarity) directly tests this.
+
+  D. LLaVA-1.5-7B is a uniquely bad MLLM:
+     Its low overall accuracy (TeacherBehavior: ~32.5%) dominates.
+     → Check if fixing LLaVA-1.5's instruction prompt improves things.
+
+================================================================================

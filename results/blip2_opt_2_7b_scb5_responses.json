@@ -1,0 +1,4768 @@
+{
+ "TeacherBehavior": [
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction.\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " guide\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "guide",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " guide\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "answer",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " guide\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " guide\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " guide\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " guide\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " guide\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " guide\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " guide\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " guide\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " guide\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " guide\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " guide\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " guide\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " guide\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " guide\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " guide\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " guide\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " guide\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " guide\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " guide\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " guide, answer, On-stage interaction, blackboard-writing, teacher"
+  },
+  {
+   "class": "teacher",
+   "response": " guide\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " guide\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " guide, answer, On-stage interaction, blackboard-writing, teacher"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " guide\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " guide\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " guide\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " guide\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " guide\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " guide\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " guide\n"
+  },
+  {
+   "class": "teacher",
+   "response": " guide\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction.\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " guide\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " guide\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " guide\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "teacher",
+   "response": " guide\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " guide, answer, On-stage interaction, blackboard-writing, teacher"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " guide\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " guide\n"
+  },
+  {
+   "class": "stand",
+   "response": " guide\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "stand",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " guide\n"
+  },
+  {
+   "class": "screen",
+   "response": " guide\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " guide\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "screen",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " guide\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " guide\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " guide\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  },
+  {
+   "class": "blackBoard",
+   "response": " On-stage interaction\n"
+  }
+ ],
+ "HandriseReadWrite": [
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising, read, write\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising, read, write\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising, read, write\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising, read, write\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "hand-raising",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising, read, write\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising, read, write\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising, read, write\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising, read, write\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising, read, write\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising, read, write\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising, read, write\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising, read, write\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising, read, write\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "read",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising, read, write\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising, read, write\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising, read, write\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising, read, write\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising, read, write\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising, read, write\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising, read, write\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising, read, write\n"
+  },
+  {
+   "class": "write",
+   "response": " hand-raising\n"
+  }
+ ],
+ "BowTurnHead": [
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "BowHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead, TurnHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  },
+  {
+   "class": "TurnHead",
+   "response": " BowHead\n"
+  }
+ ]
+}

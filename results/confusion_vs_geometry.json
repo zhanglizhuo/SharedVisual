@@ -1,0 +1,141 @@
+{
+  "encoder": "gemma4:31b",
+  "vision_encoder_for_geometry": "SigLIP (ViT-SO400M)",
+  "n_images": 390,
+  "n_unmatched": 1,
+  "unmatched_rate": 0.0026,
+  "confusion_matrix": [
+    [
+      14,
+      0,
+      0,
+      0,
+      35,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      47,
+      2,
+      0,
+      0
+    ],
+    [
+      7,
+      0,
+      1,
+      0,
+      14,
+      10,
+      16,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      46,
+      2,
+      1,
+      1,
+      0
+    ],
+    [
+      1,
+      0,
+      1,
+      0,
+      38,
+      3,
+      7,
+      0
+    ],
+    [
+      5,
+      10,
+      0,
+      0,
+      21,
+      8,
+      6,
+      0
+    ],
+    [
+      0,
+      3,
+      0,
+      1,
+      24,
+      0,
+      14,
+      0
+    ],
+    [
+      2,
+      10,
+      0,
+      0,
+      30,
+      0,
+      6,
+      1
+    ]
+  ],
+  "per_class_accuracy": {
+    "guide": 0.28,
+    "answer": 0.0,
+    "On-stage interaction": 0.0208,
+    "blackboard-writing": 0.92,
+    "teacher": 0.76,
+    "stand": 0.16,
+    "screen": 0.3333,
+    "blackBoard": 0.0204
+  },
+  "hypothesis_tests_8class_n28": {
+    "raw_confusion_vs_sim": {
+      "rho": 0.2635,
+      "p": 0.1755
+    },
+    "norm_confusion_vs_sim": {
+      "rho": 0.0921,
+      "p": 0.6411,
+      "perm_p_10k_seed42": 0.6612
+    },
+    "norm_confusion_vs_distance": {
+      "rho": -0.0921
+    }
+  },
+  "hypothesis_tests_7class_teacher_excluded_n21": {
+    "norm_confusion_vs_sim": {
+      "rho": 0.0443,
+      "p": 0.8486
+    },
+    "raw_confusion_vs_sim": {
+      "rho": 0.1578,
+      "p": 0.4945
+    }
+  },
+  "cross_validation": {
+    "class_order_aligned": true,
+    "siglip_matrix_range": [
+      0.8667,
+      0.9888
+    ],
+    "siglip_matrix_std": 0.0352,
+    "sanity_mantel_siglip_vs_cliploa": 0.9547,
+    "paper_expected_mantel_range": "0.93-0.96",
+    "sign_consistency_conf_sim_vs_dist": "+0.092 vs -0.092 (must be opposite signs)"
+  },
+  "interpretation": "Within gemma4:31b, confusion structure does NOT correlate with SigLIP class-centroid geometry (\u03c1 \u2248 0.09, p \u2248 0.6-0.7). The MLLM's confusion is dominated by LM-level biases (teacher attractor) and prompt/text-image alignment, not by pairwise feature-space geometry. This is consistent with \u00a75's prompt-variant finding that CLIP failures are semantic, not visual, and supports the paper's framing of the mechanism as 'class-neighborhood geometry' rather than 'class confusability'.",
+  "caveats": [
+    "n=28 unordered pairs (8 classes) gives low power; only \u03c1 \u2265 ~0.5 would reach p<0.05.",
+    "gemma4 is an MLLM (encoder + LM head); the test conflates vision-encoder-side and LM-side effects.",
+    "A cleaner test would use a pure vision encoder (CLIP/SigLIP zero-shot, no LM) \u2014 not run here.",
+    "Image-set overlap with the 50/class centroid-matrix sample cannot be verified (filenames not persisted)."
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "n_perm": 10000,
+  "seed": 42,
+  "n_pairs": 21,
+  "global_null_max_abs_rho": 0.944,
+  "min_margin_over_null_max": 0.013,
+  "max_margin_over_null_max": 0.118,
+  "pairs": [
+    {
+      "encoder_a": "CLIP ViT-L/14 (OpenAI)",
+      "encoder_b": "CLIP ViT-L/14 (LAION)",
+      "observed_rho": 0.982,
+      "null_mean_abs_rho": 0.246,
+      "null_max_abs_rho": 0.916,
+      "margin_over_null_max": 0.066
+    },
+    {
+      "encoder_a": "CLIP ViT-L/14 (OpenAI)",
+      "encoder_b": "CLIP ViT-B/32 (OpenAI)",
+      "observed_rho": 0.955,
+      "null_mean_abs_rho": 0.239,
+      "null_max_abs_rho": 0.874,
+      "margin_over_null_max": 0.081
+    },
+    {
+      "encoder_a": "CLIP ViT-L/14 (OpenAI)",
+      "encoder_b": "Qwen2-VL Vision",
+      "observed_rho": 0.897,
+      "null_mean_abs_rho": 0.2,
+      "null_max_abs_rho": 0.88,
+      "margin_over_null_max": 0.018
+    },
+    {
+      "encoder_a": "CLIP ViT-L/14 (OpenAI)",
+      "encoder_b": "SigLIP (ViT-SO400M)",
+      "observed_rho": 0.955,
+      "null_mean_abs_rho": 0.22,
+      "null_max_abs_rho": 0.901,
+      "margin_over_null_max": 0.054
+    },
+    {
+      "encoder_a": "CLIP ViT-L/14 (OpenAI)",
+      "encoder_b": "ResNet-50 (ImageNet-1k)",
+      "observed_rho": 0.95,
+      "null_mean_abs_rho": 0.233,
+      "null_max_abs_rho": 0.937,
+      "margin_over_null_max": 0.013
+    },
+    {
+      "encoder_a": "CLIP ViT-L/14 (OpenAI)",
+      "encoder_b": "DINOv2 ViT-B/14 (LVD-142M)",
+      "observed_rho": 0.662,
+      "null_mean_abs_rho": 0.156,
+      "null_max_abs_rho": 0.619,
+      "margin_over_null_max": 0.043
+    },
+    {
+      "encoder_a": "CLIP ViT-L/14 (LAION)",
+      "encoder_b": "CLIP ViT-B/32 (OpenAI)",
+      "observed_rho": 0.952,
+      "null_mean_abs_rho": 0.233,
+      "null_max_abs_rho": 0.885,
+      "margin_over_null_max": 0.067
+    },
+    {
+      "encoder_a": "CLIP ViT-L/14 (LAION)",
+      "encoder_b": "Qwen2-VL Vision",
+      "observed_rho": 0.913,
+      "null_mean_abs_rho": 0.197,
+      "null_max_abs_rho": 0.894,
+      "margin_over_null_max": 0.019
+    },
+    {
+      "encoder_a": "CLIP ViT-L/14 (LAION)",
+      "encoder_b": "SigLIP (ViT-SO400M)",
+      "observed_rho": 0.957,
+      "null_mean_abs_rho": 0.217,
+      "null_max_abs_rho": 0.91,
+      "margin_over_null_max": 0.047
+    },
+    {
+      "encoder_a": "CLIP ViT-L/14 (LAION)",
+      "encoder_b": "ResNet-50 (ImageNet-1k)",
+      "observed_rho": 0.967,
+      "null_mean_abs_rho": 0.226,
+      "null_max_abs_rho": 0.944,
+      "margin_over_null_max": 0.022
+    },
+    {
+      "encoder_a": "CLIP ViT-L/14 (LAION)",
+      "encoder_b": "DINOv2 ViT-B/14 (LVD-142M)",
+      "observed_rho": 0.719,
+      "null_mean_abs_rho": 0.154,
+      "null_max_abs_rho": 0.707,
+      "margin_over_null_max": 0.013
+    },
+    {
+      "encoder_a": "CLIP ViT-B/32 (OpenAI)",
+      "encoder_b": "Qwen2-VL Vision",
+      "observed_rho": 0.949,
+      "null_mean_abs_rho": 0.194,
+      "null_max_abs_rho": 0.831,
+      "margin_over_null_max": 0.118
+    },
+    {
+      "encoder_a": "CLIP ViT-B/32 (OpenAI)",
+      "encoder_b": "SigLIP (ViT-SO400M)",
+      "observed_rho": 0.927,
+      "null_mean_abs_rho": 0.212,
+      "null_max_abs_rho": 0.9,
+      "margin_over_null_max": 0.028
+    },
+    {
+      "encoder_a": "CLIP ViT-B/32 (OpenAI)",
+      "encoder_b": "ResNet-50 (ImageNet-1k)",
+      "observed_rho": 0.936,
+      "null_mean_abs_rho": 0.223,
+      "null_max_abs_rho": 0.922,
+      "margin_over_null_max": 0.014
+    },
+    {
+      "encoder_a": "CLIP ViT-B/32 (OpenAI)",
+      "encoder_b": "DINOv2 ViT-B/14 (LVD-142M)",
+      "observed_rho": 0.781,
+      "null_mean_abs_rho": 0.154,
+      "null_max_abs_rho": 0.766,
+      "margin_over_null_max": 0.015
+    },
+    {
+      "encoder_a": "Qwen2-VL Vision",
+      "encoder_b": "SigLIP (ViT-SO400M)",
+      "observed_rho": 0.949,
+      "null_mean_abs_rho": 0.181,
+      "null_max_abs_rho": 0.925,
+      "margin_over_null_max": 0.024
+    },
+    {
+      "encoder_a": "Qwen2-VL Vision",
+      "encoder_b": "ResNet-50 (ImageNet-1k)",
+      "observed_rho": 0.928,
+      "null_mean_abs_rho": 0.186,
+      "null_max_abs_rho": 0.891,
+      "margin_over_null_max": 0.037
+    },
+    {
+      "encoder_a": "Qwen2-VL Vision",
+      "encoder_b": "DINOv2 ViT-B/14 (LVD-142M)",
+      "observed_rho": 0.87,
+      "null_mean_abs_rho": 0.153,
+      "null_max_abs_rho": 0.814,
+      "margin_over_null_max": 0.056
+    },
+    {
+      "encoder_a": "SigLIP (ViT-SO400M)",
+      "encoder_b": "ResNet-50 (ImageNet-1k)",
+      "observed_rho": 0.98,
+      "null_mean_abs_rho": 0.203,
+      "null_max_abs_rho": 0.932,
+      "margin_over_null_max": 0.048
+    },
+    {
+      "encoder_a": "SigLIP (ViT-SO400M)",
+      "encoder_b": "DINOv2 ViT-B/14 (LVD-142M)",
+      "observed_rho": 0.772,
+      "null_mean_abs_rho": 0.153,
+      "null_max_abs_rho": 0.75,
+      "margin_over_null_max": 0.022
+    },
+    {
+      "encoder_a": "ResNet-50 (ImageNet-1k)",
+      "encoder_b": "DINOv2 ViT-B/14 (LVD-142M)",
+      "observed_rho": 0.759,
+      "null_mean_abs_rho": 0.154,
+      "null_max_abs_rho": 0.713,
+      "margin_over_null_max": 0.047
+    }
+  ]
+}

@@ -1,0 +1,431 @@
+{
+  "alpha": 0.05,
+  "z_critical": 1.959963984540054,
+  "note": "Fisher-z asymptotic; approximate for n<=20",
+  "power_curves": [
+    {
+      "n": 8,
+      "approximate": true,
+      "power": [
+        {
+          "rho": 0.05,
+          "power": 0.0514
+        },
+        {
+          "rho": 0.1,
+          "power": 0.0558
+        },
+        {
+          "rho": 0.15,
+          "power": 0.0632
+        },
+        {
+          "rho": 0.2,
+          "power": 0.0739
+        },
+        {
+          "rho": 0.25,
+          "power": 0.0881
+        },
+        {
+          "rho": 0.3,
+          "power": 0.1064
+        },
+        {
+          "rho": 0.35,
+          "power": 0.1293
+        },
+        {
+          "rho": 0.4,
+          "power": 0.1574
+        },
+        {
+          "rho": 0.45,
+          "power": 0.1916
+        },
+        {
+          "rho": 0.5,
+          "power": 0.2329
+        },
+        {
+          "rho": 0.55,
+          "power": 0.2823
+        },
+        {
+          "rho": 0.6,
+          "power": 0.3411
+        },
+        {
+          "rho": 0.65,
+          "power": 0.4106
+        },
+        {
+          "rho": 0.7,
+          "power": 0.4918
+        },
+        {
+          "rho": 0.75,
+          "power": 0.5854
+        },
+        {
+          "rho": 0.8,
+          "power": 0.6903
+        },
+        {
+          "rho": 0.85,
+          "power": 0.802
+        },
+        {
+          "rho": 0.9,
+          "power": 0.9086
+        },
+        {
+          "rho": 0.95,
+          "power": 0.9837
+        },
+        {
+          "rho": 1.0,
+          "power": 1.0
+        }
+      ]
+    },
+    {
+      "n": 13,
+      "approximate": true,
+      "power": [
+        {
+          "rho": 0.05,
+          "power": 0.0529
+        },
+        {
+          "rho": 0.1,
+          "power": 0.0616
+        },
+        {
+          "rho": 0.15,
+          "power": 0.0766
+        },
+        {
+          "rho": 0.2,
+          "power": 0.0983
+        },
+        {
+          "rho": 0.25,
+          "power": 0.1274
+        },
+        {
+          "rho": 0.3,
+          "power": 0.1649
+        },
+        {
+          "rho": 0.35,
+          "power": 0.2115
+        },
+        {
+          "rho": 0.4,
+          "power": 0.268
+        },
+        {
+          "rho": 0.45,
+          "power": 0.3349
+        },
+        {
+          "rho": 0.5,
+          "power": 0.4119
+        },
+        {
+          "rho": 0.55,
+          "power": 0.4983
+        },
+        {
+          "rho": 0.6,
+          "power": 0.5917
+        },
+        {
+          "rho": 0.65,
+          "power": 0.6886
+        },
+        {
+          "rho": 0.7,
+          "power": 0.7831
+        },
+        {
+          "rho": 0.75,
+          "power": 0.868
+        },
+        {
+          "rho": 0.8,
+          "power": 0.935
+        },
+        {
+          "rho": 0.85,
+          "power": 0.9779
+        },
+        {
+          "rho": 0.9,
+          "power": 0.9965
+        },
+        {
+          "rho": 0.95,
+          "power": 0.9999
+        },
+        {
+          "rho": 1.0,
+          "power": 1.0
+        }
+      ]
+    },
+    {
+      "n": 20,
+      "approximate": true,
+      "power": [
+        {
+          "rho": 0.05,
+          "power": 0.0549
+        },
+        {
+          "rho": 0.1,
+          "power": 0.0698
+        },
+        {
+          "rho": 0.15,
+          "power": 0.0955
+        },
+        {
+          "rho": 0.2,
+          "power": 0.1331
+        },
+        {
+          "rho": 0.25,
+          "power": 0.1835
+        },
+        {
+          "rho": 0.3,
+          "power": 0.2477
+        },
+        {
+          "rho": 0.35,
+          "power": 0.3255
+        },
+        {
+          "rho": 0.4,
+          "power": 0.4157
+        },
+        {
+          "rho": 0.45,
+          "power": 0.5154
+        },
+        {
+          "rho": 0.5,
+          "power": 0.6198
+        },
+        {
+          "rho": 0.55,
+          "power": 0.7223
+        },
+        {
+          "rho": 0.6,
+          "power": 0.8154
+        },
+        {
+          "rho": 0.65,
+          "power": 0.8919
+        },
+        {
+          "rho": 0.7,
+          "power": 0.947
+        },
+        {
+          "rho": 0.75,
+          "power": 0.9799
+        },
+        {
+          "rho": 0.8,
+          "power": 0.9949
+        },
+        {
+          "rho": 0.85,
+          "power": 0.9994
+        },
+        {
+          "rho": 0.9,
+          "power": 1.0
+        },
+        {
+          "rho": 0.95,
+          "power": 1.0
+        },
+        {
+          "rho": 1.0,
+          "power": 1.0
+        }
+      ]
+    },
+    {
+      "n": 40,
+      "approximate": false,
+      "power": [
+        {
+          "rho": 0.05,
+          "power": 0.0607
+        },
+        {
+          "rho": 0.1,
+          "power": 0.0936
+        },
+        {
+          "rho": 0.15,
+          "power": 0.151
+        },
+        {
+          "rho": 0.2,
+          "power": 0.2344
+        },
+        {
+          "rho": 0.25,
+          "power": 0.3425
+        },
+        {
+          "rho": 0.3,
+          "power": 0.4693
+        },
+        {
+          "rho": 0.35,
+          "power": 0.6037
+        },
+        {
+          "rho": 0.4,
+          "power": 0.7314
+        },
+        {
+          "rho": 0.45,
+          "power": 0.8385
+        },
+        {
+          "rho": 0.5,
+          "power": 0.9164
+        },
+        {
+          "rho": 0.55,
+          "power": 0.9642
+        },
+        {
+          "rho": 0.6,
+          "power": 0.988
+        },
+        {
+          "rho": 0.65,
+          "power": 0.9971
+        },
+        {
+          "rho": 0.7,
+          "power": 0.9995
+        },
+        {
+          "rho": 0.75,
+          "power": 1.0
+        },
+        {
+          "rho": 0.8,
+          "power": 1.0
+        },
+        {
+          "rho": 0.85,
+          "power": 1.0
+        },
+        {
+          "rho": 0.9,
+          "power": 1.0
+        },
+        {
+          "rho": 0.95,
+          "power": 1.0
+        },
+        {
+          "rho": 1.0,
+          "power": 1.0
+        }
+      ]
+    }
+  ],
+  "min_detectable_rho": [
+    {
+      "n": 8,
+      "min_rho_80pct": 0.849
+    },
+    {
+      "n": 13,
+      "min_rho_80pct": 0.709
+    },
+    {
+      "n": 20,
+      "min_rho_80pct": 0.591
+    },
+    {
+      "n": 40,
+      "min_rho_80pct": 0.431
+    }
+  ],
+  "power_for_observed_cprime": [
+    {
+      "dataset": "SCB5 n=13",
+      "n": 13,
+      "rho": 0.1,
+      "power": 0.0616
+    },
+    {
+      "dataset": "SCB5 n=13",
+      "n": 13,
+      "rho": 0.2,
+      "power": 0.0983
+    },
+    {
+      "dataset": "SCB5 n=13",
+      "n": 13,
+      "rho": 0.3,
+      "power": 0.1649
+    },
+    {
+      "dataset": "SCB5 n=13",
+      "n": 13,
+      "rho": 0.45,
+      "power": 0.3349
+    },
+    {
+      "dataset": "SCB5 n=13",
+      "n": 13,
+      "rho": 0.55,
+      "power": 0.4983
+    },
+    {
+      "dataset": "Stanford40 n=40",
+      "n": 40,
+      "rho": 0.05,
+      "power": 0.0607
+    },
+    {
+      "dataset": "Stanford40 n=40",
+      "n": 40,
+      "rho": 0.1,
+      "power": 0.0936
+    },
+    {
+      "dataset": "Stanford40 n=40",
+      "n": 40,
+      "rho": 0.15,
+      "power": 0.151
+    },
+    {
+      "dataset": "Stanford40 n=40",
+      "n": 40,
+      "rho": 0.2,
+      "power": 0.2344
+    },
+    {
+      "dataset": "Stanford40 n=40",
+      "n": 40,
+      "rho": 0.25,
+      "power": 0.3425
+    }
+  ]
+}

@@ -1,0 +1,1048 @@
+{
+ "TeacherBehavior": [
+  {
+   "class": "guide",
+   "response": "guide"
+  },
+  {
+   "class": "guide",
+   "response": "guide"
+  },
+  {
+   "class": "guide",
+   "response": "answer"
+  },
+  {
+   "class": "guide",
+   "response": "answer"
+  },
+  {
+   "class": "guide",
+   "response": "answer"
+  },
+  {
+   "class": "guide",
+   "response": "guide"
+  },
+  {
+   "class": "guide",
+   "response": "guide"
+  },
+  {
+   "class": "guide",
+   "response": "answer"
+  },
+  {
+   "class": "guide",
+   "response": "guide"
+  },
+  {
+   "class": "guide",
+   "response": "guide"
+  },
+  {
+   "class": "guide",
+   "response": "guide"
+  },
+  {
+   "class": "guide",
+   "response": "answer"
+  },
+  {
+   "class": "guide",
+   "response": "guide"
+  },
+  {
+   "class": "guide",
+   "response": "guide"
+  },
+  {
+   "class": "guide",
+   "response": "guide"
+  },
+  {
+   "class": "guide",
+   "response": "guide"
+  },
+  {
+   "class": "guide",
+   "response": "answer"
+  },
+  {
+   "class": "guide",
+   "response": "guide"
+  },
+  {
+   "class": "guide",
+   "response": "guide"
+  },
+  {
+   "class": "guide",
+   "response": "guide"
+  },
+  {
+   "class": "answer",
+   "response": "guide"
+  },
+  {
+   "class": "answer",
+   "response": "guide"
+  },
+  {
+   "class": "answer",
+   "response": "guide"
+  },
+  {
+   "class": "answer",
+   "response": "guide"
+  },
+  {
+   "class": "answer",
+   "response": "guide"
+  },
+  {
+   "class": "answer",
+   "response": "guide"
+  },
+  {
+   "class": "answer",
+   "response": "guide"
+  },
+  {
+   "class": "answer",
+   "response": "guide"
+  },
+  {
+   "class": "answer",
+   "response": "guide"
+  },
+  {
+   "class": "answer",
+   "response": "guide"
+  },
+  {
+   "class": "answer",
+   "response": "guide"
+  },
+  {
+   "class": "answer",
+   "response": "guide"
+  },
+  {
+   "class": "answer",
+   "response": "guide"
+  },
+  {
+   "class": "answer",
+   "response": "guide"
+  },
+  {
+   "class": "answer",
+   "response": "guide"
+  },
+  {
+   "class": "answer",
+   "response": "guide"
+  },
+  {
+   "class": "answer",
+   "response": "guide"
+  },
+  {
+   "class": "answer",
+   "response": "guide"
+  },
+  {
+   "class": "answer",
+   "response": "guide"
+  },
+  {
+   "class": "answer",
+   "response": "guide"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": "guide"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": "answer"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": "guide"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": "guide"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": "stand"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": "guide"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": "guide"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": "guide"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": "guide"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": "guide"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": "guide"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": "stand"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": "guide"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": "answer"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": "guide"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": "guide"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": "answer"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": "guide"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": "guide"
+  },
+  {
+   "class": "On-stage interaction",
+   "response": "guide"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": "guide"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": "guide"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": "guide"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": "blackboard-writing"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": "guide"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": "guide"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": "guide"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": "blackboard-writing"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": "guide"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": "guide"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": "guide"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": "guide"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": "guide"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": "blackboard-writing"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": "guide"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": "blackboard-writing"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": "guide"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": "guide"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": "guide"
+  },
+  {
+   "class": "blackboard-writing",
+   "response": "blackboard-writing"
+  },
+  {
+   "class": "teacher",
+   "response": "guide"
+  },
+  {
+   "class": "teacher",
+   "response": "guide"
+  },
+  {
+   "class": "teacher",
+   "response": "guide"
+  },
+  {
+   "class": "teacher",
+   "response": "guide"
+  },
+  {
+   "class": "teacher",
+   "response": "guide"
+  },
+  {
+   "class": "teacher",
+   "response": "answer"
+  },
+  {
+   "class": "teacher",
+   "response": "answer"
+  },
+  {
+   "class": "teacher",
+   "response": "guide"
+  },
+  {
+   "class": "teacher",
+   "response": "guide"
+  },
+  {
+   "class": "teacher",
+   "response": "teacher"
+  },
+  {
+   "class": "teacher",
+   "response": "guide"
+  },
+  {
+   "class": "teacher",
+   "response": "teacher"
+  },
+  {
+   "class": "teacher",
+   "response": "teacher"
+  },
+  {
+   "class": "teacher",
+   "response": "guide"
+  },
+  {
+   "class": "teacher",
+   "response": "guide"
+  },
+  {
+   "class": "teacher",
+   "response": "guide"
+  },
+  {
+   "class": "teacher",
+   "response": "answer"
+  },
+  {
+   "class": "teacher",
+   "response": "guide"
+  },
+  {
+   "class": "teacher",
+   "response": "guide"
+  },
+  {
+   "class": "teacher",
+   "response": "guide"
+  },
+  {
+   "class": "stand",
+   "response": "guide"
+  },
+  {
+   "class": "stand",
+   "response": "guide"
+  },
+  {
+   "class": "stand",
+   "response": "guide"
+  },
+  {
+   "class": "stand",
+   "response": "guide"
+  },
+  {
+   "class": "stand",
+   "response": "guide"
+  },
+  {
+   "class": "stand",
+   "response": "guide"
+  },
+  {
+   "class": "stand",
+   "response": "answer"
+  },
+  {
+   "class": "stand",
+   "response": "guide"
+  },
+  {
+   "class": "stand",
+   "response": "guide"
+  },
+  {
+   "class": "stand",
+   "response": "guide"
+  },
+  {
+   "class": "stand",
+   "response": "guide"
+  },
+  {
+   "class": "stand",
+   "response": "answer"
+  },
+  {
+   "class": "stand",
+   "response": "guide"
+  },
+  {
+   "class": "stand",
+   "response": "guide"
+  },
+  {
+   "class": "stand",
+   "response": "guide"
+  },
+  {
+   "class": "stand",
+   "response": "guide"
+  },
+  {
+   "class": "stand",
+   "response": "guide"
+  },
+  {
+   "class": "stand",
+   "response": "answer"
+  },
+  {
+   "class": "stand",
+   "response": "guide"
+  },
+  {
+   "class": "stand",
+   "response": "guide"
+  },
+  {
+   "class": "screen",
+   "response": "answer"
+  },
+  {
+   "class": "screen",
+   "response": "guide"
+  },
+  {
+   "class": "screen",
+   "response": "guide"
+  },
+  {
+   "class": "screen",
+   "response": "guide"
+  },
+  {
+   "class": "screen",
+   "response": "guide"
+  },
+  {
+   "class": "screen",
+   "response": "guide"
+  },
+  {
+   "class": "screen",
+   "response": "answer"
+  },
+  {
+   "class": "screen",
+   "response": "answer"
+  },
+  {
+   "class": "screen",
+   "response": "guide"
+  },
+  {
+   "class": "screen",
+   "response": "guide"
+  },
+  {
+   "class": "screen",
+   "response": "guide"
+  },
+  {
+   "class": "screen",
+   "response": "guide"
+  },
+  {
+   "class": "screen",
+   "response": "guide"
+  },
+  {
+   "class": "screen",
+   "response": "guide"
+  },
+  {
+   "class": "screen",
+   "response": "guide"
+  },
+  {
+   "class": "screen",
+   "response": "guide"
+  },
+  {
+   "class": "screen",
+   "response": "blackBoard"
+  },
+  {
+   "class": "screen",
+   "response": "answer"
+  },
+  {
+   "class": "screen",
+   "response": "guide"
+  },
+  {
+   "class": "screen",
+   "response": "guide"
+  },
+  {
+   "class": "blackBoard",
+   "response": "guide"
+  },
+  {
+   "class": "blackBoard",
+   "response": "guide"
+  },
+  {
+   "class": "blackBoard",
+   "response": "guide"
+  },
+  {
+   "class": "blackBoard",
+   "response": "guide"
+  },
+  {
+   "class": "blackBoard",
+   "response": "guide"
+  },
+  {
+   "class": "blackBoard",
+   "response": "guide"
+  },
+  {
+   "class": "blackBoard",
+   "response": "blackBoard"
+  },
+  {
+   "class": "blackBoard",
+   "response": "blackBoard"
+  },
+  {
+   "class": "blackBoard",
+   "response": "guide"
+  },
+  {
+   "class": "blackBoard",
+   "response": "guide"
+  },
+  {
+   "class": "blackBoard",
+   "response": "answer"
+  },
+  {
+   "class": "blackBoard",
+   "response": "guide"
+  },
+  {
+   "class": "blackBoard",
+   "response": "guide"
+  },
+  {
+   "class": "blackBoard",
+   "response": "guide"
+  },
+  {
+   "class": "blackBoard",
+   "response": "blackboard-writing"
+  },
+  {
+   "class": "blackBoard",
+   "response": "guide"
+  },
+  {
+   "class": "blackBoard",
+   "response": "guide"
+  },
+  {
+   "class": "blackBoard",
+   "response": "guide"
+  },
+  {
+   "class": "blackBoard",
+   "response": "guide"
+  },
+  {
+   "class": "blackBoard",
+   "response": "guide"
+  }
+ ],
+ "HandriseReadWrite": [
+  {
+   "class": "hand-raising",
+   "response": "hand-raising"
+  },
+  {
+   "class": "hand-raising",
+   "response": "hand-raising"
+  },
+  {
+   "class": "hand-raising",
+   "response": "hand-raising"
+  },
+  {
+   "class": "hand-raising",
+   "response": "hand-raising"
+  },
+  {
+   "class": "hand-raising",
+   "response": "hand-raising"
+  },
+  {
+   "class": "hand-raising",
+   "response": "hand-raising"
+  },
+  {
+   "class": "hand-raising",
+   "response": "hand-raising"
+  },
+  {
+   "class": "hand-raising",
+   "response": "hand-raising"
+  },
+  {
+   "class": "hand-raising",
+   "response": "hand-raising"
+  },
+  {
+   "class": "hand-raising",
+   "response": "hand-raising"
+  },
+  {
+   "class": "hand-raising",
+   "response": "hand-raising"
+  },
+  {
+   "class": "hand-raising",
+   "response": "hand-raising"
+  },
+  {
+   "class": "hand-raising",
+   "response": "hand-raising"
+  },
+  {
+   "class": "hand-raising",
+   "response": "hand-raising"
+  },
+  {
+   "class": "hand-raising",
+   "response": "hand-raising"
+  },
+  {
+   "class": "hand-raising",
+   "response": "hand-raising"
+  },
+  {
+   "class": "hand-raising",
+   "response": "hand-raising"
+  },
+  {
+   "class": "hand-raising",
+   "response": "hand-raising"
+  },
+  {
+   "class": "hand-raising",
+   "response": "hand-raising"
+  },
+  {
+   "class": "hand-raising",
+   "response": "hand-raising"
+  },
+  {
+   "class": "read",
+   "response": "hand-raising"
+  },
+  {
+   "class": "read",
+   "response": "hand-raising"
+  },
+  {
+   "class": "read",
+   "response": "hand-raising"
+  },
+  {
+   "class": "read",
+   "response": "hand-raising"
+  },
+  {
+   "class": "read",
+   "response": "hand-raising"
+  },
+  {
+   "class": "read",
+   "response": "hand-raising"
+  },
+  {
+   "class": "read",
+   "response": "hand-raising"
+  },
+  {
+   "class": "read",
+   "response": "hand-raising"
+  },
+  {
+   "class": "read",
+   "response": "hand-raising"
+  },
+  {
+   "class": "read",
+   "response": "hand-raising"
+  },
+  {
+   "class": "read",
+   "response": "hand-raising"
+  },
+  {
+   "class": "read",
+   "response": "write"
+  },
+  {
+   "class": "read",
+   "response": "write"
+  },
+  {
+   "class": "read",
+   "response": "hand-raising"
+  },
+  {
+   "class": "read",
+   "response": "hand-raising"
+  },
+  {
+   "class": "read",
+   "response": "hand-raising"
+  },
+  {
+   "class": "read",
+   "response": "hand-raising"
+  },
+  {
+   "class": "read",
+   "response": "read"
+  },
+  {
+   "class": "read",
+   "response": "hand-raising"
+  },
+  {
+   "class": "read",
+   "response": "write"
+  },
+  {
+   "class": "write",
+   "response": "hand-raising"
+  },
+  {
+   "class": "write",
+   "response": "hand-raising"
+  },
+  {
+   "class": "write",
+   "response": "write"
+  },
+  {
+   "class": "write",
+   "response": "write"
+  },
+  {
+   "class": "write",
+   "response": "hand-raising"
+  },
+  {
+   "class": "write",
+   "response": "hand-raising"
+  },
+  {
+   "class": "write",
+   "response": "hand-raising"
+  },
+  {
+   "class": "write",
+   "response": "hand-raising"
+  },
+  {
+   "class": "write",
+   "response": "write"
+  },
+  {
+   "class": "write",
+   "response": "write"
+  },
+  {
+   "class": "write",
+   "response": "write"
+  },
+  {
+   "class": "write",
+   "response": "hand-raising"
+  },
+  {
+   "class": "write",
+   "response": "hand-raising"
+  },
+  {
+   "class": "write",
+   "response": "write"
+  },
+  {
+   "class": "write",
+   "response": "hand-raising"
+  },
+  {
+   "class": "write",
+   "response": "hand-raising"
+  },
+  {
+   "class": "write",
+   "response": "hand-raising"
+  },
+  {
+   "class": "write",
+   "response": "hand-raising"
+  },
+  {
+   "class": "write",
+   "response": "hand-raising"
+  },
+  {
+   "class": "write",
+   "response": "hand-raising"
+  }
+ ],
+ "BowTurnHead": [
+  {
+   "class": "BowHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "BowHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "BowHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "BowHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "BowHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "BowHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "BowHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "BowHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "BowHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "BowHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "BowHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "BowHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "BowHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "BowHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "BowHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "BowHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "BowHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "BowHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "BowHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "BowHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "TurnHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "TurnHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "TurnHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "TurnHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "TurnHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "TurnHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "TurnHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "TurnHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "TurnHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "TurnHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "TurnHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "TurnHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "TurnHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "TurnHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "TurnHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "TurnHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "TurnHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "TurnHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "TurnHead",
+   "response": "bowhead"
+  },
+  {
+   "class": "TurnHead",
+   "response": "bowhead"
+  }
+ ]
+}

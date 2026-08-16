@@ -1,0 +1,139 @@
+{
+  "model": "gemma4:31b",
+  "task": "SCB5 TeacherBehavior 8-class classification under Gaussian blur",
+  "n_per_class": 50,
+  "blur_sigmas": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "prompt": "Classify the classroom activity in this image. Choose exactly one category from the list: guiding students in classroom, answering questions in class, on stage interaction, writing on blackboard, teacher in classroom, standing at the front of a classroom, showing a screen in classroom, standing near a blackboard or whiteboard. Output only the category name, nothing else.",
+  "scoring": {
+    "display": "match_class_name (display names in prompt vocabulary)",
+    "rawkey": "match_class_name_raw_key (legacy VisualAnchor raw CLASSES keys, identical to eval_clip_mllms_v100.py scoring for paper comparability)"
+  },
+  "results": {
+    "sigma_0": {
+      "per_class_acc": {
+        "guide": 0.28,
+        "answer": 0.0,
+        "On-stage interaction": 0.020833333333333332,
+        "blackboard-writing": 0.92,
+        "teacher": 0.76,
+        "stand": 0.16,
+        "screen": 0.3333333333333333,
+        "blackBoard": 0.02
+      },
+      "per_class_acc_rawkey": {
+        "guide": 0.0,
+        "answer": 0.0,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 0.0,
+        "teacher": 0.76,
+        "stand": 0.16,
+        "screen": 0.3333333333333333,
+        "blackBoard": 0.02
+      },
+      "overall_acc": 0.3128205128205128,
+      "overall_acc_rawkey": 0.1564102564102564
+    },
+    "sigma_1": {
+      "per_class_acc": {
+        "guide": 0.28,
+        "answer": 0.0,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 0.8,
+        "teacher": 0.72,
+        "stand": 0.16,
+        "screen": 0.38095238095238093,
+        "blackBoard": 0.0
+      },
+      "per_class_acc_rawkey": {
+        "guide": 0.0,
+        "answer": 0.0,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 0.0,
+        "teacher": 0.72,
+        "stand": 0.16,
+        "screen": 0.38095238095238093,
+        "blackBoard": 0.0
+      },
+      "overall_acc": 0.2923076923076923,
+      "overall_acc_rawkey": 0.15384615384615385
+    },
+    "sigma_2": {
+      "per_class_acc": {
+        "guide": 0.18,
+        "answer": 0.0,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 0.38,
+        "teacher": 0.64,
+        "stand": 0.12,
+        "screen": 0.42857142857142855,
+        "blackBoard": 0.0
+      },
+      "per_class_acc_rawkey": {
+        "guide": 0.0,
+        "answer": 0.0,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 0.0,
+        "teacher": 0.64,
+        "stand": 0.12,
+        "screen": 0.42857142857142855,
+        "blackBoard": 0.0
+      },
+      "overall_acc": 0.2153846153846154,
+      "overall_acc_rawkey": 0.14358974358974358
+    },
+    "sigma_3": {
+      "per_class_acc": {
+        "guide": 0.16,
+        "answer": 0.0,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 0.28,
+        "teacher": 0.68,
+        "stand": 0.14,
+        "screen": 0.38095238095238093,
+        "blackBoard": 0.0
+      },
+      "per_class_acc_rawkey": {
+        "guide": 0.0,
+        "answer": 0.0,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 0.0,
+        "teacher": 0.68,
+        "stand": 0.14,
+        "screen": 0.38095238095238093,
+        "blackBoard": 0.0
+      },
+      "overall_acc": 0.20256410256410257,
+      "overall_acc_rawkey": 0.14615384615384616
+    },
+    "sigma_4": {
+      "per_class_acc": {
+        "guide": 0.16,
+        "answer": 0.0,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 0.14,
+        "teacher": 0.6,
+        "stand": 0.1,
+        "screen": 0.4523809523809524,
+        "blackBoard": 0.0
+      },
+      "per_class_acc_rawkey": {
+        "guide": 0.0,
+        "answer": 0.0,
+        "On-stage interaction": 0.0,
+        "blackboard-writing": 0.0,
+        "teacher": 0.6,
+        "stand": 0.1,
+        "screen": 0.4523809523809524,
+        "blackBoard": 0.0
+      },
+      "overall_acc": 0.17692307692307693,
+      "overall_acc_rawkey": 0.13846153846153847
+    }
+  }
+}

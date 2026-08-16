@@ -1,0 +1,132 @@
+{
+  "class_frequency": {
+    "scb5_8_classes": {
+      "n_classes": 8,
+      "n_range": [
+        42,
+        1684
+      ],
+      "spearman_anchor_log_n": [
+        -0.357,
+        0.385
+      ],
+      "spearman_mllm_log_n": [
+        -0.381,
+        0.352
+      ],
+      "spearman_anchor_mean_mllm_raw": [
+        0.595,
+        0.12
+      ],
+      "spearman_anchor_mean_mllm_partial_log_n": [
+        0.595,
+        0.12
+      ]
+    },
+    "scb5_13_classes": {
+      "n_classes": 13,
+      "n_range": [
+        42,
+        1684
+      ],
+      "spearman_anchor_log_n": [
+        -0.066,
+        0.831
+      ],
+      "spearman_mllm_log_n": [
+        -0.038,
+        0.901
+      ],
+      "spearman_anchor_mean_mllm_raw": [
+        0.797,
+        0.001
+      ],
+      "spearman_anchor_mean_mllm_partial_log_n": [
+        0.835,
+        0.0
+      ]
+    }
+  },
+  "stanford40_leverage": {
+    "n_classes": 40,
+    "rho_anchor_mean": [
+      0.817,
+      0.0
+    ],
+    "n_classes_below_60pct_anchor": 3,
+    "lowest_5_anchor_classes": {
+      "cutting vegetables": 47.6,
+      "texting message": 52.9,
+      "writing on a book": 58.9,
+      "pouring liquid": 61.0,
+      "applauding": 69.4
+    },
+    "jackknife_top5": [
+      {
+        "class": "cutting trees",
+        "rho_without": 0.859,
+        "delta": 0.043
+      },
+      {
+        "class": "looking through a microscope",
+        "rho_without": 0.854,
+        "delta": 0.037
+      },
+      {
+        "class": "waving hands",
+        "rho_without": 0.847,
+        "delta": 0.03
+      },
+      {
+        "class": "cutting vegetables",
+        "rho_without": 0.802,
+        "delta": 0.015
+      },
+      {
+        "class": "texting message",
+        "rho_without": 0.802,
+        "delta": 0.014
+      }
+    ],
+    "rho_removing_3_lowest_anchor": [
+      0.768,
+      0.0
+    ],
+    "rho_removing_5_lowest_anchor": [
+      0.738,
+      0.0
+    ],
+    "per_model_full_vs_no_bottom3": [
+      {
+        "model": "qwen3.5:27b",
+        "rho_full": 0.58,
+        "rho_no_bottom3": 0.616
+      },
+      {
+        "model": "qwen3.5:35b-a3b",
+        "rho_full": 0.639,
+        "rho_no_bottom3": 0.531
+      },
+      {
+        "model": "qwen3.6:27b",
+        "rho_full": 0.723,
+        "rho_no_bottom3": 0.659
+      },
+      {
+        "model": "qwen3.6:35b-a3b",
+        "rho_full": 0.723,
+        "rho_no_bottom3": 0.642
+      },
+      {
+        "model": "gemma4:26b",
+        "rho_full": 0.678,
+        "rho_no_bottom3": 0.59
+      },
+      {
+        "model": "gemma4:31b",
+        "rho_full": 0.662,
+        "rho_no_bottom3": 0.565
+      }
+    ]
+  }
+}
