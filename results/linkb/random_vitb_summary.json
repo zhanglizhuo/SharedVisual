@@ -1,0 +1,21 @@
+{
+  "arm": "random_vitb",
+  "n": 5416,
+  "per_class_acc": {
+    "teacher": 31.71,
+    "stand": 7.29,
+    "answer": 5.57,
+    "guide": 3.59,
+    "blackboard-writing": 37.27,
+    "blackBoard": 0.0,
+    "screen": 4.76,
+    "On-stage interaction": 0.0,
+    "hand-raising": 3.75,
+    "read": 4.66,
+    "write": 11.07,
+    "BowHead": 0.0,
+    "TurnHead": 0.0
+  },
+  "mean_acc": 8.44,
+  "collapse_top_class_frac": 0.0
+}

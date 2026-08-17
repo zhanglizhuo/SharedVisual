@@ -1,0 +1,21 @@
+{
+  "arm": "dinov2_b14",
+  "n": 5416,
+  "per_class_acc": {
+    "teacher": 52.32,
+    "stand": 13.67,
+    "answer": 77.0,
+    "guide": 67.66,
+    "blackboard-writing": 91.3,
+    "blackBoard": 0.0,
+    "screen": 9.52,
+    "On-stage interaction": 64.58,
+    "hand-raising": 45.28,
+    "read": 20.13,
+    "write": 15.16,
+    "BowHead": 0.0,
+    "TurnHead": 0.51
+  },
+  "mean_acc": 35.16,
+  "collapse_top_class_frac": 0.0
+}

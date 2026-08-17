@@ -88,3 +88,15 @@ No orphan metric functions found. Scripts without same-named result files are ac
 ## Limitations
 
 - Same-family audit (executor; cross-model reviewer unavailable by user instruction). The 2026-08-12 audit report and this session's cross-checks cover the same ground from two angles; the audit catches common integrity patterns, not all possible fabrication.
+
+## Addendum — Link B Encoder-Swap Run (2026-08-17)
+
+Preregistered (DESIGN.md locked before training; deviations disclosed in RUN_MANIFEST: full cleaned pool vs bounded 4,896; 257-token cap; manual greedy decode). Verified post-run:
+
+| Check | Result |
+|-------|--------|
+| GT provenance | Dataset labels (SCB5 val, full-frame); scoring identical to eval_hf.py first-match |
+| Score normalization | Raw per-class accuracies; no self-reference |
+| Result existence | 4 arm summaries n=5416 each; analysis JSON committed; RUN_MANIFEST present |
+| Preregistration integrity | P1-P4 and interpretation table written before unblinding (commit history); outcome reported per table without post-hoc reinterpretation |
+| Verdict | PASS (honest-boundary outcome faithfully reported) |

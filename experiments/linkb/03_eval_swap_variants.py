@@ -69,9 +69,6 @@ def evaluate_arm(arm, device="cuda", dry_run=False):
     feats, labels, img_ids = data["features"], list(data["labels"]), list(data["img_ids"])
 
     ckpt = torch.load(CKPT_DIR / arm / "latest.pt", map_location=device)
-    from importlib import import_module
-    train_mod = import_module("linkb.02_train_projector")  # best-effort
-    # (in practice the projector shape is rebuilt from the feature dim + state)
     D_i = feats.shape[2]
     from torch import nn
     LM_HIDDEN = 4096
@@ -90,20 +87,33 @@ def evaluate_arm(arm, device="cuda", dry_run=False):
         INSTRUCTION.format(classes=", ".join(all_classes)),
         add_special_tokens=False)
 
+    T_cap = 257  # must match 02_train_projector's token cap
     for i, (iid, y) in enumerate(zip(img_ids, labels)):
         if iid in out:
             continue
         with torch.no_grad():
-            v = torch.from_numpy(feats[i].astype(np.float16)) \
+            v = torch.from_numpy(feats[i][:T_cap].astype(np.float16)) \
                     .to(device).unsqueeze(0)
             emb = proj(v)
+            e = lm.get_input_embeddings()
             ids = torch.tensor(prompt_ids, device=device)
-            inputs_embeds = torch.cat(
-                [emb, lm.get_input_embeddings()(ids).unsqueeze(0)], dim=1)
-            gen = lm.generate(inputs_embeds=inputs_embeds,
-                              pad_token_id=tok.pad_token_id,
-                              max_new_tokens=16, do_sample=False)
-            txt = tok.decode(gen[0, emb.shape[1]:], skip_special_tokens=True)
+            # manual greedy loop: generate(inputs_embeds=...) returns empty
+            # in this transformers version; the plain forward path is
+            # verified correct on trained checkpoints (top-5 = class names)
+            cur = torch.cat([emb, e(ids).unsqueeze(0).to(emb.dtype)], dim=1)
+            gen_ids = []
+            eos = tok.eos_token_id
+            for _ in range(8):
+                logits = lm(inputs_embeds=cur).logits[0, -1]
+                nxt = int(logits.argmax())
+                if nxt == eos:
+                    break
+                gen_ids.append(nxt)
+                cur = torch.cat(
+                    [cur,
+                     e(torch.tensor([[nxt]], device=device)).to(emb.dtype)],
+                    dim=1)
+            txt = tok.decode(gen_ids, skip_special_tokens=True)
         out[iid] = {"class": y, "response": txt,
                     "correct": match_class_name(txt, y, all_classes)}
         if (i + 1) % 200 == 0:

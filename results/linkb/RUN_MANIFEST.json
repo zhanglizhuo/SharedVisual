@@ -1,0 +1,35 @@
+{
+  "run": "linkb_encoder_swap_v1",
+  "date": "2026-08-16/17",
+  "hardware": "V100x4 (GPU1-3 used; GPU0 reserved for another user)",
+  "env": "dl_env_310 (py3.10, torch 2.6.0+cu124, transformers 4.57.6, open_clip)",
+  "lm": "Mistral-7B-v0.1 frozen, fp16, gradient checkpointing",
+  "budget": "2000 steps, batch 8, AdamW lr 1e-4 cosine, class-balanced, seed 42",
+  "token_cap": "257 for all arms (SigLIP 730 center-cropped to first 257)",
+  "train_pool": "all SCB5 train minus filename collisions (exp1b rule); 12902 images",
+  "protocol_deviations": [
+    "full cleaned pool instead of bounded 4896 (preregistered deviation, disclosed in DESIGN.md)",
+    "257-token cap added for equal-budget + memory (SigLIP affected)",
+    "manual greedy decode loop (transformers generate(inputs_embeds=) returns empty in 4.57.6)"
+  ],
+  "arms_mean_acc": {
+    "C": 36.13,
+    "S": 30.0,
+    "D": 35.16,
+    "R": 8.44
+  },
+  "preregistered_outcomes": {
+    "P4_validity": "PASS (R markedly lower)",
+    "floor_check": "PASS (no trainable arm floor-affected)",
+    "P1_ordinal": "FAIL (C-S 0.740 not the max; S-D 0.839 > C-D 0.791)",
+    "P2_matrix": "descriptive only; rho=-0.5 under 2/6 ceiling",
+    "P3_lm_floor": "FAIL (diff CI [-0.17, 0.693] includes 0)"
+  },
+  "reading": "Honest-boundary outcome per preregistered interpretation table: every encoder arm acquires genuine discriminative power (P4), but cross-arm difficulty-profile agreement does NOT track geometry agreement, and C-S agreement cannot be distinguished from the shared-LM+shared-task floor (P3) at this budget/sample. Geometry is shared in the visual layer (static evidence unchanged); behavior-level difficulty under a frozen LM with projector-only training is dominated by LM prior + task structure.",
+  "generated_at": "2026-08-17T05:17:13.706765Z",
+  "preregistration_timeline": {
+    "design_locked_commit": "76931c2 (2026-08-16 10:15 CST) \u2014 P1/P2 exact-test ceilings and floor thresholds added before any training",
+    "first_v100_run": "2026-08-16 (feature extraction launched after design lock)",
+    "verified": "ceilings + floor thresholds predate data unblinding; no post-hoc additions"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "arm": "siglip_so400m",
+  "n": 5416,
+  "per_class_acc": {
+    "teacher": 43.88,
+    "stand": 24.37,
+    "answer": 71.43,
+    "guide": 58.08,
+    "blackboard-writing": 79.5,
+    "blackBoard": 5.34,
+    "screen": 28.57,
+    "On-stage interaction": 10.42,
+    "hand-raising": 13.92,
+    "read": 39.1,
+    "write": 7.79,
+    "BowHead": 0.0,
+    "TurnHead": 7.63
+  },
+  "mean_acc": 30.0,
+  "collapse_top_class_frac": 0.0
+}

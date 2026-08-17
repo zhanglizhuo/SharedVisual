@@ -40,9 +40,13 @@ is too close to arm C to add discriminative contrast.
 - **Projector**: LLaVA-1.5-style 2-layer MLP per arm (Linear→GELU→Linear),
   mapping each encoder's per-patch token dim → LM hidden dim (4096). Only the
   projector trains.
-- **Training data**: SCB5 train pool, 13 classes pooled, **4,896 images** — the
-  leakage-cleaned pool of `exp1b` (104 cross-dataset filename collisions removed;
-  same discipline as `exp1b_leakage_check.py`). Class-balanced sampling.
+- **Training data**: SCB5 train pool, 13 classes pooled, ALL train images
+  minus cross-dataset filename collisions with val (the exp1b leakage
+  convention; ~104 collisions). Note: the plan draft cited the exp1b bounded
+  pool of 4,896; the implementation uses the full leakage-cleaned train pool
+  (larger), recorded in RUN_MANIFEST as a pre-registered deviation — more
+  training data, identical exclusion rule, equal budget per arm unchanged.
+  Class-balanced sampling.
 - **Task**: classification-style instruction tuning. Prompt:
   `Classify the person's behavior in this classroom image into one of: {classes}. Answer with the class name only.`
   Target = gold class name; loss on answer tokens only.

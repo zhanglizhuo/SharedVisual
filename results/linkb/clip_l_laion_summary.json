@@ -1,0 +1,21 @@
+{
+  "arm": "clip_l_laion",
+  "n": 5416,
+  "per_class_acc": {
+    "teacher": 26.78,
+    "stand": 22.1,
+    "answer": 84.32,
+    "guide": 59.28,
+    "blackboard-writing": 76.4,
+    "blackBoard": 0.0,
+    "screen": 50.0,
+    "On-stage interaction": 25.0,
+    "hand-raising": 50.85,
+    "read": 19.63,
+    "write": 32.38,
+    "BowHead": 0.0,
+    "TurnHead": 22.9
+  },
+  "mean_acc": 36.13,
+  "collapse_top_class_frac": 0.0
+}

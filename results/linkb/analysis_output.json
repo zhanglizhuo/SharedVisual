@@ -1,0 +1,134 @@
+{
+  "n_classes": 13,
+  "classes": [
+    "BowHead",
+    "On-stage interaction",
+    "TurnHead",
+    "answer",
+    "blackBoard",
+    "blackboard-writing",
+    "guide",
+    "hand-raising",
+    "read",
+    "screen",
+    "stand",
+    "teacher",
+    "write"
+  ],
+  "behavior_agreement": {
+    "C-S": {
+      "rho": 0.74,
+      "ci95": [
+        0.209,
+        0.96
+      ]
+    },
+    "C-D": {
+      "rho": 0.791,
+      "ci95": [
+        0.322,
+        0.966
+      ]
+    },
+    "C-R": {
+      "rho": 0.508,
+      "ci95": [
+        -0.071,
+        0.845
+      ]
+    },
+    "S-D": {
+      "rho": 0.839,
+      "ci95": [
+        0.389,
+        0.994
+      ]
+    },
+    "S-R": {
+      "rho": 0.666,
+      "ci95": [
+        0.101,
+        0.938
+      ]
+    },
+    "D-R": {
+      "rho": 0.491,
+      "ci95": [
+        -0.156,
+        0.892
+      ]
+    }
+  },
+  "geometry": {
+    "primary_ref": "pooled_13_from_cached_features",
+    "pooled_13": {
+      "C-S": 0.937,
+      "C-D": 0.899,
+      "S-D": 0.927
+    },
+    "tb8_secondary": {
+      "C-S": 0.957,
+      "C-D": 0.719,
+      "S-D": 0.772
+    }
+  },
+  "floor_flags": {
+    "C": {
+      "mean_acc": 36.13,
+      "collapse": 0.0,
+      "floor_affected": false
+    },
+    "S": {
+      "mean_acc": 30.0,
+      "collapse": 0.0,
+      "floor_affected": false
+    },
+    "D": {
+      "mean_acc": 35.16,
+      "collapse": 0.0,
+      "floor_affected": false
+    },
+    "R": {
+      "mean_acc": 8.44,
+      "collapse": 0.0,
+      "floor_affected": true
+    }
+  },
+  "any_trainable_floor_affected": false,
+  "all_trainable_floor_affected": false,
+  "P1_ordinal": {
+    "observed": {
+      "C-S": 0.74,
+      "S-D": 0.839,
+      "C-D": 0.791
+    },
+    "predicted_order_holds": false,
+    "exact_p": 0.1667,
+    "ceiling_disclosed": "min one-sided exact p = 1/6; perfect match is descriptive support"
+  },
+  "P2_matrix": {
+    "rho_geometry_vs_behavior": -0.5,
+    "exact_p": 1.0,
+    "ceiling_disclosed": "min two-sided exact p = 2/6"
+  },
+  "P3_lm_floor": {
+    "criterion": "95% CI of rho(C,S)-rho(C,R) excludes 0",
+    "diff_ci95": [
+      -0.17,
+      0.693
+    ],
+    "passes": false
+  },
+  "P4_validity": {
+    "random_markedly_lower": true,
+    "random_acc": 8.44,
+    "min_other_acc": 30.0,
+    "collapse_R": 0.0
+  },
+  "preregistration_note": "P1/P2 descriptive under disclosed ceilings; causal reading of P1/P2 void if any trainable arm floor-affected; C-S is the primary causal pair (D-arm learnability confound preregistered)",
+  "bootstrap": {
+    "B": 10000,
+    "seed": 20260801,
+    "unit": "class"
+  }
+}

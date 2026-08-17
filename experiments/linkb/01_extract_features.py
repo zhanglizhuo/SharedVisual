@@ -31,13 +31,15 @@ DATASETS = ["TeacherBehavior", "HandriseReadWrite", "BowTurnHead"]
 
 
 def dataset_paths():
-    """SCB5 dataset roots (V100 layout)."""
+    """SCB5 dataset roots (V100 layout, verified 2026-08-15 against both the
+    mapping keys and the server directory structure)."""
     base = os.environ.get("SHAREDVISUAL_SCB5",
                           str(Path.home() / "works/lizhuo/AutoResearchClaw/datasets_scb"))
     return {
         "TeacherBehavior": Path(base) / "SCB5_TeacherBehavior" /
             "SCB5_Teacher_Behavior_Stand_BlackBoard_Sreen_20250406-2" / "images",
-        "HandriseReadWrite": Path(base) / "SCB5_HandriseReadWrite" / "images",
+        "HandriseReadWrite": Path(base) / "SCB5_HandriseReadWrite" /
+            "SCB5-Handrise-Read-write-2024-9-17" / "images",
         "BowTurnHead": Path(base) / "SCB_BowTurnHead" / "images",
     }
 
@@ -85,7 +87,17 @@ def load_encoder(arm, device):
         return model.eval(), preprocess, "open_clip"
     if arm == "dinov2_b14":
         import torch
-        model = torch.hub.load("facebookresearch/dinov2", "dinov2_vitb14")
+        # local load (V100: repo + weights pre-cached; avoids network flakiness
+        # and the py3.8 union-type incompatibility of the hub repo)
+        hub_dir = Path(os.environ.get("TORCH_HOME", str(Path.home()/".cache/torch"))) / "hub"
+        repo = hub_dir / "facebookresearch_dinov2_main"
+        ckpt = hub_dir / "checkpoints" / "dinov2_vitb14_pretrain.pth"
+        if repo.exists() and ckpt.exists():
+            model = torch.hub.load(str(repo), "dinov2_vitb14",
+                                   source="local", pretrained=False)
+            model.load_state_dict(torch.load(str(ckpt), map_location="cpu"))
+        else:
+            model = torch.hub.load("facebookresearch/dinov2", "dinov2_vitb14")
         model = model.to(device).eval()
         from torchvision import transforms as T
         preprocess = T.Compose([
@@ -104,7 +116,6 @@ def load_encoder(arm, device):
     raise ValueError(arm)
 
 
-@torch.no_grad() if False else (lambda f: f)  # no-op guard; torch imported lazily
 def extract_arm(arm, split, device="cuda", dry_run=False):
     out_path = OUT_DIR / f"{arm}_{split}.npz"
     if out_path.exists():
@@ -144,29 +155,58 @@ def extract_arm(arm, split, device="cuda", dry_run=False):
                 files.append((f, None, ds, f.name))  # label from train labels dir
         # train labels: YOLO-format .txt of same stem under labels/train
         for i, (f, _, ds, _) in enumerate(files):
-            lbl = f.parents[1] / "labels" / "train" / (f.stem + ".txt")
+            lbl = f.parents[2] / "labels" / "train" / (f.stem + ".txt")
             files[i] = (f, parse_train_label(lbl, ds), ds, f.name)
+        n_labeled = sum(1 for (_, c, _, _) in files if c is not None)
+        if split == "train" and n_labeled == 0:
+            raise RuntimeError(
+                f"train labels all None for this enumeration — label path "
+                f"resolution broken; refusing to write a useless npz "
+                f"(first file: {files[0][0]}, tried: "
+                f"{files[0][0].parents[2] / 'labels' / 'train' / (files[0][0].stem + '.txt')})")
 
-    for f, cls, ds, fname in files:
-        if not f.exists():
-            continue
-        try:
-            img = preprocess(Image.open(f).convert("RGB"))
-        except Exception:
-            continue
-        x = img.unsqueeze(0).to(device)
-        if family == "open_clip":
-            if arm == "clip_l_laion":
-                tok = model.visual(x)              # (1, 257, 768) tokens for L/14
-            else:
-                tok = model.visual(x)              # (1, 730, 1152) for SO400M-384
-        elif family == "dinov2":
-            tok = model.forward_features(x)        # (1, 257, 768)
-        feats.append(tok[0].to(torch.float16).cpu().numpy())
-        labels.append(cls)
-        img_ids.append(f"{ds}/{fname}")
-        if len(feats) % 512 == 0:
-            print(f"  {arm}/{split}: {len(feats)} images")
+    with torch.no_grad():
+        for f, y_cls, ds, fname in files:
+            if not f.exists():
+                continue
+            try:
+                img = preprocess(Image.open(f).convert("RGB"))
+            except Exception:
+                continue
+            x = img.unsqueeze(0).to(device)
+            if family == "open_clip":
+                v = model.visual
+                if hasattr(v, "trunk"):
+                    # TimmModel wrapper (newer open_clip): trunk.__call__
+                    # returns pooled; forward_features gives pre-pool tokens
+                    tok = v.trunk.forward_features(x)   # (1,730,1152) SO400M
+                else:
+                    # old-style VisionTransformer returns pooled; rebuild
+                    # the token stream: conv1->flatten->CLS->pos->ln_pre->
+                    # transformer->ln_post
+                    y = v.conv1(x)                             # (1,D,14,14)
+                    y = y.reshape(y.shape[0], y.shape[1], -1).permute(0, 2, 1)
+                    cls_emb = v.class_embedding.to(y.dtype).view(1, 1, -1)
+                    y = torch.cat([cls_emb, y], dim=1)         # prepend CLS
+                    y = y + v.positional_embedding.to(y.dtype)
+                    y = v.patch_dropout(y) if hasattr(v, "patch_dropout") else y
+                    y = v.ln_pre(y)
+                    y = v.transformer(y)
+                    tok = v.ln_post(y)                          # (1,257,1024)
+            elif family == "dinov2":
+                out = model.forward_features(x)   # dict in this repo version
+                tok = out["x_norm_patchtokens"] if isinstance(out, dict) else out
+                # (1, 256, 768) patch tokens; prepend CLS for parity with
+                # open_clip token streams (257 total)
+                if isinstance(out, dict):
+                    cls_tok = out["x_norm_clstoken"].unsqueeze(1)
+                    tok = torch.cat([cls_tok, tok], dim=1)
+            feats.append(tok[0].to(torch.float16).cpu().numpy())
+            assert not torch.is_tensor(y_cls), f"label must not be a tensor: {y_cls}"
+            labels.append(y_cls)
+            img_ids.append(f"{ds}/{fname}")
+            if len(feats) % 512 == 0:
+                print(f"  {arm}/{split}: {len(feats)} images", flush=True)
 
     np.savez_compressed(out_path,
                         features=np.stack(feats),

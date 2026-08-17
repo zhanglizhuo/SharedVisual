@@ -40,6 +40,7 @@ No GPU, no external data downloads, no separate repositories required — every 
 | FDR correction | raw + Mantel survive; partial ρ do not; perturbation grid 8 sig → 0 (static 6/6 survive) | `analysis/fdr_correction.py` | `results/fdr_correction.json` |
 | Class-frequency control | ρ(anchor, log n)=−0.07, ρ(MLLM, log n)=−0.04 n.s.; partial ρ unchanged 0.797→0.835 | `analysis/prevalence_and_leverage_controls.py` | `results/prevalence_and_leverage_controls.json` |
 | S40 leverage (jackknife) | max \|Δρ\|=0.043; removing 3/5 lowest-anchor classes 0.817→0.768/0.738 (p<0.001) | `analysis/prevalence_and_leverage_controls.py` | `results/prevalence_and_leverage_controls.json` |
+| Link B encoder swap (V100, §4.9) | Preregistered causal intervention, boundary outcome: all arms learn (C 36.1/S 30.0/D 35.2 vs R 8.44%, chance 7.7%), but cross-arm difficulty does not follow geometry ordering (P1) and C-S agreement is indistinguishable from the shared-LM-and-task floor (P3 diff CI [-0.17,0.69]); P4 validity passes; preregistration timeline verified (commit 76931c2 predates unblinding) | `experiments/linkb/` (01-03 + analysis_linkb.py) | `results/linkb/` (summaries + analysis + RUN_MANIFEST) |
 
 ## Datasets
 

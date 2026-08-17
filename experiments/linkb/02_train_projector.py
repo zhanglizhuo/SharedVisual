@@ -44,11 +44,6 @@ SEED = 42
 MAX_POS = 1024  # vision tokens + prompt + answer guard
 
 
-class Projector(torch.nn.Module if False else object):
-    """LLaVA-1.5-style 2-layer MLP. Deferred torch import for --dry-run."""
-    pass
-
-
 def build_projector(in_dim, hidden, out_dim):
     import torch.nn as nn
     return nn.Sequential(
@@ -95,6 +90,19 @@ def train_arm(arm, device="cuda", dry_run=False):
     feats = data["features"]            # (N, T_i, D_i) fp16
     labels_raw = data["labels"]         # per-dataset class ids or None
     img_ids = data["img_ids"]           # dataset/filename
+
+    # leakage discipline (exp1b convention): drop any TRAIN image whose
+    # filename collides with a val filename (cross-dataset duplication by
+    # md5 in the exp1b audit; filename collision is the operative rule).
+    mapping = json.load(open(RESULTS / "scb5_true_class_mapping.json"))
+    val_names = {Path(p).name for p in mapping}
+    keep = [i for i, iid in enumerate(img_ids)
+            if Path(str(iid)).name not in val_names]
+    n_dropped = len(img_ids) - len(keep)
+    print(f"[leakage] {arm}: dropped {n_dropped} filename-colliding train "
+          f"images (exp1b convention); pool {len(keep)}")
+    feats, labels_raw = feats[keep], [labels_raw[i] for i in keep]
+    img_ids = [img_ids[i] for i in keep]
     dataset_of = np.array([i.split("/")[0] for i in img_ids])
 
     # resolve class names: val npz stores names; train stores YOLO ids
@@ -122,8 +130,16 @@ def train_arm(arm, device="cuda", dry_run=False):
         LM_ID, torch_dtype=torch.float16, use_safetensors=True).to(device).eval()
     for p in lm.parameters():
         p.requires_grad_(False)
+    lm.gradient_checkpointing_enable(
+        gradient_checkpointing_kwargs={"use_reentrant": False})
+    lm.config.use_cache = False
 
     T_i, D_i = feats.shape[1], feats.shape[2]
+    # cap vision tokens at 257 for all arms (equal-budget fairness + memory):
+    # SigLIP's 730 tokens are center-cropped to the first 257
+    if T_i > 257:
+        feats = feats[:, :257, :]
+        T_i = 257
     proj = build_projector(D_i, (D_i + LM_HIDDEN) // 2, LM_HIDDEN).to(device)
     proj = proj.to(torch.float32)
     opt = torch.optim.AdamW(proj.parameters(), lr=LR, weight_decay=0.0)
@@ -167,16 +183,15 @@ def train_arm(arm, device="cuda", dry_run=False):
             if ids.shape[1] + emb.shape[1] > MAX_POS:
                 v = v[:, :MAX_POS - ids.shape[1] - 8, :]
                 emb = proj(v).to(torch.float16)
-            emb_in = lm.get_input_embeddings().weight
             inputs_embeds = torch.cat([
                 emb,
-                emb_in(ids).unsqueeze(0)], dim=1)
+                lm.get_input_embeddings()(ids)], dim=1)
             out = lm(inputs_embeds=inputs_embeds, use_cache=False)
-            logits = out.logits[0, emb.shape[1]-1:-1, :]              # ans pos
+            A = len(ans)
+            # rows L-A-1 .. L-2 predict the A answer tokens
+            logits = out.logits[0, -(A + 1):-1, :]
             tgt = torch.tensor(ans, device=device)
-            loss = loss + F.cross_entropy(logits.float(), tgt.unsqueeze(0)
-                                          if logits.shape[0] == 1 else
-                                          logits.float(), reduction="sum")
+            loss = loss + F.cross_entropy(logits.float(), tgt, reduction="sum")
         loss = loss / len(idxs)
         opt.zero_grad(set_to_none=True)
         loss.backward()
