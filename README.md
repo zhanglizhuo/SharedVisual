@@ -2,14 +2,26 @@
 
 Why does a frozen CLIP model's per-class zero-shot accuracy predict the per-class accuracy of much larger multimodal language models (MLLMs) with different vision encoders? We test a candidate mechanism: vision encoders trained on diverse large-scale data exhibit a broadly shared *class-neighborhood geometry*, which is associated with shared per-class difficulty across models. The paper evaluates this across twelve MLLMs (four encoder families), seven vision encoders (CLIP variants, SigLIP, QwenViT, ResNet-50, DINOv2), and three datasets (SCB5, Stanford40, Flowers102), using Mantel tests, CKA, bootstrap mediation with counterfactual controls, and prompt-ablation. All analyses are observational; causal confirmation awaits perturbation-based validation.
 
+![Seven independently trained vision encoders converge to nearly identical class-neighborhood geometry](paper/figures/fig3_class_geometry.png)
+
+*Seven independently trained vision encoders — three CLIP variants, SigLIP, QwenViT, an ImageNet-1k-only ResNet-50, and DINOv2 — converge to nearly the same class-neighborhood structure (Mantel ρ = 0.66–0.98, all exact-permutation p < 5×10⁻⁵). This shared geometry is the candidate mechanism. Figure 3 of the paper.*
+
+## License
+
+Code is released under the MIT License (see [LICENSE](LICENSE)).
+
+
 ## Quick Start
 
 ```bash
-git clone https://github.com/<org>/SharedVisual.git
+git clone https://github.com/zhanglizhuo/SharedVisual.git
 cd SharedVisual
 pip install -r requirements.txt          # CPU-only is enough for all analyses
 
-# Every analysis script reads committed results and reproduces the paper's numbers:
+# Every analysis script reads committed results and reproduces the paper's numbers.
+# NOTE: these scripts REWRITE the JSONs under results/ (deterministically, same seeds),
+# so `git diff results/` after running should show no changes; use `git checkout -- results/`
+# if you want to restore the committed snapshots.
 python analysis/exp1c_clip_group_expanded.py        # Exp 1C encoder-group comparison
 python analysis/mediation_tost_collinearity.py      # Mediation + TOST + VIF
 python analysis/mediation_combined_test.py          # SCB5 combined mediation test
@@ -36,7 +48,7 @@ No GPU, no external data downloads, no separate repositories required — every 
 | Mediation (bootstrap a×b) | Stanford40: 6/6 indirect-effect CIs exclude 0; SCB5 combined sign test p=0.020 | `analysis/mediation_tost_collinearity.py`, `analysis/mediation_combined_test.py` | `results/mediation_bootstrap.json`, `results/mediation_combined_test.json` |
 | Mediation counterfactual controls | Permuted/noise mediators collapse (S40 baseline +0.56 CI[0.37,0.71] p<0.0001 vs −0.006/−0.02); pipeline does not spuriously attribute | `analysis/mediation_counterfactual_controls.py` | `results/mediation_counterfactual_controls.json` |
 | Mantel (class resampling) | Stanford40 CI [0.74, 0.87]; Flowers102 10/10 pairs p<0.0001 | `analysis/mantel_bootstrap.py`, `analysis/flowers102_mantel.py` | `results/mantel_bootstrap.json`, `results/flowers102_mantel.json` |
-| Power analysis | n=13: 33% power for ρ=0.45 | `analysis/power_analysis.py` | `results/power_analysis.json` |
+| Power analysis | n=13: 33% power for ρ=0.45; 80% power needs \|ρ\|≥0.71 (n=13) / ≥0.43 (n=40) | `analysis/power_analysis.py` | `results/power_analysis.json` |
 | FDR correction | raw + Mantel survive; partial ρ do not; perturbation grid 8 sig → 0 (static 6/6 survive) | `analysis/fdr_correction.py` | `results/fdr_correction.json` |
 | Class-frequency control | ρ(anchor, log n)=−0.07, ρ(MLLM, log n)=−0.04 n.s.; partial ρ unchanged 0.797→0.835 | `analysis/prevalence_and_leverage_controls.py` | `results/prevalence_and_leverage_controls.json` |
 | S40 leverage (jackknife) | max \|Δρ\|=0.043; removing 3/5 lowest-anchor classes 0.817→0.768/0.738 (p<0.001) | `analysis/prevalence_and_leverage_controls.py` | `results/prevalence_and_leverage_controls.json` |
@@ -44,7 +56,7 @@ No GPU, no external data downloads, no separate repositories required — every 
 
 ## Datasets
 
-- **SCB5** (Smart Classroom Behavior v5; 13 classes across 3 sub-datasets): download from [`huggingface.co/wintonYF/SCB-Dataset`](https://huggingface.co/wintonYF/SCB-Dataset) (~5.4 GB). Layout after download: `datasets_scb/{SCB5_TeacherBehavior,SCB5_HandriseReadWrite,SCB_BowTurnHead}/`.
+- **SCB5** (Smart Classroom Behavior v5; 13 classes across 3 sub-datasets): download from [`huggingface.co/wintonYF/SCB-Dataset`](https://huggingface.co/wintonYF/SCB-Dataset) (~5.4 GB). Layout after download: `datasets_scb/{SCB5_TeacherBehavior,SCB5_HandriseReadWrite,SCB_BowTurnHead}/` (the third directory uses the `SCB_` prefix, not `SCB5_`; this is the upstream naming).
 - **Stanford40 Actions** (40 classes): download from [`cv.stanford.edu/projects/ActionCategories`](http://cv.stanford.edu/projects/ActionCategories/) — the per-class AnchorScores and MLLM accuracies used in the paper are already committed under `data/visualanchor_snapshot/02_robustness/stanford40/`, so re-running the Stanford40 analyses needs no download.
 - **Flowers102** (102 classes): download from [`robots.ox.ac.uk/~vgg/data/flowers`](https://www.robots.ox.ac.uk/~vgg/data/flowers/). Only needed to re-run the geometric validation of §Flowers102.
 

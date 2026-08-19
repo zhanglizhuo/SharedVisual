@@ -34,7 +34,7 @@ All scripts are deterministic (seeded) and idempotent.
 | Script | Purpose | Output |
 |--------|---------|--------|
 | `exp1_group_analysis.py` | Natural MLLM groups by encoder family (Kruskal–Wallis, permutation) | stdout |
-| `exp1_deep_analysis.py` | LOO partial correlation, SCB5 | `results/exp1_deep_analysis_output.txt` |
+| `exp1_deep_analysis.py` | LOO partial correlation, SCB5 (exploratory) | stdout only (writes no file) |
 | `exp1c_clip_group_expanded.py` | CLIP-encoder group expansion (n=1 → n=5) | `results/exp1c_clip_group_expanded.json` |
 | `kruskal_4groups.py` | Four-group Kruskal–Wallis across encoder families | `results/kruskal_4groups.json` |
 | `compute_partial_ci.py` | Bootstrap CI for partial correlations | stdout |
@@ -52,7 +52,7 @@ All scripts are deterministic (seeded) and idempotent.
 | Script | Purpose | Output |
 |--------|---------|--------|
 | `stanford40_partial_correlation.py` | Stanford40 mediation + aggregated phenomenon | `results/stanford40_partial_correlation.json` |
-| `mediation_combined_test.py` | Pooled mediation test for SCB5 (low-power concern) | `results/mediation_bootstrap.json` (SCB5 section) |
+| `mediation_combined_test.py` | Pooled mediation test for SCB5 (low-power concern) | `results/mediation_combined_test.json` |
 | `mediation_simulation.py` | Rank-z product-of-coefficients estimator consistency check | stdout |
 | `mediation_tost_collinearity.py` | TOST equivalence + mediator-covariate collinearity | stdout |
 | `mediation_counterfactual_controls.py` | Counterfactual mediation controls (class-permuted / noise / independent-encoder mediators) showing the indirect effect is a pipeline artifact only when real | `results/mediation_counterfactual_controls.json` |

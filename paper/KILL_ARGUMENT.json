@@ -1,0 +1,27 @@
+{
+  "audit_skill": "kill-argument",
+  "verdict": "NOT_APPLICABLE",
+  "reason_code": "not_theory_or_scope_paper",
+  "summary": "Empirical mechanism paper: 0 theorem/lemma/proposition/corollary environments; abstract hedged ('candidate mechanism'), no generality claims. Skill scoped to theory papers — research-review is the matching tool.",
+  "audited_input_hashes": {
+    "SharedVisual.tex": "sha256:3f8fef1d2d1401ed606334eb3984dce1e4b218e6012f777cae48b2846e45e814",
+    "supplemental.tex": "sha256:c3424c664fcef6079947adba1a4b0fbdfc8895bdc3c6c783e30f335e47324170",
+    "refs.bib": "sha256:a265592b945022acb1f1b809346efa182978333ba968aaa39bc0297d10e60996",
+    "SharedVisual.pdf": "sha256:f6242204cce07a6eebd9ed5ca88561afbfd2058ce8e56ba54e3626d751113e6d"
+  },
+  "trace_path": ".aris/traces/kill-argument/2026-08-18_run01/",
+  "agent_id": null,
+  "reviewer_model": "gpt-5.5",
+  "reviewer_reasoning": "xhigh",
+  "generated_at": "2026-08-18T11:18:24.483519+00:00",
+  "details": {
+    "detector_evidence": {
+      "theorem_env_count": 0,
+      "title_stable_last_2_commits": true,
+      "headline_unstable": false
+    },
+    "note": "No codex threads spawned (detector verdict). Cross-model reviewers remain network-blocked this session (chatgpt.com unreachable, curl 000) — recorded for transparency; not the reason for NOT_APPLICABLE.",
+    "net_assessment": "kill-argument is scoped to theory papers with theorem obligations. SV is an empirical mechanism paper whose equivalent adversarial exercise was performed in its 12 review rounds (incl. ChatGPT+Claude adversarial panels) and in the boundary/honesty framing audited throughout this session.",
+    "top_action_items": []
+  }
+}

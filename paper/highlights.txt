@@ -1,0 +1,5 @@
+Independently trained vision encoders converge to shared class geometry
+An ImageNet-only ResNet-50 recovers this geometry, weakening data-overlap accounts
+Shared structure is strongest at class prototypes, not patches (adapter R2 <= 0.21)
+Mediation quantifies the shared-difficulty component of the CLIP-MLLM correlation
+Preregistered encoder intervention yields a boundary; prompts repair CLIP's failures

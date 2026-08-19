@@ -5,8 +5,8 @@
     "CLIP ViT-B/32 (OpenAI)",
     "SigLIP ViT-SO400M-14-384",
     "CLIP ViT-L/14 (OpenAI) probe",
-    "Qwen2-VL Vision probe",
-    "ResNet-50 (IN-1k) probe"
+    "ResNet-50 (IN-1k) probe",
+    "Qwen2-VL Vision probe"
   ],
   "protocols": {
     "zero_shot": [
@@ -17,8 +17,8 @@
     ],
     "probe": [
       "CLIP ViT-L/14 (OpenAI) probe",
-      "Qwen2-VL Vision probe",
-      "ResNet-50 (IN-1k) probe"
+      "ResNet-50 (IN-1k) probe",
+      "Qwen2-VL Vision probe"
     ]
   },
   "classes": [
@@ -39,6 +39,7 @@
   ],
   "n_perm": 10000,
   "seed": 42,
+  "note": "mean_prob Delta values are ~1e-3 under the sharp zero-shot softmax (teacher class ~1.0) and constitute numerical noise; only the accuracy Delta analysis is interpretable. The accuracy Delta signal at sigma=8 is driven by the few blur-sensitive classes (blackboard-writing, blackBoard) with many zero entries; treat significance as indicative.",
   "static_control": {
     "accuracy": {
       "CLIP ViT-L/14 (OpenAI) | CLIP ViT-L/14 (LAION)": {
@@ -65,17 +66,17 @@
         "rho": 0.5,
         "p_perm": 0.1411
       },
-      "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
-        "rho": 0.929,
-        "p_perm": 0.0015
-      },
       "CLIP ViT-L/14 (OpenAI) probe | ResNet-50 (IN-1k) probe": {
         "rho": 0.786,
-        "p_perm": 0.0285
+        "p_perm": 0.0273
       },
-      "Qwen2-VL Vision probe | ResNet-50 (IN-1k) probe": {
+      "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
+        "rho": 0.929,
+        "p_perm": 0.0024
+      },
+      "ResNet-50 (IN-1k) probe | Qwen2-VL Vision probe": {
         "rho": 0.881,
-        "p_perm": 0.0079
+        "p_perm": 0.0073
       }
     },
     "mean_prob": {
@@ -103,17 +104,17 @@
         "rho": 0.443,
         "p_perm": 0.2754
       },
-      "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
-        "rho": 0.714,
-        "p_perm": 0.0604
-      },
       "CLIP ViT-L/14 (OpenAI) probe | ResNet-50 (IN-1k) probe": {
         "rho": -0.024,
-        "p_perm": 0.9781
+        "p_perm": 0.9766
       },
-      "Qwen2-VL Vision probe | ResNet-50 (IN-1k) probe": {
+      "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
+        "rho": 0.714,
+        "p_perm": 0.0523
+      },
+      "ResNet-50 (IN-1k) probe | Qwen2-VL Vision probe": {
         "rho": 0.095,
-        "p_perm": 0.8412
+        "p_perm": 0.8454
       }
     }
   },
@@ -156,23 +157,23 @@
           "pearson_centered_rho": -0.122,
           "pearson_centered_p": 1.0
         },
-        "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
-          "spearman_rho": NaN,
-          "spearman_p": 0.0001,
-          "pearson_centered_rho": 0.0,
-          "pearson_centered_p": 1.0
-        },
         "CLIP ViT-L/14 (OpenAI) probe | ResNet-50 (IN-1k) probe": {
-          "spearman_rho": NaN,
-          "spearman_p": 0.0001,
-          "pearson_centered_rho": 0.0,
-          "pearson_centered_p": 1.0
+          "spearman_rho": -0.418,
+          "spearman_p": 0.3006,
+          "pearson_centered_rho": -0.417,
+          "pearson_centered_p": 0.2932
         },
-        "Qwen2-VL Vision probe | ResNet-50 (IN-1k) probe": {
-          "spearman_rho": NaN,
-          "spearman_p": 0.0001,
-          "pearson_centered_rho": 0.0,
-          "pearson_centered_p": 1.0
+        "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
+          "spearman_rho": -0.405,
+          "spearman_p": 0.3144,
+          "pearson_centered_rho": -0.284,
+          "pearson_centered_p": 0.4901
+        },
+        "ResNet-50 (IN-1k) probe | Qwen2-VL Vision probe": {
+          "spearman_rho": 0.482,
+          "spearman_p": 0.2343,
+          "pearson_centered_rho": 0.736,
+          "pearson_centered_p": 0.0697
         }
       },
       "sigma_2": {
@@ -212,23 +213,23 @@
           "pearson_centered_rho": 0.175,
           "pearson_centered_p": 0.8718
         },
-        "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
-          "spearman_rho": NaN,
-          "spearman_p": 0.0001,
-          "pearson_centered_rho": 0.0,
-          "pearson_centered_p": 1.0
-        },
         "CLIP ViT-L/14 (OpenAI) probe | ResNet-50 (IN-1k) probe": {
-          "spearman_rho": NaN,
-          "spearman_p": 0.0001,
-          "pearson_centered_rho": 0.0,
-          "pearson_centered_p": 1.0
+          "spearman_rho": 0.03,
+          "spearman_p": 0.9508,
+          "pearson_centered_rho": 0.04,
+          "pearson_centered_p": 0.9351
         },
-        "Qwen2-VL Vision probe | ResNet-50 (IN-1k) probe": {
-          "spearman_rho": NaN,
-          "spearman_p": 0.0001,
-          "pearson_centered_rho": 0.0,
-          "pearson_centered_p": 1.0
+        "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
+          "spearman_rho": 0.422,
+          "spearman_p": 0.2898,
+          "pearson_centered_rho": 0.416,
+          "pearson_centered_p": 0.298
+        },
+        "ResNet-50 (IN-1k) probe | Qwen2-VL Vision probe": {
+          "spearman_rho": 0.012,
+          "spearman_p": 0.9892,
+          "pearson_centered_rho": 0.178,
+          "pearson_centered_p": 0.6844
         }
       },
       "sigma_4": {
@@ -268,23 +269,23 @@
           "pearson_centered_rho": 0.14,
           "pearson_centered_p": 1.0
         },
-        "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
-          "spearman_rho": NaN,
-          "spearman_p": 0.0001,
-          "pearson_centered_rho": 0.0,
-          "pearson_centered_p": 1.0
-        },
         "CLIP ViT-L/14 (OpenAI) probe | ResNet-50 (IN-1k) probe": {
-          "spearman_rho": NaN,
-          "spearman_p": 0.0001,
-          "pearson_centered_rho": 0.0,
-          "pearson_centered_p": 1.0
+          "spearman_rho": -0.286,
+          "spearman_p": 0.5037,
+          "pearson_centered_rho": -0.457,
+          "pearson_centered_p": 0.2563
         },
-        "Qwen2-VL Vision probe | ResNet-50 (IN-1k) probe": {
-          "spearman_rho": NaN,
-          "spearman_p": 0.0001,
-          "pearson_centered_rho": 0.0,
-          "pearson_centered_p": 1.0
+        "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
+          "spearman_rho": -0.371,
+          "spearman_p": 0.3606,
+          "pearson_centered_rho": -0.019,
+          "pearson_centered_p": 0.9704
+        },
+        "ResNet-50 (IN-1k) probe | Qwen2-VL Vision probe": {
+          "spearman_rho": -0.443,
+          "spearman_p": 0.2775,
+          "pearson_centered_rho": -0.681,
+          "pearson_centered_p": 0.0649
         }
       },
       "sigma_8": {
@@ -324,23 +325,23 @@
           "pearson_centered_rho": 0.522,
           "pearson_centered_p": 0.2197
         },
-        "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
-          "spearman_rho": NaN,
-          "spearman_p": 0.0001,
-          "pearson_centered_rho": 0.0,
-          "pearson_centered_p": 1.0
-        },
         "CLIP ViT-L/14 (OpenAI) probe | ResNet-50 (IN-1k) probe": {
-          "spearman_rho": NaN,
-          "spearman_p": 0.0001,
-          "pearson_centered_rho": 0.0,
-          "pearson_centered_p": 1.0
+          "spearman_rho": 0.342,
+          "spearman_p": 0.407,
+          "pearson_centered_rho": 0.138,
+          "pearson_centered_p": 0.7715
         },
-        "Qwen2-VL Vision probe | ResNet-50 (IN-1k) probe": {
-          "spearman_rho": NaN,
-          "spearman_p": 0.0001,
-          "pearson_centered_rho": 0.0,
-          "pearson_centered_p": 1.0
+        "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
+          "spearman_rho": 0.714,
+          "spearman_p": 0.0569,
+          "pearson_centered_rho": 0.683,
+          "pearson_centered_p": 0.0628
+        },
+        "ResNet-50 (IN-1k) probe | Qwen2-VL Vision probe": {
+          "spearman_rho": -0.013,
+          "spearman_p": 0.9875,
+          "pearson_centered_rho": -0.265,
+          "pearson_centered_p": 0.5365
         }
       }
     },
@@ -382,23 +383,23 @@
           "pearson_centered_rho": -0.28,
           "pearson_centered_p": 0.4751
         },
-        "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
-          "spearman_rho": NaN,
-          "spearman_p": 0.0001,
-          "pearson_centered_rho": 0.0,
-          "pearson_centered_p": 1.0
-        },
         "CLIP ViT-L/14 (OpenAI) probe | ResNet-50 (IN-1k) probe": {
-          "spearman_rho": NaN,
-          "spearman_p": 0.0001,
-          "pearson_centered_rho": 0.0,
-          "pearson_centered_p": 1.0
+          "spearman_rho": -0.238,
+          "spearman_p": 0.5899,
+          "pearson_centered_rho": -0.218,
+          "pearson_centered_p": 0.61
         },
-        "Qwen2-VL Vision probe | ResNet-50 (IN-1k) probe": {
-          "spearman_rho": NaN,
-          "spearman_p": 0.0001,
-          "pearson_centered_rho": 0.0,
-          "pearson_centered_p": 1.0
+        "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
+          "spearman_rho": -0.262,
+          "spearman_p": 0.5335,
+          "pearson_centered_rho": 0.008,
+          "pearson_centered_p": 0.9842
+        },
+        "ResNet-50 (IN-1k) probe | Qwen2-VL Vision probe": {
+          "spearman_rho": 0.214,
+          "spearman_p": 0.6108,
+          "pearson_centered_rho": 0.314,
+          "pearson_centered_p": 0.4591
         }
       },
       "sigma_2": {
@@ -438,23 +439,23 @@
           "pearson_centered_rho": -0.486,
           "pearson_centered_p": 0.2218
         },
-        "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
-          "spearman_rho": NaN,
-          "spearman_p": 0.0001,
-          "pearson_centered_rho": 0.0,
-          "pearson_centered_p": 1.0
-        },
         "CLIP ViT-L/14 (OpenAI) probe | ResNet-50 (IN-1k) probe": {
-          "spearman_rho": NaN,
-          "spearman_p": 0.0001,
-          "pearson_centered_rho": 0.0,
-          "pearson_centered_p": 1.0
+          "spearman_rho": 0.095,
+          "spearman_p": 0.8404,
+          "pearson_centered_rho": -0.109,
+          "pearson_centered_p": 0.8059
         },
-        "Qwen2-VL Vision probe | ResNet-50 (IN-1k) probe": {
-          "spearman_rho": NaN,
-          "spearman_p": 0.0001,
-          "pearson_centered_rho": 0.0,
-          "pearson_centered_p": 1.0
+        "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
+          "spearman_rho": 0.571,
+          "spearman_p": 0.1461,
+          "pearson_centered_rho": 0.801,
+          "pearson_centered_p": 0.0207
+        },
+        "ResNet-50 (IN-1k) probe | Qwen2-VL Vision probe": {
+          "spearman_rho": -0.19,
+          "spearman_p": 0.6705,
+          "pearson_centered_rho": -0.235,
+          "pearson_centered_p": 0.5695
         }
       },
       "sigma_4": {
@@ -494,23 +495,23 @@
           "pearson_centered_rho": -0.367,
           "pearson_centered_p": 0.369
         },
-        "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
-          "spearman_rho": NaN,
-          "spearman_p": 0.0001,
-          "pearson_centered_rho": 0.0,
-          "pearson_centered_p": 1.0
-        },
         "CLIP ViT-L/14 (OpenAI) probe | ResNet-50 (IN-1k) probe": {
-          "spearman_rho": NaN,
-          "spearman_p": 0.0001,
-          "pearson_centered_rho": 0.0,
-          "pearson_centered_p": 1.0
+          "spearman_rho": -0.262,
+          "spearman_p": 0.5372,
+          "pearson_centered_rho": -0.697,
+          "pearson_centered_p": 0.0855
         },
-        "Qwen2-VL Vision probe | ResNet-50 (IN-1k) probe": {
-          "spearman_rho": NaN,
-          "spearman_p": 0.0001,
-          "pearson_centered_rho": 0.0,
-          "pearson_centered_p": 1.0
+        "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
+          "spearman_rho": 0.19,
+          "spearman_p": 0.6679,
+          "pearson_centered_rho": 0.702,
+          "pearson_centered_p": 0.061
+        },
+        "ResNet-50 (IN-1k) probe | Qwen2-VL Vision probe": {
+          "spearman_rho": -0.5,
+          "spearman_p": 0.222,
+          "pearson_centered_rho": -0.804,
+          "pearson_centered_p": 0.0254
         }
       },
       "sigma_8": {
@@ -550,23 +551,23 @@
           "pearson_centered_rho": -0.38,
           "pearson_centered_p": 0.3631
         },
-        "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
-          "spearman_rho": NaN,
-          "spearman_p": 0.0001,
-          "pearson_centered_rho": 0.0,
-          "pearson_centered_p": 1.0
-        },
         "CLIP ViT-L/14 (OpenAI) probe | ResNet-50 (IN-1k) probe": {
-          "spearman_rho": NaN,
-          "spearman_p": 0.0001,
-          "pearson_centered_rho": 0.0,
-          "pearson_centered_p": 1.0
+          "spearman_rho": 0.095,
+          "spearman_p": 0.8388,
+          "pearson_centered_rho": -0.213,
+          "pearson_centered_p": 0.6082
         },
-        "Qwen2-VL Vision probe | ResNet-50 (IN-1k) probe": {
-          "spearman_rho": NaN,
-          "spearman_p": 0.0001,
-          "pearson_centered_rho": 0.0,
-          "pearson_centered_p": 1.0
+        "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
+          "spearman_rho": 0.762,
+          "spearman_p": 0.0386,
+          "pearson_centered_rho": 0.898,
+          "pearson_centered_p": 0.0026
+        },
+        "ResNet-50 (IN-1k) probe | Qwen2-VL Vision probe": {
+          "spearman_rho": -0.143,
+          "spearman_p": 0.7532,
+          "pearson_centered_rho": -0.294,
+          "pearson_centered_p": 0.4708
         }
       }
     }
@@ -597,17 +598,17 @@
         "spearman_rho": -0.025,
         "p_perm_class_block": 1.0
       },
-      "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
-        "spearman_rho": NaN,
-        "p_perm_class_block": 0.0001
-      },
       "CLIP ViT-L/14 (OpenAI) probe | ResNet-50 (IN-1k) probe": {
-        "spearman_rho": NaN,
-        "p_perm_class_block": 0.0001
+        "spearman_rho": -0.116,
+        "p_perm_class_block": 0.6435
       },
-      "Qwen2-VL Vision probe | ResNet-50 (IN-1k) probe": {
-        "spearman_rho": NaN,
-        "p_perm_class_block": 0.0001
+      "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
+        "spearman_rho": 0.233,
+        "p_perm_class_block": 0.4172
+      },
+      "ResNet-50 (IN-1k) probe | Qwen2-VL Vision probe": {
+        "spearman_rho": -0.016,
+        "p_perm_class_block": 0.948
       }
     },
     "mean_prob": {
@@ -635,19 +636,18 @@
         "spearman_rho": -0.35,
         "p_perm_class_block": 0.2115
       },
-      "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
-        "spearman_rho": NaN,
-        "p_perm_class_block": 0.0001
-      },
       "CLIP ViT-L/14 (OpenAI) probe | ResNet-50 (IN-1k) probe": {
-        "spearman_rho": NaN,
-        "p_perm_class_block": 0.0001
+        "spearman_rho": -0.091,
+        "p_perm_class_block": 0.7478
       },
-      "Qwen2-VL Vision probe | ResNet-50 (IN-1k) probe": {
-        "spearman_rho": NaN,
-        "p_perm_class_block": 0.0001
+      "CLIP ViT-L/14 (OpenAI) probe | Qwen2-VL Vision probe": {
+        "spearman_rho": 0.349,
+        "p_perm_class_block": 0.2121
+      },
+      "ResNet-50 (IN-1k) probe | Qwen2-VL Vision probe": {
+        "spearman_rho": -0.147,
+        "p_perm_class_block": 0.5522
       }
     }
-  },
-  "note": "mean_prob Delta values are ~1e-3 under the sharp zero-shot softmax (teacher class ~1.0) and constitute numerical noise; only the accuracy Delta analysis is interpretable. The accuracy Delta signal at sigma=8 is driven by the few blur-sensitive classes (blackboard-writing, blackBoard) with many zero entries; treat significance as indicative."
+  }
 }

@@ -123,7 +123,19 @@
     "random_markedly_lower": true,
     "random_acc": 8.44,
     "min_other_acc": 30.0,
-    "collapse_R": 0.0
+    "collapse_R": 0.0,
+    "p4b_r_pairs_lowest": true,
+    "p4b_r_pair_rhos": {
+      "C-R": 0.508,
+      "S-R": 0.666,
+      "D-R": 0.491
+    },
+    "p4b_non_r_pair_rhos": {
+      "C-S": 0.74,
+      "S-D": 0.839,
+      "C-D": 0.791
+    },
+    "p4b_note": "implemented and verified 2026-08-18; R pair agreements are the three lowest of six"
   },
   "preregistration_note": "P1/P2 descriptive under disclosed ceilings; causal reading of P1/P2 void if any trainable arm floor-affected; C-S is the primary causal pair (D-arm learnability confound preregistered)",
   "bootstrap": {

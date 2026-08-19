@@ -269,7 +269,7 @@ def main():
         print(f"  saved {name} -> {out_path}", flush=True)
 
     # ---------- probe encoders ----------
-    def extract_qwen(paths, device):
+    def extract_qwen(paths, device, sigma):
         from transformers import Qwen2VLForConditionalGeneration, AutoProcessor
         qwen = Qwen2VLForConditionalGeneration.from_pretrained(
             "Qwen/Qwen2-VL-7B-Instruct", torch_dtype=torch.float16,
@@ -278,7 +278,8 @@ def main():
         qwen.eval()
         feats = []
         for p in paths:
-            img = Image.open(p).convert("RGB").resize((224, 224))
+            data = blur_bytes(p, sigma)
+            img = Image.open(io.BytesIO(data)).convert("RGB").resize((224, 224))
             conv = [{"role": "user", "content": [
                 {"type": "image", "max_pixels": 224 * 224},
                 {"type": "text", "text": "x"}]}]
@@ -291,7 +292,7 @@ def main():
             feats.append(pooled.cpu().numpy())
         return np.stack(feats)
 
-    def extract_resnet(paths, device):
+    def extract_resnet(paths, device, sigma):
         import torchvision.transforms as T
         from torchvision import models
         model = models.resnet50(weights=models.ResNet50_Weights.IMAGENET1K_V1)
@@ -303,7 +304,8 @@ def main():
         ])
         feats = []
         for p in paths:
-            img = Image.open(p).convert("RGB")
+            data = blur_bytes(p, sigma)
+            img = Image.open(io.BytesIO(data)).convert("RGB")
             t = tfm(img).unsqueeze(0).to(device)
             with torch.no_grad():
                 f = model(t)
@@ -335,9 +337,9 @@ def main():
         for s in SIGMAS:
             paths = [p for p, _ in samples]
             if kind == "qwen":
-                all_feats[s] = extract_qwen(paths, device)
+                all_feats[s] = extract_qwen(paths, device, s)
             elif kind == "resnet":
-                all_feats[s] = extract_resnet(paths, device)
+                all_feats[s] = extract_resnet(paths, device, s)
             elif kind == "clip_l14":
                 feats = []
                 for img_path in paths:

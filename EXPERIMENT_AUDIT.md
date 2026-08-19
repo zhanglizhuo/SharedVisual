@@ -1,7 +1,7 @@
 # Experiment Audit Report
 
 **Date**: 2026-08-15
-**Auditor**: local executor (cross-model reviewer backend unavailable — codex disabled by user, no alternative API keys; deviation from the cross-model rule recorded)
+**Auditor**: local executor (cross-model reviewer backend unavailable; deviation from the cross-model rule recorded)
 **Project**: SharedVisual — Shared Class-Neighborhood Geometry: A Candidate Mechanism for Why CLIP Predicts MLLM Difficulty
 
 ## Overall Verdict: PASS
@@ -87,7 +87,7 @@ No orphan metric functions found. Scripts without same-named result files are ac
 
 ## Limitations
 
-- Same-family audit (executor; cross-model reviewer unavailable by user instruction). The 2026-08-12 audit report and this session's cross-checks cover the same ground from two angles; the audit catches common integrity patterns, not all possible fabrication.
+- Same-family audit (executor; cross-model reviewer unavailable). The 2026-08-12 audit report and this session's cross-checks cover the same ground from two angles; the audit catches common integrity patterns, not all possible fabrication.
 
 ## Addendum — Link B Encoder-Swap Run (2026-08-17)
 
@@ -100,3 +100,25 @@ Preregistered (DESIGN.md locked before training; deviations disclosed in RUN_MAN
 | Result existence | 4 arm summaries n=5416 each; analysis JSON committed; RUN_MANIFEST present |
 | Preregistration integrity | P1-P4 and interpretation table written before unblinding (commit history); outcome reported per table without post-hoc reinterpretation |
 | Verdict | PASS (honest-boundary outcome faithfully reported) |
+
+## Addendum — 2026-08-18 Session Delta (text/figure-only)
+
+Cross-model rerun attempted (codex CLI, gpt-5.5, read-only sandbox): blocked by network (chatgpt.com backend unreachable from this shell, no proxy env; transport closed + reconnect loop). Deviation recorded as in the 2026-08-15 audit.
+
+Experiment-side surface unchanged since the 08-17 PASS audit. Verified in-session:
+- No new analysis/evaluation scripts, no new result files, no new quantitative claims (session changes were prose, captions, figures, cross-refs, and the fig3 colorbar bound 0.5→0.45, which changes a display scale only).
+- Numeric-token multiset of paper/SharedVisual.tex verified identical across the session (1692=1692) except the intentional colorbar bound.
+- All claim-critical numbers re-verified against JSONs during figure reviews (fig2 group means 0.462/0.716/0.669/0.374; fig4 45.3→98.1 etc.; fig5 ρ=0.817/0.810; mediation table; supplement §1-§4).
+
+Verdict for the delta: PASS (no integrity-relevant change).
+
+## Addendum — Code Walkthrough Corrections (2026-08-18)
+
+Two integrity-relevant bugs found by the full-code walkthrough (3 parallel passes + executor verification) and fixed:
+
+| Bug | Fix | Paper impact |
+|-----|-----|--------------|
+| Probe blur never applied for Qwen/ResNet (`exp_visual_perturbation_sync.py` extractors) | Re-run on V100 with blur applied | S4.8 "blur-invariant (Δ=0)" rewritten with true results (ResNet teacher 65.3→44.0 at σ8; Qwen non-monotonic; no probe-pair Δ agreement, all perm p≥0.057) |
+| `confusion_vs_geometry.py` permuted both matrices jointly (preserved pairing) | One-matrix permutation on symmetrized statistic | Supplement §2 perm p 0.661 → 0.7351 (null conclusion unchanged) |
+
+Also fixed: analysis_linkb.py reproducibility paths, preregistered P4(b) implemented (PASS), collapse-metric inertness documented, SigLIP token-cap wording corrected, exp1_deep_analysis LOO+seed. Verdict: PASS (all fixes verified by re-execution).

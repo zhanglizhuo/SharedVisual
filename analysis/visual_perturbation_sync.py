@@ -45,6 +45,8 @@ def score_vector(entry, metric):
 def spearman_p(x, y, rng):
     """Two-sided permutation p-value for Spearman on n=8 vectors."""
     rho_obs = stats.spearmanr(x, y).statistic
+    if not np.isfinite(rho_obs):
+        return float('nan'), float('nan')
     n = len(x)
     count = 0
     y_arr = np.asarray(y)

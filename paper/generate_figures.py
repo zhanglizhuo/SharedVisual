@@ -55,6 +55,7 @@ def configure_paper_figure(font_size=8.0):
         'figure.dpi': 300,
         'savefig.dpi': 300,
         'savefig.bbox': 'tight',
+        'pdf.fonttype': 42,
         'savefig.pad_inches': 0.05,
     })
 
@@ -69,6 +70,12 @@ def load_json(name):
 
 def save(fig: plt.Figure, name: str) -> None:
     fig.savefig(OUT / f'{name}.pdf')
+    fig.savefig(OUT / f'{name}.png', dpi=300)
+    fig.savefig(OUT / f'{name}.svg')
+    try:
+        fig.savefig(OUT / f'{name}.tiff', dpi=300)
+    except Exception:
+        pass
     plt.close(fig)
 
 
@@ -102,14 +109,24 @@ def style_axis(ax, grid_axis: str | None = 'y', tick_size: float = 8.0):
 def fig1_phenomenon_overview():
     from matplotlib.patches import FancyBboxPatch
 
-    fig, ax = plt.subplots(figsize=(6.5, 3.85))
+    fig, ax = plt.subplots(figsize=(6.5, 3.1))
+    ax.set_position([0.02, 0, 0.97, 1])
     ax.set_xlim(0, 6.5)
-    ax.set_ylim(0, 3.85)
+    ax.set_ylim(0.35, 3.6)
     ax.axis('off')
+    renderer = fig.canvas.get_renderer()
+
+    def line_w(s, fs=8.5, bold=True):
+        t = ax.text(0, 0, s, fontsize=fs,
+                    fontweight='bold' if bold else 'normal')
+        bb = t.get_window_extent(renderer=renderer)
+        t.remove()
+        return bb.width / fig.dpi
 
     BOX_COLOR = PRIMARY_BLUE
     ARROW_COLOR = '#555555'
     EVIDENCE_COLOR = '#555555'
+    BAND_FILL = '#F3F4F6'
 
     def draw_box(x, y, w, h, text, fontsize=8.5, color=BOX_COLOR):
         box = FancyBboxPatch((x - w / 2, y - h / 2), w, h,
@@ -125,68 +142,125 @@ def fig1_phenomenon_overview():
                     arrowprops=dict(arrowstyle='->', color=ARROW_COLOR,
                                     lw=1.8), zorder=4)
 
-    def draw_attack(x, y_bottom, y_top, color):
-        ax.annotate('', xy=(x, y_top), xytext=(x, y_bottom),
-                    arrowprops=dict(arrowstyle='->', color=color, lw=1.3,
-                                    linestyle='dashed'), zorder=2)
+    def draw_attack(x_bottom, y_bottom, x_top, y_top, color='#555555',
+                    solid=False):
+        ax.annotate('', xy=(x_top, y_top), xytext=(x_bottom, y_bottom),
+                    arrowprops=dict(arrowstyle='->', color=color, lw=1.4,
+                                    linestyle='-' if solid else 'dashed'),
+                    zorder=2)
 
-    # ── Main chain (4 boxes) ──
-    box_w, box_h = 1.08, 0.62
-    margin = 0.08
-    first_cx = margin + box_w / 2
-    last_cx = 6.5 - margin - box_w / 2
-    spacing = (last_cx - first_cx) / 3
-    centers_x = [first_cx + i * spacing for i in range(4)]
-    y_main = 2.95
-
+    # ── Main chain: widths measured from content, uniform short height ──
+    y_main = 2.75
+    box_h = 0.48
     labels = [
-        'Web-Scale\nTraining',
-        'Shared Class-\nNeighborhood\nGeometry\n(Level 1)',
-        'Shared Visual\nDifficulty\n(Level 2)',
-        'CLIP Predicts\nMLLM Difficulty',
+        ['Web-Scale', 'Training'],
+        ['Shared Class-', 'Neighborhood Geometry', '(Level 1)'],
+        ['Shared Visual', 'Difficulty', '(Level 2)'],
+        ['CLIP Predicts', 'MLLM Difficulty'],
     ]
-    for cx, lab in zip(centers_x, labels):
-        draw_box(cx, y_main, box_w, box_h, lab)
+    box_ws = [max(line_w(l) for l in ls) + 0.18 for ls in labels]
+    gap = (6.30 - 0.16 - sum(box_ws)) / 3
+    centers_x = []
+    x_cur = 0.08
+    for w in box_ws:
+        centers_x.append(x_cur + w / 2)
+        x_cur += w + gap
 
-    for i in range(3):
-        draw_arrow(centers_x[i] + box_w / 2, centers_x[i + 1] - box_w / 2,
-                   y_main)
+    for cx, ls, w in zip(centers_x, labels, box_ws):
+        draw_box(cx, y_main, w, box_h, '\n'.join(ls))
+
+    x1r = centers_x[0] + box_ws[0] / 2
+    x2l = centers_x[1] - box_ws[1] / 2
+    x2r = centers_x[1] + box_ws[1] / 2
+    x3l = centers_x[2] - box_ws[2] / 2
+    x3r = centers_x[2] + box_ws[2] / 2
+    x4l = centers_x[3] - box_ws[3] / 2
+    mid12 = (x2r + x3l) / 2
+    mid34 = (x3r + x4l) / 2
+
+    # chain arrows: straight lines, tips inset so they never touch box edges
+    draw_arrow(x1r + 0.04, x2l - 0.04, y_main)
+    draw_arrow(x2r + 0.04, x3l - 0.04, y_main)
+    draw_arrow(x3r + 0.04, x4l - 0.04, y_main)
 
     # ── Evidence annotations ABOVE the chain ──
     y_ev = y_main + box_h / 2 + 0.10
     evidence = [
-        'All on\nweb-scale data',
+        'Independent encoders\ntrained at web scale',
         'Mantel ρ = 0.90–0.98 (prototype level)\nCKA 0.79–0.87 (feature level)',
         'Mediation (S40):\nindirect CIs exclude 0',
         'SigLIP 0.72 > CLIP 0.46 (n=4)\nρ = 0.82 (S40)',
     ]
-    for cx, ev in zip(centers_x, evidence):
-        ax.text(cx, y_ev, ev, ha='center', va='bottom', fontsize=8.5,
-                color=EVIDENCE_COLOR, style='italic', zorder=3)
+    for idx, (cx, ev) in enumerate(zip(centers_x, evidence)):
+        if idx == 0:
+            ax.text(0.05, y_ev, ev, ha='left', va='bottom', fontsize=8.5,
+                    color=EVIDENCE_COLOR, style='italic', zorder=3)
+        elif idx == 3:
+            ax.text(6.30, y_ev, ev, ha='right', va='bottom', fontsize=8.5,
+                    color=EVIDENCE_COLOR, style='italic', zorder=3)
+        else:
+            ax.text(cx, y_ev, ev, ha='center', va='bottom', fontsize=8.5,
+                    color=EVIDENCE_COLOR, style='italic', zorder=3)
 
-    # ── Hypothesis verdicts: one row beneath the chain, vertically aligned ──
+    # ── Hypothesis verdicts: dashed arrows target the LINKS ──
+    y_hyp_top = y_main - box_h / 2 - 0.51
+    box_hyp_h = 0.48
+    v_first = 0.08 + 1.30 / 2
+    v_last = 6.30 - 1.30 / 2
+    verdict_x = [v_first + (v_last - v_first) / 3 * k for k in range(4)]
+    v_box_w = 1.30
     hyps = [
-        (centers_x[0], '(H2) Shared Data\n(WEAKENED)', MID_GRAY, True),
-        (centers_x[1], '(H3) Shared Geometry\n(SUPPORTED — ours)', BOX_COLOR,
-         False),
-        (centers_x[2], '(H4) Image Difficulty\n(CONSTRAINED)', MID_GRAY,
-         True),
-        (centers_x[3], '(H1) Shared Encoder\n(RULED OUT)', MID_GRAY, True),
+        (verdict_x[0], 'H2: Shared Data\nWEAKENED', MID_GRAY, 'attack'),
+        (verdict_x[1], 'H3: Shared Geometry\nSUPPORTED (ours)', BOX_COLOR,
+         'support'),
+        (verdict_x[2], 'H4: Image Difficulty\nCONSTRAINED', MID_GRAY,
+         'attack'),
+        (verdict_x[3], 'H1: Shared Encoder\nRULED OUT', MID_GRAY, 'attack'),
     ]
-    y_hyp_top = y_main - box_h / 2 - 0.16
-    box_hyp_h = 0.52
-    for xb, lab, col, has_arrow in hyps:
-        if has_arrow:
-            draw_attack(xb, y_hyp_top - 0.10, y_hyp_top, '#555555')
-        box = FancyBboxPatch((xb - 0.75, y_hyp_top - box_hyp_h), 1.5,
-                             box_hyp_h, boxstyle="round,pad=0.05",
+    for xb, lab, col, kind in hyps:
+        box = FancyBboxPatch((xb - v_box_w / 2, y_hyp_top - box_hyp_h),
+                             v_box_w, box_hyp_h,
+                             boxstyle="round,pad=0.05",
                              facecolor=col, edgecolor='white', linewidth=1,
                              alpha=0.78, zorder=5)
         ax.add_patch(box)
         ax.text(xb, y_hyp_top - box_hyp_h / 2, lab, ha='center', va='center',
-                fontsize=8.5, fontweight='bold', color='white', zorder=6)
+                fontsize=8.0, fontweight='bold', color='white', zorder=6)
 
-    fig.tight_layout(pad=0.3)
+    link12 = (x1r + x2l) / 2
+    link34 = (x3r + x4l) / 2
+
+    def draw_ortho(x_b, y_bottom, x_t, y_top, y_mid, color='#555555',
+                   solid=False):
+        ls = '-' if solid else 'dashed'
+        ax.plot([x_b, x_b, x_t, x_t], [y_bottom, y_mid, y_mid, y_top],
+                color=color, lw=1.4, linestyle=ls, zorder=2)
+        ax.annotate('', xy=(x_t, y_top), xytext=(x_t, y_top - 0.015),
+                    arrowprops=dict(arrowstyle='->', color=color, lw=1.4),
+                    zorder=3)
+
+    y_target = y_main - 0.13
+    # H2 (left) and H3 (right) converge on the training->geometry link
+    draw_ortho(verdict_x[0], y_hyp_top + 0.08, link12 - 0.06, y_target,
+               y_hyp_top + 0.26)
+    draw_ortho(verdict_x[1], y_hyp_top + 0.08, link12 + 0.06, y_target,
+               y_hyp_top + 0.26, color=BOX_COLOR, solid=True)
+    # H4 targets the geometry->difficulty link (straight chain arrow above)
+    draw_ortho(verdict_x[2], y_hyp_top + 0.08, mid12, y_main - 0.17,
+               y_hyp_top + 0.26)
+    # H1 targets the difficulty->prediction link
+    draw_ortho(verdict_x[3], y_hyp_top + 0.08, link34, y_target, y_hyp_top + 0.26)
+
+    # ── Downstream modulation band ──
+    band = FancyBboxPatch((0.08, 0.6), 6.22, 0.5,
+                          boxstyle="round,pad=0.05",
+                          facecolor=BAND_FILL, edgecolor='#D1D5DB',
+                          linewidth=0.8, zorder=1)
+    ax.add_patch(band)
+    ax.text(3.19, 0.85,
+            'Downstream modulation: language alignment (Supplement §2)  ·  family-conditioned component (§4.2)',
+            ha='center', va='center', fontsize=8, color='#374151', zorder=2)
+
     save(fig, 'fig1_phenomenon_overview')
     print('  ✓ Figure 1 saved (two-level chain diagram)')
 
@@ -219,6 +293,11 @@ def fig2_not_shared_encoder():
 
     ax.bar(x_pos, means, width=0.5, color=colors,
            edgecolor=EDGE_COLOR, linewidth=0.6, alpha=0.88, zorder=3)
+    # n=1 group (Qwen2-VL ViT): hatch + lighter so a single model does not
+    # read as a group mean comparable to n=3/4
+    ax.bar(x_pos[-1], means[-1], width=0.5, color=colors[-1],
+           edgecolor=EDGE_COLOR, linewidth=0.6, alpha=0.45, hatch='///',
+           zorder=4)
 
     rng = np.random.RandomState(42)
     marker_shapes = ['o', 's', '^', 'D']
@@ -239,17 +318,17 @@ def fig2_not_shared_encoder():
         ax.text((x1 + x2) / 2, y + 0.02, p_text, ha='center',
                 fontsize=9, fontweight='bold', color=TEXT_COLOR)
 
-    star_bracket(ax, 0, 1, 0.81, 'sep. p=0.029\n(one-sided)')
-    ax.text(1.0, 0.335, 'KW p=0.030 (all four groups)', ha='center',
-            fontsize=8, fontstyle='italic', color='#444444')
+    star_bracket(ax, 0, 1, 0.78, 'sep. p=0.029\n(one-sided)')
+    ax.text(2.5, 0.796, 'KW p=0.030 (all four groups)', ha='center', va='bottom',
+            fontsize=8.5, color=TEXT_COLOR,
+            bbox=dict(boxstyle='round,pad=0.3', facecolor='white',
+                      edgecolor=EDGE_COLOR, alpha=0.9))
 
     ax.set_xticks(x_pos)
     ax.set_xticklabels(labels, fontsize=9)
     ax.set_ylabel('Spearman ρ (CLIP vs MLLM)', fontsize=9)
-    ax.set_ylim(0.3, 1.0)
-    ax.text(0.02, 0.98,
-            'Higher ρ = stronger CLIP–MLLM agreement\n→ shared encoder would predict CLIP > others',
-            transform=ax.transAxes, fontsize=8, va='top', color='gray')
+    ax.set_ylim(0.3, 0.845)
+
     style_axis(ax)
 
     fig.tight_layout(pad=0.5)
@@ -273,7 +352,7 @@ def figS1_cka_heatmap():
 
     fig, ax = plt.subplots(figsize=(5.2, 4.6))
 
-    im = ax.imshow(mat, vmin=0.7, vmax=1.0, cmap=HEATMAP_CMAP, aspect='equal')
+    im = ax.imshow(mat, vmin=0.6, vmax=1.0, cmap=HEATMAP_CMAP, aspect='equal')
     ax.set_xticks(range(n))
     ax.set_yticks(range(n))
     ax.set_xticklabels(labels_short, fontsize=8.5)
@@ -284,7 +363,7 @@ def figS1_cka_heatmap():
             val = mat[i, j]
             ax.text(j, i, f'{val:.3f}', ha='center', va='center',
                     fontsize=8, fontweight='bold',
-                    color=text_color_for(val, 0.7, 1.0))
+                    color=text_color_for(val, 0.6, 1.0))
 
     cbar = plt.colorbar(im, ax=ax, shrink=0.8)
     cbar.ax.tick_params(labelsize=8.5)
@@ -368,7 +447,7 @@ def fig3_class_geometry():
                     frozenset((heat_order[i], heat_order[j])), np.nan)
     mask = np.tril(np.ones((n7, n7), dtype=bool), k=-1)
     mat_masked = np.ma.masked_where(mask, mantel_mat)
-    m_ax.imshow(mat_masked, vmin=0.5, vmax=1.0, cmap=HEATMAP_CMAP, aspect='equal')
+    m_ax.imshow(mat_masked, vmin=0.45, vmax=1.0, cmap=HEATMAP_CMAP, aspect='equal')
     m_ax.set_xticks(range(n7))
     m_ax.set_yticks(range(n7))
     m_ax.set_xticklabels(short_labels, rotation=45, ha='right', fontsize=8)
@@ -380,7 +459,7 @@ def fig3_class_geometry():
                 continue
             m_ax.text(j, i, f'{val:.2f}', ha='center', va='center',
                       fontsize=8, fontweight='bold',
-                      color=text_color_for(val, 0.5, 1.0))
+                      color=text_color_for(val, 0.45, 1.0))
     m_ax.set_title('Mantel ρ between encoders', fontsize=10,
                    fontweight='bold', color=TEXT_COLOR, loc='center')
     style_axis(m_ax, grid_axis=None)
@@ -397,7 +476,7 @@ def fig4_prompt_variants():
     data = {**data3, **data5}
     classes = ['blackboard-writing', 'answer', 'blackBoard', 'stand', 'screen']
 
-    fig, ax = plt.subplots(figsize=(6.9, 3.7))
+    fig, ax = plt.subplots(figsize=(6.5, 3.7))
 
     orig_accs = []
     best_accs = []
@@ -424,28 +503,34 @@ def fig4_prompt_variants():
            edgecolor=EDGE_COLOR, linewidth=0.6, label='Original prompt', zorder=3)
     ax.bar(x + width / 2, best_accs, width,
            color=PRIMARY_BLUE,
-           edgecolor=EDGE_COLOR, linewidth=0.6, label='Best of 5 variants', zorder=3)
+           edgecolor=EDGE_COLOR, linewidth=0.6, label='Best of 4 variants', zorder=3)
+
+    def fmt(v):
+        return f'{v:.0f}' if abs(v - round(v)) < 1e-9 else f'{v:.1f}'
 
     for i in range(len(classes)):
-        ax.text(i - width / 2, orig_accs[i] + 1.5, f'{orig_accs[i]:.0f}',
+        ax.text(i - width / 2, orig_accs[i] + 1.5, fmt(orig_accs[i]),
                 ha='center', fontsize=8, color=TEXT_COLOR)
-        ax.text(i + width / 2, best_accs[i] + 1.5, f'{best_accs[i]:.0f}',
+        ax.text(i + width / 2, best_accs[i] + 1.5, fmt(best_accs[i]),
                 ha='center', fontsize=8, fontweight='bold', color=TEXT_COLOR)
 
     for i in range(len(classes)):
         imp = best_accs[i] - orig_accs[i]
-        ax.annotate(f'+{imp:.0f} pp', xy=(i + width / 2, best_accs[i] + 4.5),
+        ax.annotate(f'+{fmt(imp)} pp', xy=(i + width / 2, best_accs[i] + 4.5),
                     xytext=(i + width / 2, best_accs[i] + 13),
                     ha='center', fontsize=8.5, fontweight='bold',
                     color=LINE_DARK,
                     arrowprops=dict(arrowstyle='->', color=EDGE_COLOR, lw=0.8))
 
     ax.set_xticks(x)
-    ax.set_xticklabels(classes, fontsize=8.5)
-    plt.setp(ax.get_xticklabels(), rotation=18, ha='right')
+    tick_labs = ['blackboard-\nwriting', 'answer', 'blackBoard', 'stand',
+                 'screen']
+    ax.set_xticklabels(tick_labs, fontsize=8.5)
+    plt.setp(ax.get_xticklabels(), rotation=0, ha='center')
     ax.set_ylabel('CLIP Zero-Shot Accuracy (%)', fontsize=9)
     ax.set_title('OpenAI ViT-L/14', fontsize=8.5, color='#555555', loc='right')
     ax.set_ylim(0, 122)
+    ax.set_yticks([0, 20, 40, 60, 80, 100])  # data domain only; annotation zone above 100 carries no tick
     ax.legend(fontsize=8.5, loc='upper right', frameon=False)
     style_axis(ax)
 
@@ -514,12 +599,13 @@ def fig5_stanford40():
     ax_a.set_xlabel('AnchorScore (%)', fontsize=9)
     ax_a.set_ylabel('MLLM Mean Accuracy (%)', fontsize=9)
     ax_a.set_xlim(40, 105)
-    ax_a.set_ylim(70, 105)
+    ax_a.set_ylim(79, 101)
+    ax_a.set_yticks([80, 85, 90, 95, 100])  # ticks stop at the data domain max
     ax_a.text(0.95, 0.05, f'ρ = {rho_acc:.3f}\np < 0.001\nn = 40 classes',
               transform=ax_a.transAxes, fontsize=8.5, ha='right', va='bottom',
               bbox=dict(boxstyle='round,pad=0.3', facecolor='white',
                         edgecolor=EDGE_COLOR, alpha=0.85))
-    ax_a.set_title('a  Phenomenon replicates',
+    ax_a.set_title('(a) Phenomenon replicates',
                    fontsize=10, fontweight='bold', loc='left', color=TEXT_COLOR)
     style_axis(ax_a)
 
@@ -530,12 +616,12 @@ def fig5_stanford40():
     xs2 = np.linspace(clip_ut.min(), clip_ut.max(), 100)
     ax_b.plot(xs2, s2 * xs2 + i2, color=PRIMARY_BLUE, linewidth=1.5, zorder=4)
     ax_b.set_xlabel('CLIP class similarity', fontsize=9)
-    ax_b.set_ylabel('Qwen2-VL class similarity', fontsize=9)
-    ax_b.text(0.95, 0.05, f'ρ = {rho_geo:.3f}\np < 10⁻⁴\n780 class pairs',
+    ax_b.set_ylabel('QwenViT class similarity', fontsize=9)
+    ax_b.text(0.95, 0.05, f'ρ = {rho_geo:.3f}\np < 10$^{{-4}}$\n780 class pairs',
               transform=ax_b.transAxes, fontsize=8.5, ha='right', va='bottom',
               bbox=dict(boxstyle='round,pad=0.3', facecolor='white',
                         edgecolor=EDGE_COLOR, alpha=0.85))
-    ax_b.set_title('b  Shared class geometry',
+    ax_b.set_title('(b) Shared class geometry',
                    fontsize=10, fontweight='bold', loc='left', color=TEXT_COLOR)
     style_axis(ax_b)
 
@@ -544,7 +630,7 @@ def fig5_stanford40():
                        aspect='equal')
     ax_c.set_xticks([])
     ax_c.set_yticks([])
-    ax_c.set_title('c  CLIP ViT-L/14 class similarity',
+    ax_c.set_title('(c) CLIP ViT-L/14 class similarity',
                    fontsize=10, fontweight='bold', loc='left', color=TEXT_COLOR)
     cb_c = plt.colorbar(im_c, ax=ax_c, shrink=0.75, pad=0.02)
     cb_c.ax.tick_params(labelsize=8.5, colors=TEXT_COLOR)
@@ -554,7 +640,7 @@ def fig5_stanford40():
                        aspect='equal')
     ax_d.set_xticks([])
     ax_d.set_yticks([])
-    ax_d.set_title('d  Qwen2-VL class similarity (same order)',
+    ax_d.set_title('(d) QwenViT class similarity (same order)',
                    fontsize=10, fontweight='bold', loc='left', color=TEXT_COLOR)
     cb_d = plt.colorbar(im_d, ax=ax_d, shrink=0.75, pad=0.02)
     cb_d.ax.tick_params(labelsize=8.5, colors=TEXT_COLOR)

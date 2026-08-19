@@ -104,7 +104,7 @@
     "norm_confusion_vs_sim": {
       "rho": 0.0921,
       "p": 0.6411,
-      "perm_p_10k_seed42": 0.6612
+      "perm_p_10k_seed42": 0.7351
     },
     "norm_confusion_vs_distance": {
       "rho": -0.0921

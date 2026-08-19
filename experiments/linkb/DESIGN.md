@@ -150,7 +150,7 @@ Negative/positive, the run is reported. No post-hoc arm substitution.
 
 ## 6. Implementation notes
 
-- Feature shapes: C: 257×768 (224/14²+1); S: 730×1152 (384/14²+1); D: 257×768;
+- Feature shapes: C: 197×768 (ViT-B-16@224 yields 197 tokens; earlier 257 figure corrected 2026-08-18) (224/14²+1); S: 730×1152 (384/14²+1); D: 257×768;
   R: 257×768 (random ViT-B, seed 42).
 - Longest-sequence arm (S, 730 tokens) governs LM context; truncation guard at
   1024 tokens total (prompt + answer).

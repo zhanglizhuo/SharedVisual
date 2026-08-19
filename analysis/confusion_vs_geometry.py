@@ -72,19 +72,21 @@ def predict_class(response):
     return max(matched)[1] if matched else None
 
 
-def perm_p(rho_obs, x, y, seed=42, n=10000):
-    """Two-sided permutation p-value via class-label shuffle.
-    Shuffles BOTH x and y rows/cols by the same permutation, recomputes ρ
-    on upper triangles; reports fraction |ρ_perm| >= |rho_obs|."""
+def perm_p(rho_obs, E, sim, seed=42, n=10000):
+    """Two-sided permutation p-value: class-label permutation of the
+    CONFUSION matrix only (same permutation on rows and cols), recomputes
+    the symmetrized error-rate pairs, and correlates them against the FIXED
+    similarity pairs. Matches the observed statistic (symmetrized, same iu)."""
     rng = np.random.default_rng(seed)
-    k = x.shape[0]
+    k = E.shape[0]
     iu = np.triu_indices(k, k=1)
+    sim_pairs = sim[iu]
     count = 0
     for _ in range(n):
         p = rng.permutation(k)
-        x_p = x[np.ix_(p, p)]
-        y_p = y[np.ix_(p, p)]
-        r, _ = spearmanr(x_p[iu], y_p[iu])
+        E_p = E[np.ix_(p, p)]
+        sym_p = E_p[iu] + E_p.T[iu]
+        r, _ = spearmanr(sym_p, sim_pairs)
         if abs(r) >= abs(rho_obs):
             count += 1
     return count / n

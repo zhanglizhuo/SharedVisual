@@ -75,12 +75,13 @@ def get_per_class_dicts(anchor, mllm):
     return anchor_scores, mllm_scores
 
 
-def bootstrap_rho(x, y, n_iter=10000):
+def bootstrap_rho(x, y, n_iter=10000, seed=20260801):
     """Bootstrap Spearman ρ and return mean, 2.5%, 97.5% CI."""
+    rng = np.random.RandomState(seed)
     n = len(x)
     rhos = []
     for _ in range(n_iter):
-        idx = np.random.randint(0, n, size=n)
+        idx = rng.randint(0, n, size=n)
         if len(np.unique(x[idx])) > 1 and len(np.unique(y[idx])) > 1:
             r, _ = spearmanr(x[idx], y[idx])
             rhos.append(r)
@@ -152,15 +153,14 @@ def main():
     print("   Removes the confound: 'better models have higher ρ because they're better at everything'")
     print("-" * 80)
 
-    # Use mean accuracy across ALL models as a covariate, to capture class-level difficulty shared by all MLLMs
-    all_model_vals = []
-    for m in mllm_scores:
-        all_model_vals.append(np.array([mllm_scores[m].get(c, np.nan) for c in all_classes]))
-    mean_difficulty = np.nanmean(all_model_vals, axis=0)
-
+    # LOO covariate: mean accuracy across the OTHER models (paper convention)
     for model in ["LLaVA-1.5-7B", "Gemma4-31B", "Gemma-3-27B", "Qwen3.5-35B", "Qwen2-VL-7B"]:
         if model not in mllm_scores:
             continue
+        others = [m for m in mllm_scores if m != model]
+        all_model_vals = [np.array([mllm_scores[m].get(c, np.nan) for c in all_classes])
+                          for m in others]
+        mean_difficulty = np.nanmean(all_model_vals, axis=0)
         vals = np.array([mllm_scores[model].get(c, np.nan) for c in all_classes])
         mask = ~np.isnan(vals) & ~np.isnan(mean_difficulty)
         overall = np.nanmean(vals)

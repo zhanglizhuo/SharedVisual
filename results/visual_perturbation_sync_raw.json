@@ -559,118 +559,6 @@
       }
     }
   },
-  "Qwen2-VL Vision probe": {
-    "sigma_0": {
-      "accuracy": {
-        "guide": 56.0,
-        "answer": 68.0,
-        "On-stage interaction": 59.42,
-        "blackboard-writing": 70.67,
-        "teacher": 29.33,
-        "stand": 48.0,
-        "screen": 21.57,
-        "blackBoard": 36.0
-      },
-      "mean_prob": {
-        "guide": 0.1901,
-        "answer": 0.2238,
-        "On-stage interaction": 0.2121,
-        "blackboard-writing": 0.2219,
-        "teacher": 0.1553,
-        "stand": 0.2493,
-        "screen": 0.1328,
-        "blackBoard": 0.2122
-      }
-    },
-    "sigma_1": {
-      "accuracy": {
-        "guide": 56.0,
-        "answer": 68.0,
-        "On-stage interaction": 59.42,
-        "blackboard-writing": 70.67,
-        "teacher": 29.33,
-        "stand": 48.0,
-        "screen": 21.57,
-        "blackBoard": 36.0
-      },
-      "mean_prob": {
-        "guide": 0.1901,
-        "answer": 0.2238,
-        "On-stage interaction": 0.2121,
-        "blackboard-writing": 0.2219,
-        "teacher": 0.1553,
-        "stand": 0.2493,
-        "screen": 0.1328,
-        "blackBoard": 0.2122
-      }
-    },
-    "sigma_2": {
-      "accuracy": {
-        "guide": 56.0,
-        "answer": 68.0,
-        "On-stage interaction": 59.42,
-        "blackboard-writing": 70.67,
-        "teacher": 29.33,
-        "stand": 48.0,
-        "screen": 21.57,
-        "blackBoard": 36.0
-      },
-      "mean_prob": {
-        "guide": 0.1901,
-        "answer": 0.2238,
-        "On-stage interaction": 0.2121,
-        "blackboard-writing": 0.2219,
-        "teacher": 0.1553,
-        "stand": 0.2493,
-        "screen": 0.1328,
-        "blackBoard": 0.2122
-      }
-    },
-    "sigma_4": {
-      "accuracy": {
-        "guide": 56.0,
-        "answer": 68.0,
-        "On-stage interaction": 59.42,
-        "blackboard-writing": 70.67,
-        "teacher": 29.33,
-        "stand": 48.0,
-        "screen": 21.57,
-        "blackBoard": 36.0
-      },
-      "mean_prob": {
-        "guide": 0.1901,
-        "answer": 0.2238,
-        "On-stage interaction": 0.2121,
-        "blackboard-writing": 0.2219,
-        "teacher": 0.1553,
-        "stand": 0.2493,
-        "screen": 0.1328,
-        "blackBoard": 0.2122
-      }
-    },
-    "sigma_8": {
-      "accuracy": {
-        "guide": 56.0,
-        "answer": 68.0,
-        "On-stage interaction": 59.42,
-        "blackboard-writing": 70.67,
-        "teacher": 29.33,
-        "stand": 48.0,
-        "screen": 21.57,
-        "blackBoard": 36.0
-      },
-      "mean_prob": {
-        "guide": 0.1901,
-        "answer": 0.2238,
-        "On-stage interaction": 0.2121,
-        "blackboard-writing": 0.2219,
-        "teacher": 0.1553,
-        "stand": 0.2493,
-        "screen": 0.1328,
-        "blackBoard": 0.2122
-      }
-    }
-  },
   "ResNet-50 (IN-1k) probe": {
     "sigma_0": {
       "accuracy": {
@@ -696,90 +584,202 @@
     },
     "sigma_1": {
       "accuracy": {
-        "guide": 73.33,
-        "answer": 88.0,
-        "On-stage interaction": 89.86,
+        "guide": 72.0,
+        "answer": 85.33,
+        "On-stage interaction": 89.85,
         "blackboard-writing": 98.67,
-        "teacher": 65.33,
-        "stand": 49.33,
-        "screen": 47.06,
-        "blackBoard": 57.33
+        "teacher": 61.33,
+        "stand": 45.33,
+        "screen": 54.9,
+        "blackBoard": 56.0
       },
       "mean_prob": {
-        "guide": 0.2235,
-        "answer": 0.2415,
-        "On-stage interaction": 0.2522,
-        "blackboard-writing": 0.2696,
-        "teacher": 0.2188,
-        "stand": 0.1759,
-        "screen": 0.1863,
-        "blackBoard": 0.198
+        "guide": 0.2166,
+        "answer": 0.2504,
+        "On-stage interaction": 0.255,
+        "blackboard-writing": 0.2702,
+        "teacher": 0.2166,
+        "stand": 0.1775,
+        "screen": 0.1966,
+        "blackBoard": 0.2049
       }
     },
     "sigma_2": {
       "accuracy": {
-        "guide": 73.33,
-        "answer": 88.0,
-        "On-stage interaction": 89.86,
+        "guide": 74.67,
+        "answer": 85.33,
+        "On-stage interaction": 91.3,
         "blackboard-writing": 98.67,
-        "teacher": 65.33,
-        "stand": 49.33,
-        "screen": 47.06,
-        "blackBoard": 57.33
+        "teacher": 60.0,
+        "stand": 50.67,
+        "screen": 54.9,
+        "blackBoard": 44.0
       },
       "mean_prob": {
-        "guide": 0.2235,
-        "answer": 0.2415,
-        "On-stage interaction": 0.2522,
-        "blackboard-writing": 0.2696,
-        "teacher": 0.2188,
-        "stand": 0.1759,
-        "screen": 0.1863,
-        "blackBoard": 0.198
+        "guide": 0.2236,
+        "answer": 0.2514,
+        "On-stage interaction": 0.258,
+        "blackboard-writing": 0.2662,
+        "teacher": 0.2052,
+        "stand": 0.1816,
+        "screen": 0.1943,
+        "blackBoard": 0.1846
       }
     },
     "sigma_4": {
       "accuracy": {
-        "guide": 73.33,
-        "answer": 88.0,
-        "On-stage interaction": 89.86,
-        "blackboard-writing": 98.67,
-        "teacher": 65.33,
-        "stand": 49.33,
-        "screen": 47.06,
-        "blackBoard": 57.33
+        "guide": 72.0,
+        "answer": 85.33,
+        "On-stage interaction": 88.41,
+        "blackboard-writing": 97.33,
+        "teacher": 58.67,
+        "stand": 61.33,
+        "screen": 52.94,
+        "blackBoard": 52.0
       },
       "mean_prob": {
-        "guide": 0.2235,
-        "answer": 0.2415,
-        "On-stage interaction": 0.2522,
-        "blackboard-writing": 0.2696,
-        "teacher": 0.2188,
-        "stand": 0.1759,
-        "screen": 0.1863,
-        "blackBoard": 0.198
+        "guide": 0.2162,
+        "answer": 0.2479,
+        "On-stage interaction": 0.2547,
+        "blackboard-writing": 0.2665,
+        "teacher": 0.2064,
+        "stand": 0.2064,
+        "screen": 0.1935,
+        "blackBoard": 0.1943
       }
     },
     "sigma_8": {
       "accuracy": {
         "guide": 73.33,
         "answer": 88.0,
-        "On-stage interaction": 89.86,
+        "On-stage interaction": 91.3,
         "blackboard-writing": 98.67,
-        "teacher": 65.33,
+        "teacher": 44.0,
         "stand": 49.33,
-        "screen": 47.06,
-        "blackBoard": 57.33
+        "screen": 35.29,
+        "blackBoard": 50.67
       },
       "mean_prob": {
-        "guide": 0.2235,
-        "answer": 0.2415,
-        "On-stage interaction": 0.2522,
-        "blackboard-writing": 0.2696,
-        "teacher": 0.2188,
-        "stand": 0.1759,
-        "screen": 0.1863,
-        "blackBoard": 0.198
+        "guide": 0.2287,
+        "answer": 0.2428,
+        "On-stage interaction": 0.2598,
+        "blackboard-writing": 0.271,
+        "teacher": 0.1877,
+        "stand": 0.1767,
+        "screen": 0.1711,
+        "blackBoard": 0.1921
+      }
+    }
+  },
+  "Qwen2-VL Vision probe": {
+    "sigma_0": {
+      "accuracy": {
+        "guide": 56.0,
+        "answer": 68.0,
+        "On-stage interaction": 59.42,
+        "blackboard-writing": 70.67,
+        "teacher": 29.33,
+        "stand": 48.0,
+        "screen": 21.57,
+        "blackBoard": 36.0
+      },
+      "mean_prob": {
+        "guide": 0.1901,
+        "answer": 0.2238,
+        "On-stage interaction": 0.2121,
+        "blackboard-writing": 0.2219,
+        "teacher": 0.1553,
+        "stand": 0.2493,
+        "screen": 0.1328,
+        "blackBoard": 0.2122
+      }
+    },
+    "sigma_1": {
+      "accuracy": {
+        "guide": 41.33,
+        "answer": 53.33,
+        "On-stage interaction": 46.38,
+        "blackboard-writing": 60.0,
+        "teacher": 28.0,
+        "stand": 33.33,
+        "screen": 43.14,
+        "blackBoard": 41.33
+      },
+      "mean_prob": {
+        "guide": 0.2177,
+        "answer": 0.1886,
+        "On-stage interaction": 0.2069,
+        "blackboard-writing": 0.2192,
+        "teacher": 0.1382,
+        "stand": 0.1671,
+        "screen": 0.2319,
+        "blackBoard": 0.2805
+      }
+    },
+    "sigma_2": {
+      "accuracy": {
+        "guide": 49.33,
+        "answer": 73.33,
+        "On-stage interaction": 63.77,
+        "blackboard-writing": 88.0,
+        "teacher": 42.67,
+        "stand": 33.33,
+        "screen": 37.25,
+        "blackBoard": 33.33
+      },
+      "mean_prob": {
+        "guide": 0.2161,
+        "answer": 0.2428,
+        "On-stage interaction": 0.2285,
+        "blackboard-writing": 0.2529,
+        "teacher": 0.2497,
+        "stand": 0.1772,
+        "screen": 0.2063,
+        "blackBoard": 0.2022
+      }
+    },
+    "sigma_4": {
+      "accuracy": {
+        "guide": 58.67,
+        "answer": 70.67,
+        "On-stage interaction": 71.01,
+        "blackboard-writing": 82.67,
+        "teacher": 36.0,
+        "stand": 41.33,
+        "screen": 27.45,
+        "blackBoard": 45.33
+      },
+      "mean_prob": {
+        "guide": 0.2109,
+        "answer": 0.2325,
+        "On-stage interaction": 0.2474,
+        "blackboard-writing": 0.271,
+        "teacher": 0.2069,
+        "stand": 0.2079,
+        "screen": 0.1578,
+        "blackBoard": 0.2105
+      }
+    },
+    "sigma_8": {
+      "accuracy": {
+        "guide": 64.0,
+        "answer": 80.0,
+        "On-stage interaction": 79.71,
+        "blackboard-writing": 80.0,
+        "teacher": 45.33,
+        "stand": 32.0,
+        "screen": 41.17,
+        "blackBoard": 28.0
+      },
+      "mean_prob": {
+        "guide": 0.204,
+        "answer": 0.2583,
+        "On-stage interaction": 0.2492,
+        "blackboard-writing": 0.2511,
+        "teacher": 0.208,
+        "stand": 0.1629,
+        "screen": 0.1686,
+        "blackBoard": 0.1787
       }
     }
   }
