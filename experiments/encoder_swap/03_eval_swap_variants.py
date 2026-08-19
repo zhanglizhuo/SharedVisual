@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Link B stage 3: evaluate swap variants on SCB5 val (full-frame, greedy).
+"""Encoder-swap stage 3: evaluate swap variants on SCB5 val (full-frame, greedy).
 
 Per arm: load trained projector + frozen Mistral-7B, classify each val image
 (class-name prompt, greedy, first-match scoring identical to eval_hf.py),
@@ -16,9 +16,9 @@ import numpy as np
 REPO_ROOT = Path(os.environ.get(
     "SHAREDVISUAL_ROOT", str(Path(__file__).resolve().parents[2])))
 RESULTS = Path(os.environ.get("SHAREDVISUAL_RESULTS", str(REPO_ROOT / "results")))
-FEAT_DIR = RESULTS / "linkb" / "features"
-CKPT_DIR = RESULTS / "linkb" / "ckpt"
-RESP_DIR = RESULTS / "linkb" / "responses"
+FEAT_DIR = RESULTS / "encoder_swap" / "features"
+CKPT_DIR = RESULTS / "encoder_swap" / "ckpt"
+RESP_DIR = RESULTS / "encoder_swap" / "responses"
 
 from pathlib import Path as _P
 import importlib.util as _iu

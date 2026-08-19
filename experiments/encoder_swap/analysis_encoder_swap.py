@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Link B analysis: preregistered predictions P1-P4 (patched per review).
+"""Encoder-swap analysis: preregistered predictions P1-P4 (patched per review).
 
-Inputs : results/linkb/{arm}_summary.json (per-class accuracy per arm)
-         results/linkb/features/{arm}_val.npz (cached features -> 13-class
+Inputs : results/encoder_swap/{arm}_summary.json (per-class accuracy per arm)
+         results/encoder_swap/features/{arm}_val.npz (cached features -> 13-class
          pooled geometry matrices, PRIMARY reference; TB-8 committed matrices
          secondary)
-Output : results/linkb/analysis_output.json
+Output : results/encoder_swap/analysis_output.json
 
 Preregistered (locked before any training):
 - P1 ordinal: ceiling disclosed — min one-sided exact p = 1/6; descriptive.
@@ -26,8 +26,8 @@ from scipy.stats import spearmanr
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 RESULTS = REPO_ROOT / "results"
-RESP = RESULTS / "linkb"
-FEAT = RESULTS / "linkb" / "features"
+RESP = RESULTS / "encoder_swap"
+FEAT = RESULTS / "encoder_swap" / "features"
 
 ARMS = ["clip_l_laion", "siglip_so400m", "dinov2_b14", "random_vitb"]
 SHORT = {"clip_l_laion": "C", "siglip_so400m": "S",
@@ -206,8 +206,8 @@ def analyze():
             return [_clean(v) for v in o]
         return o
     out = _clean(out)
-    (RESULTS / "linkb").mkdir(parents=True, exist_ok=True)
-    (RESULTS / "linkb" / "analysis_output.json").write_text(json.dumps(out, indent=2))
+    (RESULTS / "encoder_swap").mkdir(parents=True, exist_ok=True)
+    (RESULTS / "encoder_swap" / "analysis_output.json").write_text(json.dumps(out, indent=2))
     print(json.dumps(out, indent=2))
 
 

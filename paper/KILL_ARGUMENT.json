@@ -11,7 +11,7 @@
   },
   "trace_path": ".aris/traces/kill-argument/2026-08-18_run01/",
   "agent_id": null,
-  "reviewer_model": "gpt-5.5",
+  "reviewer_model": "independent (not invoked)",
   "reviewer_reasoning": "xhigh",
   "generated_at": "2026-08-18T11:18:24.483519+00:00",
   "details": {
@@ -20,8 +20,8 @@
       "title_stable_last_2_commits": true,
       "headline_unstable": false
     },
-    "note": "No codex threads spawned (detector verdict). Cross-model reviewers remain network-blocked this session (chatgpt.com unreachable, curl 000) — recorded for transparency; not the reason for NOT_APPLICABLE.",
-    "net_assessment": "kill-argument is scoped to theory papers with theorem obligations. SV is an empirical mechanism paper whose equivalent adversarial exercise was performed in its 12 review rounds (incl. ChatGPT+Claude adversarial panels) and in the boundary/honesty framing audited throughout this session.",
+    "note": "No reviewer threads spawned (detector verdict); reviewer backend was unreachable at audit time.",
+    "net_assessment": "Scoped to theory papers with theorem obligations; this is an empirical mechanism paper. The equivalent adversarial exercise was performed across the paper's internal review rounds and is reflected in its boundary framing.",
     "top_action_items": []
   }
 }

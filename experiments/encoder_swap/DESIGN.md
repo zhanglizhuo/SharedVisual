@@ -1,7 +1,7 @@
-# Link B — Encoder-Swap Causal Experiment (DESIGN, preregistered, NOT YET RUN)
+# Encoder-Swap Causal Experiment (DESIGN, preregistered, NOT YET RUN)
 
 **Status**: design + code committed; execution deferred until V100 window.
-**Goal**: fill the causal gap (Link B of the paper's roadmap, §5.6): does the vision
+**Goal**: fill the causal gap (the executed branch of the roadmap, paper §5): does the vision
 encoder's class geometry causally shape MLLM per-class difficulty, holding the
 language model fixed?
 
@@ -144,7 +144,7 @@ Negative/positive, the run is reported. No post-hoc arm substitution.
    grad-checkpointing + fp16). ~3–6 h/arm.
 3. `03_eval_swap_variants.py` — val inference per arm (5,416 images full-frame),
    greedy; ~1 h/arm on 1 GPU.
-4. `analysis/linkb_analysis.py` — CPU, seconds.
+4. `analysis/encoder_swap_analysis.py` — CPU, seconds.
    Total wall-clock ≈ one V100×4 day. Checkpointed/resumable at every stage
    (remote-execution discipline: background + log + poll).
 
@@ -166,9 +166,9 @@ Negative/positive, the run is reported. No post-hoc arm substitution.
 - `01_extract_features.py` — encoder features (4 arms), cached
 - `02_train_projector.py` — equal-budget projector training, resumable
 - `03_eval_swap_variants.py` — per-class accuracy on val
-- `analysis_linkb.py` — predictions P1–P4, stats, JSON output
-- `run_linkb.sh` — V100 orchestration (nohup + logs, per-stage idempotency)
+- `analysis_encoder_swap.py` — predictions P1–P4, stats, JSON output
+- `run_encoder_swap.sh` — V100 orchestration (nohup + logs, per-stage idempotency)
 
 All scripts carry `--dry-run` for pipeline validation without GPU work.
 Nothing here has been executed; first run must record actual configs into
-`results/linkb/RUN_MANIFEST.json`.
+`results/encoder_swap/RUN_MANIFEST.json`.

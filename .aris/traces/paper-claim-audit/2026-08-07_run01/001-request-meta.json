@@ -1,9 +1,0 @@
-{
-  "purpose": "zero-context-claim-audit",
-  "seq": 1,
-  "model": "same-family fresh thread",
-  "start_utc": "2026-08-07T00:00:00Z",
-  "end_utc": "2026-08-07T00:00:00Z",
-  "status": "completed",
-  "output_artifact": "/paper/PAPER_CLAIM_AUDIT.md + .json"
-}

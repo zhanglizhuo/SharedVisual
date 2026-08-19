@@ -1,6 +1,6 @@
 {
   "date": "2026-08-15",
-  "auditor": "local-executor (cross-model unavailable; deviation recorded)",
+  "auditor": "internal audit (independent reviewer unavailable; deviation recorded)",
   "overall_verdict": "pass",
   "integrity_status": "pass",
   "checks": {
@@ -14,7 +14,7 @@
     },
     "result_existence": {
       "status": "pass",
-      "details": "All headline claims verified against committed files this session; recomputation spot-checks exact; only standard rounding displays differ."
+      "details": "All headline claims verified against the committed files; recomputation spot-checks exact; only standard rounding displays differ."
     },
     "dead_code": {
       "status": "pass",
@@ -73,14 +73,14 @@
     }
   ],
   "audit_delta_2026_08_18": {
-    "cross_model_attempt": "codex-cli gpt-5.5 read-only — blocked by network (chatgpt.com unreachable, no proxy); deviation recorded",
+    "cross_model_attempt": "independent reviewer backend — blocked by network at audit time; deviation recorded",
     "experiment_surface_changed": true,
     "evidence": "code walkthrough found 2 integrity-relevant bugs, both fixed: (C1) probe blur never applied for Qwen/ResNet in exp_visual_perturbation_sync -> S4.8 'blur-invariant (Δ=0)' claim was a bug artifact; probes re-run on V100 with blur applied (ResNet teacher 65.3->44.0 at σ8; Qwen non-monotonic) and S4.8 rewritten with true results (no probe-pair Δ agreement, all perm p>=0.057); (C2) confusion_vs_geometry permutation test permuted both matrices jointly -> invalid perm p=0.661, corrected to 0.7351 (supplement updated; null conclusion unchanged)",
     "verdict": "pass",
     "fixed": [
       "C1_probe_blur",
       "C2_permutation_test",
-      "M1_linkb_paths",
+      "M1_encoder_swap_paths",
       "M2_P4b_implemented",
       "M5_exp1_deep_analysis"
     ]

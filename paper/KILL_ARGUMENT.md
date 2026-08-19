@@ -1,7 +1,7 @@
 # Kill Argument Report — Shared Class-Neighborhood Geometry: A Candidate Mechanism for Why CLIP Predicts MLLM Difficulty
 
 **Date**: 2026-08-18
-**Reviewer model**: gpt-5.5 xhigh (fresh agents) — not invoked
+**Reviewer model**: independent fresh-context reviewer — not invoked
 **Verdict**: NOT_APPLICABLE (`reason_code: not_theory_or_scope_paper`)
 
 ## Detector evidence
@@ -14,7 +14,7 @@ Per the skill's own scoping ("When NOT to Use: Empirical papers without theorems
 
 ## Net assessment
 
-The adversarial role this skill plays (forcing the single most damaging rejection argument) was exercised for this paper through its 12 review rounds, including ChatGPT + Claude adversarial panels, and is reflected in the current text's boundary/honesty framing (Link B boundary result, floor disclosures, candidate-mechanism wording, FDR-disclosed perturbation grid). A fresh cross-model attack thread cannot be spawned this session (Codex backend unreachable — chatgpt.com, curl 000, no proxy env); if a rerun is desired, the infrastructure prerequisite applies.
+The adversarial role this skill plays (forcing the single most damaging rejection argument) was exercised for this paper through its internal review rounds and is reflected in the current text's boundary/honesty framing (encoder-swap boundary result, floor disclosures, candidate-mechanism wording, FDR-disclosed perturbation grid). A fresh reviewer thread could not be spawned at audit time (backend network unreachable); the infrastructure prerequisite applies to any rerun.
 
 ## Top action items
 

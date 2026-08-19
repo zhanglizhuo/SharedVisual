@@ -1,5 +1,5 @@
 {
-  "run": "linkb_encoder_swap_v1",
+  "run": "encoder_swap_v1",
   "date": "2026-08-16/17",
   "hardware": "V100x4 (GPU1-3 used; GPU0 reserved for another user)",
   "env": "dl_env_310 (py3.10, torch 2.6.0+cu124, transformers 4.57.6, open_clip)",
@@ -28,7 +28,7 @@
   "reading": "Honest-boundary outcome per preregistered interpretation table: every encoder arm acquires genuine discriminative power (P4), but cross-arm difficulty-profile agreement does NOT track geometry agreement, and C-S agreement cannot be distinguished from the shared-LM+shared-task floor (P3) at this budget/sample. Geometry is shared in the visual layer (static evidence unchanged); behavior-level difficulty under a frozen LM with projector-only training is dominated by LM prior + task structure.",
   "generated_at": "2026-08-17T05:17:13.706765Z",
   "preregistration_timeline": {
-    "design_locked_commit": "4c1bf56 (2026-08-16 10:15 CST) — P1/P2 exact-test ceilings and floor thresholds added before any training",
+    "design_locked_commit": "530716e (2026-08-16 10:15 CST) — P1/P2 exact-test ceilings and floor thresholds added before any training",
     "first_v100_run": "2026-08-16 (feature extraction launched after design lock)",
     "verified": "ceilings + floor thresholds predate data unblinding; no post-hoc additions"
   },

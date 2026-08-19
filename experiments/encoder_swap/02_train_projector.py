@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Link B stage 2: equal-budget projector training (frozen LM).
+"""Encoder-swap stage 2: equal-budget projector training (frozen LM).
 
 LLaVA-style: frozen Mistral-7B-v0.1 LM + per-arm 2-layer MLP projector mapping
 vision tokens -> LM hidden dim. Classification-style instruction tuning on the
@@ -7,7 +7,7 @@ leakage-cleaned SCB5 train pool (13 classes). All arms share the preregistered
 budget: AdamW, lr 1e-4 cosine->0, 3% warmup, 2000 optimizer steps, batch 8,
 fp16, seed 42, class-balanced sampler.
 
-Resumable: checkpoints per (arm, step) in results/linkb/ckpt/{arm}/; a rerun
+Resumable: checkpoints per (arm, step) in results/encoder_swap/ckpt/{arm}/; a rerun
 resumes from the latest checkpoint. NOT YET RUN — validate with --dry-run.
 """
 import argparse
@@ -22,8 +22,8 @@ import numpy as np
 REPO_ROOT = Path(os.environ.get(
     "SHAREDVISUAL_ROOT", str(Path(__file__).resolve().parents[2])))
 RESULTS = Path(os.environ.get("SHAREDVISUAL_RESULTS", str(REPO_ROOT / "results")))
-FEAT_DIR = RESULTS / "linkb" / "features"
-CKPT_DIR = RESULTS / "linkb" / "ckpt"
+FEAT_DIR = RESULTS / "encoder_swap" / "features"
+CKPT_DIR = RESULTS / "encoder_swap" / "ckpt"
 
 LM_ID = "mistralai/Mistral-7B-v0.1"
 LM_HIDDEN = 4096

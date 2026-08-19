@@ -27,7 +27,7 @@
 
 ## Blocking Issues
 
-None. Verified: every in-text callout resolves (0 undefined refs, full bibtex pipeline); numbering gap-free and non-colliding (main 1–5 / 1–4; SI S1 / S1–S2); callout order = number order; all values in this session's figure reviews traced to raw JSONs (fig2 means 0.462/0.716/0.669/0.374; fig4 45.3→98.1, 0→100, 1.7→68.7, 0→92.5, 0→73.8; fig5 ρ=0.817/0.810; Table 2 rows; Table 4 exception row SigLIP–ResNet ρ=0.18/p=0.069; S-Table 2 values = kruskal JSON).
+None. Verified: every in-text callout resolves (0 undefined refs, full bibtex pipeline); numbering gap-free and non-colliding (main 1–5 / 1–4; SI S1 / S1–S2); callout order = number order; all values traced to the raw JSONs (fig2 means 0.462/0.716/0.669/0.374; fig4 45.3→98.1, 0→100, 1.7→68.7, 0→92.5, 0→73.8; fig5 ρ=0.817/0.810; Table 2 rows; Table 4 exception row SigLIP–ResNet ρ=0.18/p=0.069; S-Table 2 values = kruskal JSON).
 
 ## Recommended Fixes
 
@@ -52,7 +52,7 @@ None — all plotted values are either labeled in-figure or sourced from committ
 |-----------|----------------------|-------|
 | Callouts resolve | PASS | 0 undefined refs |
 | Numbering gap-free | PASS | main 5 figs + 4 tables; SI S1 fig + S1/S2 tables |
-| Text↔table values | PASS | session-wide numeric verification (1692=1692 multiset; per-figure data checks) |
+| Text↔table values | PASS | revision-wide numeric verification (1692=1692 multiset; per-figure data checks) |
 | Captions self-contained | PASS | units/sample/uncertainty/panels/axis-truncation disclosed (fig2, fig4, fig5, figS1) |
 | Table notes complete | PASS | definitions, CIs, suppression dagger, VIF, seeds |
 | Colorblind/grayscale safe | PASS | Blues_r single-hue + grays; red reserved for signal |

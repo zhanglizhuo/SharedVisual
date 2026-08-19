@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-"""Link B stage 1: extract and cache per-image vision-encoder features.
+"""Encoder-swap stage 1: extract and cache per-image vision-encoder features.
 
 Arms: C = CLIP ViT-L/14 LAION-2B, S = SigLIP ViT-SO400M-14 (webli),
       D = DINOv2 ViT-B/14, R = randomly initialized ViT-B/14 (seed 42, control).
 Splits: SCB5 train pool (leakage-cleaned, exp1b discipline) + SCB5 val,
         full-frame images, each encoder's canonical preprocessing.
 
-Output: results/linkb/features/{arm}_{split}.npz  (fp16 features + labels +
+Output: results/encoder_swap/features/{arm}_{split}.npz  (fp16 features + labels +
         image ids), one file per (arm, split). Idempotent: skips existing.
 
 NOT YET RUN — validate with --dry-run first.
@@ -22,7 +22,7 @@ import numpy as np
 REPO_ROOT = Path(os.environ.get(
     "SHAREDVISUAL_ROOT", str(Path(__file__).resolve().parents[2])))
 RESULTS = Path(os.environ.get("SHAREDVISUAL_RESULTS", str(REPO_ROOT / "results")))
-OUT_DIR = RESULTS / "linkb" / "features"
+OUT_DIR = RESULTS / "encoder_swap" / "features"
 
 ARMS = ["clip_l_laion", "siglip_so400m", "dinov2_b14", "random_vitb"]
 SEED = 42
@@ -65,7 +65,7 @@ def leakage_excluded_ids():
     # is available, import and reuse it instead of duplicating.
     leak_script = REPO_ROOT / "experiments" / "exp1b_leakage_check.py"
     if leak_script.exists():
-        # reuse: run its logic (kept import-light here; see run_linkb.sh which
+        # reuse: run its logic (kept import-light here; see run_encoder_swap.sh which
         # calls it first and writes the exclusion json we consume below)
         excl = RESULTS / "exp1b_leakage_overlap.json"
         if excl.exists():

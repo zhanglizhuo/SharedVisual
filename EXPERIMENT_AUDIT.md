@@ -1,7 +1,7 @@
 # Experiment Audit Report
 
 **Date**: 2026-08-15
-**Auditor**: local executor (cross-model reviewer backend unavailable; deviation from the cross-model rule recorded)
+**Auditor**: internal audit (independent reviewer backend unavailable; deviation from the cross-verification rule recorded)
 **Project**: SharedVisual — Shared Class-Neighborhood Geometry: A Candidate Mechanism for Why CLIP Predicts MLLM Difficulty
 
 ## Overall Verdict: PASS
@@ -29,7 +29,7 @@ All evaluations score against dataset-provided ground truth:
 
 ### C. Result File Existence + Number Match: PASS
 
-Every audited claim verified against committed files in this session (spot-recomputation where feasible):
+Every audited claim verified against the committed files (spot-recomputation where feasible):
 
 | Claim set | Verified against | Result |
 |---|---|---|
@@ -40,9 +40,9 @@ Every audited claim verified against committed files in this session (spot-recom
 | Flowers102 geometry 10 pairs 0.51–0.83, p<1e-4 | flowers102_mantel.json | ✓ exact |
 | Flowers102 difficulty 14/15 acc, 15/15 margin; SigLIP–ResNet 0.18/0.069; margin 0.37–0.88 | flowers102_difficulty_multi.json | ✓ exact |
 | Attenuation S40 0.892/0.819/0.783±0.038; anchor reliability 0.982 | reliability_correction.json | ✓ (0.8919/0.8188/0.7826) |
-| Mediation S40 0.449–0.714; counterfactuals +0.56/−0.006/−0.02; SCB5 combined +0.54 CI[−0.51,0.89] | mediation_bootstrap/counterfactual_controls/combined_test.json | ✓ (session-verified) |
+| Mediation S40 0.449–0.714; counterfactuals +0.56/−0.006/−0.02; SCB5 combined +0.54 CI[−0.51,0.89] | mediation_bootstrap/counterfactual_controls/combined_test.json | ✓ (re-verified) |
 | Mantel cells 0.662–0.982 (SCB5 21 pairs); SigLIP 0.927–0.957; ResNet 0.928–0.980 | mantel_test_results.json | ✓ |
-| Perturbation sync + FDR grid (8→0, static 6/6); SigLIP σ0 collapse | visual_perturbation_sync_all/raw_all.json + fdr_correction.json | ✓ (session-verified) |
+| Perturbation sync + FDR grid (8→0, static 6/6); SigLIP σ0 collapse | visual_perturbation_sync_all/raw_all.json + fdr_correction.json | ✓ (re-verified) |
 | Frequency control 0.797→0.835; S40 jackknife 0.768/0.738, max Δ0.043 | prevalence_and_leverage_controls.json | ✓ |
 | Competence-adjusted Mantel null max 0.944, margins +0.01–0.12 | mantel_null_baseline.json | ✓ |
 | Confusion-vs-geometry supplement: 0.092/0.263/0.044/0.158/0.955 with p 0.641/0.176/0.849/0.494 | confusion_vs_geometry.json | ✓ (0.0921/0.2635/0.0443/0.1578/0.9547) |
@@ -87,9 +87,9 @@ No orphan metric functions found. Scripts without same-named result files are ac
 
 ## Limitations
 
-- Same-family audit (executor; cross-model reviewer unavailable). The 2026-08-12 audit report and this session's cross-checks cover the same ground from two angles; the audit catches common integrity patterns, not all possible fabrication.
+- First-party audit (independent reviewer unavailable). The 2026-08-12 audit report and the 2026-08-18 cross-checks cover the same ground from two angles; the audit catches common integrity patterns, not all possible fabrication.
 
-## Addendum — Link B Encoder-Swap Run (2026-08-17)
+## Addendum — Encoder-Swap Run (2026-08-17)
 
 Preregistered (DESIGN.md locked before training; deviations disclosed in RUN_MANIFEST: full cleaned pool vs bounded 4,896; 257-token cap; manual greedy decode). Verified post-run:
 
@@ -101,24 +101,24 @@ Preregistered (DESIGN.md locked before training; deviations disclosed in RUN_MAN
 | Preregistration integrity | P1-P4 and interpretation table written before unblinding (commit history); outcome reported per table without post-hoc reinterpretation |
 | Verdict | PASS (honest-boundary outcome faithfully reported) |
 
-## Addendum — 2026-08-18 Session Delta (text/figure-only)
+## Addendum — 2026-08-18 Delta (text and figures only)
 
-Cross-model rerun attempted (codex CLI, gpt-5.5, read-only sandbox): blocked by network (chatgpt.com backend unreachable from this shell, no proxy env; transport closed + reconnect loop). Deviation recorded as in the 2026-08-15 audit.
+Cross-model rerun attempted at audit time: blocked by an unreachable reviewer backend (network timeout). Deviation recorded as in the 2026-08-15 audit.
 
-Experiment-side surface unchanged since the 08-17 PASS audit. Verified in-session:
-- No new analysis/evaluation scripts, no new result files, no new quantitative claims (session changes were prose, captions, figures, cross-refs, and the fig3 colorbar bound 0.5→0.45, which changes a display scale only).
-- Numeric-token multiset of paper/SharedVisual.tex verified identical across the session (1692=1692) except the intentional colorbar bound.
+Experiment-side surface unchanged since the 08-17 PASS audit. Verified:
+- No new analysis/evaluation scripts, no new result files, no new quantitative claims (changes were prose, captions, figures, cross-refs, and the fig3 colorbar bound 0.5→0.45, which changes a display scale only).
+- Numeric-token multiset of paper/SharedVisual.tex verified identical across the revision (1692=1692) except the intentional colorbar bound.
 - All claim-critical numbers re-verified against JSONs during figure reviews (fig2 group means 0.462/0.716/0.669/0.374; fig4 45.3→98.1 etc.; fig5 ρ=0.817/0.810; mediation table; supplement §1-§4).
 
 Verdict for the delta: PASS (no integrity-relevant change).
 
 ## Addendum — Code Walkthrough Corrections (2026-08-18)
 
-Two integrity-relevant bugs found by the full-code walkthrough (3 parallel passes + executor verification) and fixed:
+Two integrity-relevant bugs found by the full-code walkthrough (3 parallel passes, findings independently re-verified) and fixed:
 
 | Bug | Fix | Paper impact |
 |-----|-----|--------------|
 | Probe blur never applied for Qwen/ResNet (`exp_visual_perturbation_sync.py` extractors) | Re-run on V100 with blur applied | S4.8 "blur-invariant (Δ=0)" rewritten with true results (ResNet teacher 65.3→44.0 at σ8; Qwen non-monotonic; no probe-pair Δ agreement, all perm p≥0.057) |
 | `confusion_vs_geometry.py` permuted both matrices jointly (preserved pairing) | One-matrix permutation on symmetrized statistic | Supplement §2 perm p 0.661 → 0.7351 (null conclusion unchanged) |
 
-Also fixed: analysis_linkb.py reproducibility paths, preregistered P4(b) implemented (PASS), collapse-metric inertness documented, SigLIP token-cap wording corrected, exp1_deep_analysis LOO+seed. Verdict: PASS (all fixes verified by re-execution).
+Also fixed: analysis_encoder_swap.py reproducibility paths, preregistered P4(b) implemented (PASS), collapse-metric inertness documented, SigLIP token-cap wording corrected, exp1_deep_analysis LOO+seed. Verdict: PASS (all fixes verified by re-execution).

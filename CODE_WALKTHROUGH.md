@@ -1,6 +1,6 @@
 # Code Walkthrough Report — SharedVisual (2026-08-18)
 
-Three parallel walkthrough passes (analysis/, experiments/, linkb+figures) + executor verification of every CRITICAL/MAJOR claim against source and committed JSONs. ~12k lines / 70 files.
+Three parallel walkthrough passes (analysis/, experiments/, encoder-swap + figures), each finding independently re-verified of every CRITICAL/MAJOR claim against source and committed JSONs. ~12k lines / 70 files.
 
 ## Verified CRITICAL (paper-facing)
 
@@ -17,12 +17,12 @@ Three parallel walkthrough passes (analysis/, experiments/, linkb+figures) + exe
 
 ## Verified MAJOR
 
-### M1. `experiments/linkb/analysis_linkb.py` (cited in paper Reproducibility) cannot reproduce committed artifacts
-- Reads `results/linkb/responses/{arm}_summary.json` (dir absent) and writes `linkb_analysis.json`; committed artifacts are `results/linkb/{arm}_summary.json` and `analysis_output.json` (verified via ls).
+### M1. `experiments/encoder_swap/analysis_encoder_swap.py` (cited in paper Reproducibility) cannot reproduce committed artifacts
+- Reads `results/encoder_swap/responses/{arm}_summary.json` (dir absent) and writes `encoder_swap_analysis.json`; committed artifacts are `results/encoder_swap/{arm}_summary.json` and `analysis_output.json` (verified via ls).
 - Fix: correct the two paths, re-run, verify output == committed analysis_output.json. **CPU, doable now.**
 
 ### M2. Preregistered P4(b) was never computed
-- DESIGN.md §3: random arm must "(b) NOT show geometry-ordered agreement (its pair agreements should be the lowest or noise-level)". `analysis_linkb.py` computes only `random_markedly_lower` = mean-acc 0.5× threshold (L157-161), absent from DESIGN.
+- DESIGN.md §3: random arm must "(b) NOT show geometry-ordered agreement (its pair agreements should be the lowest or noise-level)". `analysis_encoder_swap.py` computes only `random_markedly_lower` = mean-acc 0.5× threshold (L157-161), absent from DESIGN.
 - Data check: R's pair agreements (C-R 0.508, S-R 0.666, D-R 0.491) ARE the three lowest vs C-S 0.740 / S-D 0.839 / C-D 0.791 — so P4(b) actually PASSES; it is just unreported.
 - Fix: implement P4(b) from committed summaries, re-run, update RUN_MANIFEST + paper §4.9 sentence. **CPU, doable now.**
 
@@ -31,7 +31,7 @@ Three parallel walkthrough passes (analysis/, experiments/, linkb+figures) + exe
 - Corroboration: R mean acc 8.44% ≈ 7.7% chance level is consistent with no single-class collapse, and no arm shows per-class dominance > 40%.
 - Fix: response files are V100-only (not committed) → cannot recompute now. Amend RUN_MANIFEST with the metric limitation + corroboration note. **Doc-only now; optional V100 recompute later.**
 
-### M4. Link B feature-shape documentation wrong (2 places)
+### M4. Encoder-swap feature-shape documentation wrong (2 places)
 - SigLIP 257-cap is `feats[:, :257, :]` = **prefix/top-left crop** (02:138-142), RUN_MANIFEST says "center-cropped to first 257" — wording false.
 - DESIGN §6 lists R as "257×768"; ViT-B-16@224 yields 197 tokens.
 - Fix: doc-only (RUN_MANIFEST + DESIGN.md).
@@ -58,4 +58,4 @@ Three parallel walkthrough passes (analysis/, experiments/, linkb+figures) + exe
 - exp2_mllm_cka within-sim includes diagonal (self-sim=1).
 
 ## Verified PASS (adversarially recomputed)
-Mediation rank-z formulas; Mantel 8! enumeration (p=4.96e-05 identity-only); Kruskal-Wallis p=0.0303; Mantel null baseline 0.944; permutation critical ρ; power 16%/33%/80%; family variation (0.822/0.393/+0.429/p=0.0002); prevalence/leverage (LAION anchor correct); blur_synchrony_v2 (all four ρ/p pairs); flowers102 difficulty multi (all paper numbers); exp3 prompt numbers; linkb P1/P3 arithmetic + bootstrap (C-S 0.740, S-D 0.839, C-D 0.791, diff CI [-0.17, 0.693]); generate_figures.py all six figures' numbers vs JSONs.
+Mediation rank-z formulas; Mantel 8! enumeration (p=4.96e-05 identity-only); Kruskal-Wallis p=0.0303; Mantel null baseline 0.944; permutation critical ρ; power 16%/33%/80%; family variation (0.822/0.393/+0.429/p=0.0002); prevalence/leverage (LAION anchor correct); blur_synchrony_v2 (all four ρ/p pairs); flowers102 difficulty multi (all paper numbers); exp3 prompt numbers; encoder-swap P1/P3 arithmetic + bootstrap (C-S 0.740, S-D 0.839, C-D 0.791, diff CI [-0.17, 0.693]); generate_figures.py all six figures' numbers vs JSONs.
