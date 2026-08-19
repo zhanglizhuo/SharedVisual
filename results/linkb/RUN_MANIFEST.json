@@ -5,7 +5,7 @@
   "env": "dl_env_310 (py3.10, torch 2.6.0+cu124, transformers 4.57.6, open_clip)",
   "lm": "Mistral-7B-v0.1 frozen, fp16, gradient checkpointing",
   "budget": "2000 steps, batch 8, AdamW lr 1e-4 cosine, class-balanced, seed 42",
-  "token_cap": "257 for all arms (SigLIP 730 prefix-truncated to first 257 tokens \u2014 top-left patch block; earlier 'center-crop' wording corrected 2026-08-18)",
+  "token_cap": "257 for all arms (SigLIP 730 prefix-truncated to first 257 tokens — top-left patch block; earlier 'center-crop' wording corrected 2026-08-18)",
   "train_pool": "all SCB5 train minus filename collisions (exp1b rule); 12902 images",
   "protocol_deviations": [
     "full cleaned pool instead of bounded 4896 (preregistered deviation, disclosed in DESIGN.md)",
@@ -28,7 +28,7 @@
   "reading": "Honest-boundary outcome per preregistered interpretation table: every encoder arm acquires genuine discriminative power (P4), but cross-arm difficulty-profile agreement does NOT track geometry agreement, and C-S agreement cannot be distinguished from the shared-LM+shared-task floor (P3) at this budget/sample. Geometry is shared in the visual layer (static evidence unchanged); behavior-level difficulty under a frozen LM with projector-only training is dominated by LM prior + task structure.",
   "generated_at": "2026-08-17T05:17:13.706765Z",
   "preregistration_timeline": {
-    "design_locked_commit": "76931c2 (2026-08-16 10:15 CST) \u2014 P1/P2 exact-test ceilings and floor thresholds added before any training",
+    "design_locked_commit": "4c1bf56 (2026-08-16 10:15 CST) — P1/P2 exact-test ceilings and floor thresholds added before any training",
     "first_v100_run": "2026-08-16 (feature extraction launched after design lock)",
     "verified": "ceilings + floor thresholds predate data unblinding; no post-hoc additions"
   },
